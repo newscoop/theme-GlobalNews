@@ -54,7 +54,7 @@
                                     <div class="col-lg-4 col-md-5">
                                         <a href="{{ uri options='article' }}">
                                             <figure>
-                                                {{ include file='_tpl/img/img_500x400.tpl'}}
+                                                {{ include file='_tpl/img/img_rectangle.tpl'}}
                                             </figure>
                                         </a>
                                     </div>

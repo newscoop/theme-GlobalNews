@@ -22,7 +22,7 @@
                                     <div class="col-lg-4 col-md-5">
                                         <figure class="section-thumb pull-left">
                                             <a href="{{ uri options="article" }}">
-                                                {{ include file='_tpl/img/img_500x400.tpl'}}
+                                                {{ include file='_tpl/img/img_rectangle.tpl'}}
                                             </a>
                                         </figure>
                                     </div>
