@@ -1,28 +1,28 @@
 {{ if $where=='no'}}
 {{ image rendition="rectanglebig" }}
-	<img src="{{ $image->src }}" alt="{{ $image->caption }} (photo: {{ $image->photographer }})">
+	<img class="img-responsive" src="{{ $image->src }}" alt="{{ $image->caption }} (photo: {{ $image->photographer }})">
 {{ /image }}
 {{ else }}
-<div data-picture data-alt="{{ image rendition="rectanglesmall" }}{{ $image->caption }} (photo: {{ $image->photographer }}){{ /image }}">
+<span data-picture data-alt="{{ image rendition="rectanglesmall" }}{{ $image->caption }} (photo: {{ $image->photographer }}){{ /image }}">
 	{{ image rendition="rectanglesmall" }}
-		<div data-src="{{ $image->src }}"></div>
+		<span class="img-responsive" data-src="{{ $image->src }}"></span>
 	{{ /image }}
 	{{ image rendition="rectanglemedium" }}
-		<div data-src="{{ $image->src }}" data-media="(min-width: 321px)"></div>
+		<span class="img-responsive" data-src="{{ $image->src }}" data-media="(min-width: 321px)"></span>
 	{{ /image }}
 	{{ image rendition="rectanglebig" }}
-		<div data-src="{{ $image->src }}" data-media="(min-width: 640px)"></div>
+		<span class="img-responsive" data-src="{{ $image->src }}" data-media="(min-width: 640px)"></span>
 	{{ /image }}
 
 	<!--[if (lt IE 9) & (!IEMobile)]>
         {{ image rendition="rectanglebig" }}
 			<img src="{{ $image->src }}" alt="{{ $image->caption }} (photo: {{ $image->photographer }})">
 		{{ /image }}
-    <![endif]-->
+        <![endif]-->
 	<noscript>
 	{{ image rendition="rectanglesmall" }}
-		<img src="{{ $image->src }}" alt="{{ $image->caption }} (photo: {{ $image->photographer }})">
+		<img class="img-responsive" src="{{ $image->src }}" alt="{{ $image->caption }} (photo: {{ $image->photographer }})">
 	{{ /image }}
 	</noscript>
-</div>
+</span>
 {{ /if }}
