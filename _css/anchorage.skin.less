@@ -1,0 +1,505 @@
+@import "mixins.less";
+@import "anchorage.layout.less";
+
+/***************************** */
+/**** Begin Anchorage Skin *** */
+/***************************** */
+
+/* --- Begin General Elements */
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
+
+body{
+	font-family: 'Ubuntu', sans-serif;
+	background: url(../img/background.jpg) fixed;
+}
+
+h1, h2, h3, h4, h5, h6{
+
+}
+
+/* End General Elements --- */
+
+/* --- Begin Skin Variables and Custom Style Classes */
+
+.link-color{color:red;}
+
+.gray-text{color: #777;}
+
+a.link-color{
+    .link-color; 
+    font-weight: 600;
+    &:hover{
+        .link-color; 
+    }
+}
+
+hr{
+    border-top: 1px dotted #b2b2b2;
+    height: 1px;
+}
+
+// COLORS
+
+@main-color:#bc0000;
+@dark-color:#585657;
+
+// FONT
+
+.bold-weight{font-weight: 700}
+.normal-weight{font-weight: 400}
+.content-font{font-family: Tahoma, Helvetica, Arial, sans-serif}
+
+// CUSTOM BUTTONS
+
+.solid-button{
+	position: relative;
+	text-decoration: none;
+	background: @main-color;
+	.box-shadow(0px,2px,0px,0px,@main-color - 40);
+	padding: 5px 15px;
+	color: #fff;
+	font-size: 13px;
+	.bold-weight;
+	.trans(background, 0.3s);
+	.rounded-corners(2px);
+	&:visited,&:focus{
+		text-decoration: none;
+		color:#fff;
+	}
+	&:active{
+		top:1px;
+		.box-shadow(0px,0px,0px,0px,@main-color - 40);
+	}
+	&:hover{
+		background: @main-color + 30;
+		text-decoration: none;
+		color:#fff;
+		.trans(background, 0.3s);
+	}
+}
+
+.form-button{
+	background: #000;
+	color:#fff;
+	.rounded-corners(0px);
+	border:0px;
+	.text-shadow(0px,0px,0px,#000);
+	font-size: 11px;
+	padding:2px 15px 2px 0px;
+	font-weight: bold;
+	&:hover{
+		background: #161616;
+		color:#fff;
+	}
+	.icon-chevron-right{
+		background: #808080;
+		padding:4px 7px;
+		margin-right: 8px;
+		margin-left:1px;
+	}
+}
+
+.news-button{
+	.rounded-corners(0px);
+	.text-shadow(0px,0px,0px,@dark-color);
+	padding:0px 12px 0px 0px;
+	border-top:#fff 1px solid;
+	border-right:#fff 1px solid;
+	.trans(background,0.4s);
+	&:hover{
+		background: @dark-color - 20;
+		color:#fff;
+		.trans(background,0.4s);
+	}
+	.icon-double-angle-right{
+		background: @main-color;
+		color:#fff;
+		padding:5px 6px 4px 6px;
+		margin-right: 5px;
+	}
+}
+
+.read-more{
+	background: @dark-color + 25;
+	color:#fff;
+
+}
+.comment-link{
+	background: #e8e8e8;
+	.trans(background,0.4s);
+	&:hover{
+		background: #e8e8e8 - 25;
+		color:#333;
+		.trans(background,0.4s);
+	}
+}
+
+// END BUTTONS
+
+/* End Skin Variables and custom style classes --- */
+
+/* --- Begin Header Styles */
+
+#header{
+    .header-top{
+    	background: @main-color;
+        .top-block-left{
+            background: url(../img/grey_background.jpg);
+            margin-left:20px;
+        }
+        .top-block-right{
+            background: @main-color;
+        }
+    }
+
+    .form-search{
+        .search-query{
+        	color:#fff;
+            font-size: 12px;
+            .rounded-corners(1px);
+            background: @main-color - 18;
+            border:0;
+            border-bottom: @main-color 1px solid;
+            .box-shadow(0px,0px,0px,1px, @main-color - 33);
+        }
+    }
+
+    .social-links{
+        a{
+            color:#4f4f4f;
+            font-size: 18px;
+            .trans(all, 0.4s);
+            &:hover{
+            	.trans(all, 0.4s);
+				text-decoration: none;
+				color:#282828;
+				.opacity(0.8);
+			}
+        }
+		.icon-rss-sign{
+			color:#ff8d1f;
+			margin-right: 5px;
+		}
+		.icon-facebook-sign{
+			color:#3b589e;
+			margin-right: 5px;
+		}
+		.icon-twitter{
+			color:#4bcbf2;
+			margin-right: 5px;
+		}
+    }
+
+    .user-buttons{
+    	float: right;
+    	margin-right: 15px;
+    	.btn{
+    		background: #fff;
+    		.box-shadow(0px,2px,0px,0px,#ededed);
+    		color:#676767;
+    		font-size: 12px;
+    		.trans(all, 0.7s);
+    		&:hover{
+    			color:@main-color;
+    			background: #f8f8f8;
+    			.trans(all, 0.7s);
+    		}
+			&:first-child{
+				.rounded-corners-left(2px);
+			}
+			&:last-child{
+				.rounded-corners-right(2px);
+			}
+    	}
+    }
+
+    #main-menu{
+    	border-top: @main-color 1px solid;
+    	border-bottom: #e2e2e2 1px solid; 
+        a{
+            color:#181818;
+            .trans(all, 0.3s);
+            &:hover{
+            	color:#fff;
+            	background: @dark-color;
+            	text-decoration: none;
+            	border-bottom: #fff 1px solid;
+            	.box-shadow(0px,6px,0px,0px,@main-color);
+            	.trans(all, 0.3s);
+            	z-index: 10;
+            	position: relative;
+            }
+        }
+    }
+}
+/* End Header Styles --- */
+
+
+
+/* --- Begin Content Elements */
+
+#main{
+	background: #f2f2f2 url(../img/main-background.png) repeat-x top center;
+	border-top: #fff 1px solid;
+	border-bottom: #fff 1px solid;
+}
+
+#main-content{
+    border-left: #fff 1px solid;
+}
+
+/* End Content Elements --- */
+
+/* --- Begin Index */
+
+.news{
+    .featured-thumb{
+        .landing-title{
+            border-left:@main-color 15px solid;
+        }
+    }
+    h2 {
+    	a{
+    		color:@dark-color - 20;
+    	}
+    	.dateline{
+    		color:@main-color;
+    	}
+    }
+}
+
+.index-section-title{
+	color:#000;
+	.normal-weight;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.extra-news {
+	.link{
+		.dateline{
+			color:@main-color;
+			font-weight: bold;
+		}		
+	}
+
+
+	a{
+		color:@dark-color - 30 ;
+		font-size: 12px;
+		&:hover{
+			text-decoration: none;
+			color:@main-color;
+		}
+		.icon-double-angle-right{
+			margin-right: 5px;
+		}
+	}
+}
+
+#videos{
+    .video{
+        .video-caption{
+        	text-align: center;
+        	background: #d1d1d1;
+        	color:#575757;
+        	font-size: 12px;
+        	padding:4px;
+        }
+        .title{
+        	font-size: 13px;
+        	color:@main-color;
+        	font-weight: bold;
+        }
+        .description{
+        	font-size: 12px;
+        	margin-bottom: 10px;
+        }
+        .read-more{
+        	position: relative;
+        	bottom: 0;
+        }
+    }
+}
+
+/* End Index --- */
+
+/* --- Begin Sidebar */
+
+#sidebar{
+    border-right:#fff 1px solid;
+
+    #graph{
+    	margin-bottom: 20px;
+    	h4{
+    		color:@main-color;
+    	}
+    }
+
+    #login-form{
+    	background: @main-color;
+    	h4{
+    		color:#fff;
+    	}
+    	form{
+    		margin-bottom:10px;
+    	}
+    	.control-group{
+    		margin-bottom:10px;
+    	}
+		.input-medium{
+			.rounded-corners(0px);
+			height: 10px;
+			font-size: 12px;
+		}
+    	.control-label{
+    		color:#fff;
+    		font-size: 12px;
+    		height: 10px;
+    		line-height:10px;
+    	}
+    	a{
+    		color:#fff;
+    		font-size: 11px;
+    	}
+    }
+
+    #premium-block{
+    	background: @main-color + 30;
+    	h4{
+    		color:#fff;
+    		font-weight: normal;
+    		font-size: 14px;
+    		margin-top: 5px;
+    		margin-bottom: 5px;
+    	}
+    }
+    #premium-block-description{
+    	background: @dark-color - 35;
+    	color:#d8d8d8;
+    	font-size: 12px;
+    	padding-bottom:15px;
+    }
+    #extra{
+    	background: url(../img/grey_background.jpg) fixed;
+    	height: 1565px; // valor temporal
+    }
+
+    // Weather external widget
+    .weatherFeed {
+        background: @dark-color - 40; 
+    }
+    .weatherTemp,.weatherCountry,.weatherCity{
+    	color:@main-color;
+    }
+    .weatherDesc{
+    	margin-top:5px;
+    }
+    .weatherItem{
+    	color:#f5f5f5;
+    }
+    .weatherLink a{
+    	.solid-button();
+    }
+
+}
+
+/* End Sidebar --- */
+
+/* --- Begin Footer */
+
+#footer{
+	margin-top:5px;
+	.footer-area{
+		background: @main-color + 15 url(../img/footer-background.png) fixed;
+
+	}
+    .footer-widgets{
+    	height: 280px;
+    	background: url(../img/footer-planet.png) no-repeat center bottom;
+        > .block{
+            margin-top:30px;
+            a{
+                color:#fff;
+            }
+        }
+    }
+    .bottom-footer{
+    	background: @dark-color - 35;
+    	color:#7a7a7a;
+		.social-links{
+		    a{
+		        color:#fff;
+		        font-size: 13px;
+		        margin-right: 10px;
+		        &:hover{
+					text-decoration: none;
+					color:#fff;
+				}
+		    }
+			.icon-rss-sign{
+				color:#ff8d1f;
+				font-size: 16px;
+				margin-right: 5px;
+			}
+			.icon-facebook-sign{
+				color:#3b589e;
+				font-size: 16px;
+				margin-right: 5px;
+			}
+			.icon-twitter{
+				color:#4bcbf2;
+				font-size: 16px;
+				margin-right: 5px;
+			}
+		}
+    }
+  
+}
+
+/* End Footer --- */
+
+/* --- Begin Internal Page */
+
+
+
+/* End Internal Page --- */
+
+/* --- Begin Section Page */
+
+
+
+/* End Section Page --- */
+
+/* --- Begin Debate */
+
+
+/* End Debate --- */
+
+/* --- Begin Comments */
+
+
+/* End Comments --- */
+
+/* --- Begin Phone Navigation */
+
+
+
+/* End Phone Navigation --- */
+
+/* --- Begin Tablet Navigation (extends from phone nav) */
+
+
+/* End Tablet Navigation  --- */
+
+
+/* --- Registration and Login Form */
+
+
+
+/* End Registration and Login Form   --- */
+
+/***************************** */
+/***** End Anchorage Skin **** */
+/***************************** */

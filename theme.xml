@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<theme name="Global News" designer="Sourcefabric" version="1.0" require="4.2">
+    <description>Theme for Newscoop Version 4</description>
+    
+    <presentation-img src="themethumbs/front.jpg" name="Front page"/>
+    <presentation-img src="themethumbs/section.jpg" name="Section page"/>
+    <presentation-img src="themethumbs/article.jpg" name="Article"/>
+    
+    <!-- =============================== -->
+    
+    <output name="Web">
+        <frontPage src="front.tpl"/>
+        <sectionPage src="section.tpl"/>
+        <articlePage src="article.tpl"/>
+        <errorPage src="404.tpl"/>
+    </output>
+
+    <renditions>
+        <rendition name="articlesmall" width="110" height="100" specs="crop"/>
+    </renditions>
+</theme>
