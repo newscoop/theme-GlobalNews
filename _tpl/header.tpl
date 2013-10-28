@@ -1,7 +1,3 @@
-<body>
-
-    <div class="container">
-
         <header id="header" role="banner">
                 <div class="row ">
 
