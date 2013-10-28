@@ -3,193 +3,156 @@
 <body>
     <div class="container">
         {{ include "_tpl/header.tpl" }}
-        <section role="main">
-            <div class="row">
-                <div id="main" class="span12">
-                    <div class="row">
-                        <div class="span8 column">
-                            <div id="main-content">
+        
+        <main id="main">
+                <div class="row">
 
-                                <article class="news featured-new">
-                                    <figure class="featured-thumb">
-                                        <a href="">
-                                            <img src="http://lorempixel.com/720/310/business">
-                                        </a>
-                                        <figcaption>Boat in Copenhagen canals</figcaption>
-                                        <div class="landing-title">Home: Banking Crisis</div>
-                                    </figure>
+                    <div class="col-lg-8 col-md-8">
 
-                                    <header>
-                                        <h2><a href="">Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</a></h2>
-                                    </header>
-                                    <div class="excerpt">
-                                        Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna.
+                        <div id="content" class="index-page">
+
+                            <article class="article featured">
+                                <figure>
+                                    <img class="img-responsive" src="http://lorempixel.com/900/350/" alt="">
+                                </figure>
+                                <h2><a href="#">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit</a></h2>
+                                <p class="excerpt">
+                                    Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                </p>
+                            </article>
+
+                            <article class="article list">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-5">
+                                        <figure>
+                                            <img class="img-responsive" src="http://lorempixel.com/500/400/sports" alt="">
+                                        </figure>
                                     </div>
-                                    <div class="new-links pull-right">
-                                        <a href="#" class="btn btn-mini">Read More</a>
-                                        <a href="#" class="btn btn-mini">Comments(43)</a>
+                                    <div class="col-lg-8 col-md-7">
+                                        <a href="#">Sports</a>
+                                        <h4><a href="#">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit</a></h4>
+                                        <p class="excerpt">
+                                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                        </p>
+                                        <a href="#">≫ More</a>
                                     </div>
-                                    <div class="clearfix"></div>
-                                </article>
+                                </div>
+                            </article>
 
-                                <h4 class="index-section-title"> LATEST ARTICLES </h4>
 
-                                <article class="news news-list">
-                                    <figure class="secundary-thumb">
-                                        <a href="">
-                                            <img src="http://lorempixel.com/110/100/people">
-                                        </a>
-                                    </figure>
-
-                                    <header class="pull-right">
-                                        <h2><a href="">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</a></h2>
-                                    </header>
-                                    <div class="excerpt pull-right">
-                                        Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus.
+                            <article class="article list">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-5">
+                                        <figure>
+                                            <img class="img-responsive" src="http://lorempixel.com/500/400/business" alt="">
+                                        </figure>
                                     </div>
-
-                                    <div class="new-links pull-right">
-                                        <a href="#" class="btn btn-mini">Read More</a>
-                                        <a href="#" class="btn btn-mini">Comments(43)</a>
+                                    <div class="col-lg-8 col-md-7">
+                                        <a href="#">Business</a>
+                                        <h4><a href="#">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit</a></h4>
+                                        <p class="excerpt">
+                                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                        </p>
+                                        <a href="#">≫ More</a>
                                     </div>
-                                    <div class="clearfix"></div>
-                                </article>
+                                </div>
+                            </article>
 
-                               <article class="news news-list">
-                                    <figure class="secundary-thumb">
-                                        <a href="">
-                                            <img src="http://lorempixel.com/110/100/city">
-                                        </a>
-                                    </figure>
 
-                                    <header class="pull-right">
-                                        <h2><a href="">Etiam porta sem malesuada magna mollis euismod.</a></h2>
-                                    </header>
-                                    <div class="excerpt pull-right">
-                                       Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                            <article class="article list">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-5">
+                                        <figure>
+                                            <img class="img-responsive" src="http://lorempixel.com/500/400/people" alt="">
+                                        </figure>
                                     </div>
-
-                                    <div class="new-links pull-right">
-                                        <a href="#" class="btn btn-mini">Read More</a>
-                                        <a href="#" class="btn btn-mini">Comments(43)</a>
+                                    <div class="col-lg-8 col-md-7">
+                                        <a href="#">Health</a>
+                                        <h4><a href="#">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit</a></h4>
+                                        <p class="excerpt">
+                                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                        </p>
+                                        <a href="#">≫ More</a>
                                     </div>
-                                    <div class="clearfix"></div>
-                                </article>
+                                </div>
+                            </article>
 
-                               <article class="news news-list">
-                                    <figure class="secundary-thumb">
-                                        <a href="">
-                                            <img src="http://lorempixel.com/110/100/sports">
-                                        </a>
-                                    </figure>
 
-                                    <header class="pull-right">
-                                        <h2><a href="">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</a></h2>
-                                    </header>
-                                    <div class="excerpt pull-right">
-                                        Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                            <article class="article list">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-5">
+                                        <figure>
+                                            <img class="img-responsive" src="http://lorempixel.com/500/400/" alt="">
+                                        </figure>
                                     </div>
-
-                                    <div class="new-links pull-right">
-                                        <a href="#" class="btn btn-mini">Read More</a>
-                                        <a href="#" class="btn btn-mini">Comments(43)</a>
+                                    <div class="col-lg-8 col-md-7">
+                                        <a href="#">Politics</a>
+                                        <h4><a href="#">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit</a></h4>
+                                        <p class="excerpt">
+                                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                        </p>
+                                        <a href="#">≫ More</a>
                                     </div>
-                                    <div class="clearfix"></div>
-                                </article>
-
-                                <aside class="extra-news left-block">
-                                    <h4 class="index-section-title"> Articles in Sport </h4>
-                                    <ul class="nav nav-tabs nav-stacked">
-                                      <li><a href="#">Aenean lacinia bibendum nulla sed consectetur.</a></li>
-                                      <li><a href="#">Donec ullamcorper nulla non metus auctor fringilla.</a></li>
-                                      <li><a href="#">Curabitur blandit tempus porttitor.</a></li>
-                                    </ul>
-                                </aside>
-
-                                <aside class="extra-news">
-                                    <h4 class="index-section-title"> Articles in Health </h4>
-                                    <ul class="nav nav-tabs nav-stacked">
-                                      <li><a href="#">Aenean lacinia bibendum nulla sed consectetur.</a></li>
-                                      <li><a href="#">Donec ullamcorper nulla non metus auctor fringilla.</a></li>
-                                      <li><a href="#">Curabitur blandit tempus porttitor.</a></li>
-                                    </ul>
-                                </aside>
-
-                                <aside class="extra-news left-block">
-                                    <h4 class="index-section-title"> Articles in Sci/Tech  </h4>
-                                    <ul class="nav nav-tabs nav-stacked">
-                                      <li><a href="#">Aenean lacinia bibendum nulla sed consectetur.</a></li>
-                                      <li><a href="#">Donec ullamcorper nulla non metus auctor fringilla.</a></li>
-                                      <li><a href="#">Curabitur blandit tempus porttitor.</a></li>
-                                    </ul>
-                                </aside>
-
-                                <aside class="extra-news">
-                                    <h4 class="index-section-title"> Articles in Entertaiment </h4>
-                                    <ul class="nav nav-tabs nav-stacked">
-                                      <li><a href="#">Aenean lacinia bibendum nulla sed consectetur.</a></li>
-                                      <li><a href="#">Donec ullamcorper nulla non metus auctor fringilla.</a></li>
-                                      <li><a href="#">Curabitur blandit tempus porttitor.</a></li>
-                                    </ul>
-                                </aside>
-
+                                </div>
+                            </article>
+                            
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <section id="map">
+                                        <h3>Articles by Location</h3>
+                                        <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-86.3258,12.0851,-86.2032,12.1946&amp;layer=mapnik" style="border: 1px solid #fff"></iframe><br /> 
+                                    </section>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <section id="multimedia">
+                                        <h3>Multimedia</h3>
+                                         
+                                    </section>
+                                </div>
                             </div>
+
                         </div>
-                        <aside class="span4 column">
-
-                            <div id="sidebar">
-
-                                <section id="graph" class="block">
-                                    <h4>Financial Graph</h4>
-                                        <img src="img/graph.png" alt="" />
-                                </section>
-
-                                <section id="login-form" class="block">
-                                    <h4>Premium login</h4>
-                                    <form class="form-horizontal">
-                                      <div class="control-group">
-                                        <label class="control-label" for="inputEmail">Email:</label>
-                                        <div class="controls">
-                                          <input type="text" class="input-medium" id="inputEmail">
-                                        </div>
-                                      </div>
-                                      <div class="control-group">
-                                        <label class="control-label" for="inputPassword">Password:</label>
-                                        <div class="controls">
-                                          <input type="password" class="input-medium" id="inputPassword">
-                                        </div>
-                                      </div>
-                                      <div class="control-group">
-                                        <div class="controls">
-                                          <button type="submit" class="btn btn-mini btn-inverse">Log In</button>
-                                        </div>
-                                      </div>
-                                    </form>
-                                </section>
-
-                                <section id="premium-block" class="block">
-                                    <h4>Not a premium member?</h4>
-                                </section>
-
-                                <section id="premium-block-description" class="block">
-                                    <p><strong>Advantages:</strong> Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor.</p>
-                                    <a href="#" class="solid-button">Register Now</a>
-                                </section>
-
-                                <section id="extra" class="block">
-                                    <a class="twitter-timeline" href="https://twitter.com/slashmango" data-widget-id="344226794171428864">Tweets por @slashmango</a>
-                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-                                    <div id="weather"></div>
-
-                                </section>
-
-                            </div>
-                        </aside>
+                        <!-- End Content -->
                     </div>
+
+                    <div class="col-lg-4 col-md-4">
+
+                        <aside id="sidebar">
+
+                            <section id="video-block" class="block">
+                                <h4>Video ≫</h4>
+                                <img class="img-responsive" src="http://lorempixel.com/400/250/" alt="">
+                                <span>Lorem ipsum: <a href="#">Aenean eu leo quam</a></span>
+                            </section>
+
+
+                            <section id="latest-articles-block" class="block">
+                                <h4>Latest Articles ≫</h4>
+                                <div class="link">
+                                    <div class="time">14:23</div><a href="#">Purus Lorem Cras Fringilla</a>
+                                </div>
+                                <div class="link">
+                                    <div class="time">14:21</div><a href="#">Aenean lacinia bibendum nulla sed consectetur</a>
+                                </div>
+                                <div class="link">
+                                    <div class="time">14:18</div><a href="#">Fusce dapibus, tellus ac cursus commodo tortor mauris condimentum nibh</a>
+                                </div>
+                                <div class="link">
+                                    <div class="time">14:10</div><a href="#">Nullam quis risus eget urna mollis ornare vel eu leo</a>
+                                </div>
+                                <div class="link">
+                                    <div class="time">14:00</div><a href="#">Vestibulum id ligula porta felis euismod semper</a>
+                                </div>
+                            </section>
+
+                        </aside>
+                        <!-- End Sidebar -->
+                    </div>
+
+
                 </div>
-            </div>
-        </section> 
+
+            </main> 
 
         {{ include "_tpl/footer.tpl" }}
     {{ include "_tpl/_html-footer.tpl" }}

@@ -1,40 +1,49 @@
-        <header id="header" role="banner">
-                <div class="row ">
+        <header id="header">
 
-                    <div class="span12 header-top">
-                        <div class="row">
-                            <div class="span6">
-                                <div class="top-block-left"></div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="top-header">
+                            <div class="pull-left">
+                                <a href="#">Register</a>
+                                <a href="#">Login</a>
+                                <a href="#">Font <span class="font-12">A</span><span class="font-11">A</span><span class="font-10">A</span></a>
+                                <a href="/en/static/rss">{{ #RSS# }}</a>
                             </div>
-                            <div class="span6">
-                                <div class="top-block-right">
-                                    NEWSTICKER: Maecenas faucibus mollis interdum bibendum nulla sed consectetur.
-                                </div>  
+                            <div class="pull-right">
+                                {{$smarty.now|date_format:"%d/%m/%Y"}}
                             </div>
-                         </div>
-                    </div>
-
-                    <div class="span12 banner">
-                       <hgroup>
-                            <h1 id="logo">                  
-                                <a href="/">
-                                    <img  class="pull-left" src="{{ url static_file="_img/logo.png"}}" alt="">
-                                </a>
-                            </h1>
-                        </hgroup>
-                        <div class="date-header pull-right">
-                            {{$smarty.now|date_format:"%d/%m/%Y"}} 
-                        </div> 
-                        <div class="social-links pull-right">
-                            <a href="/en/static/rss"><i class="icon-rss-sign"></i> {{ #RSSFeed# }}</a>
-                            <a href="http://facebook.com/sourcefabric"><i class="icon-facebook-sign"></i></a>
-                            <a href="http://twitter.com/sourcefabric"><i class="icon-twitter"></i></a>
                         </div>
                     </div>
+                </div>
 
-                    <div class="span12">
-                        <nav id="main-menu">
-                            {{ local }}
+                <div class="row">
+                    <div id="main-header">
+                        <div class="col-lg-9 col-md-9">
+                            <h1><a href="#">Global News</a></h1>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div id="social-header">
+                                <a href="#"><img src="img/social-icons/facebook.png"></a>
+                                <a href="#"><img src="img/social-icons/twitter.png"></a>
+                                <a href="#"><img src="img/social-icons/vimeo.png"></a>
+                                <a href="#"><img src="img/social-icons/flickr.png"></a>
+                                <a href="#" class="btn btn-primary btn-sm pull-right">Community</a>
+                            </div>
+                            <form class="form-horizontal" role="form">
+                                <div class="input-group">
+                                  <input type="search" class="form-control">
+                                  <span class="input-group-addon"><span class="glyphicon glyphicon-search "></span></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="main-navigation">
+                            <nav id="menu">
+                                {{ local }}
                             {{ set_current_issue }}
                             {{ list_sections }}
                             <a href="{{ uri options='section' }}" 
@@ -42,11 +51,9 @@
                             </a>
                             {{ /list_sections }}
                             {{ /local }}
-
-                            <a href="/user" class="pull-right">{{ #community# }}</a>
-                        </nav>
+                            </nav>
+                        </div>
                     </div>
-
                 </div>
 
-        </header>
+            </header>

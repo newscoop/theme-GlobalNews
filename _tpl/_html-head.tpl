@@ -17,15 +17,6 @@
 
         <link rel="stylesheet" href="{{ url static_file="_css/bootstrap.min.css" }}">
         <link rel="stylesheet" href="{{ url static_file="_css/globalnews.layout.css" }}">
-        <link rel="stylesheet" href="{{ url static_file="_css/globalnews.responsive.min.css" }}">
-        <link rel="stylesheet" href="{{ url static_file="_css/font-awesome.css" }}">
-
-        <!--[if lte IE 9]>
-           <link rel="stylesheet" href="{{ url static_file="_css/anchorage.ie.css" }}">
-        <![endif]-->
-        <!--[if IE 7]>
-           <link rel="stylesheet" href="{{ url static_file="_css/font-awesome-ie7.css" }}">
-        <![endif]-->
 
         {{ if $gimme->article->defined }}{{* Open Graph protocol metatags for Facebook sharing *}}
         <meta property="og:title" content="{{$gimme->article->name|html_entity_decode|regex_replace:'/&(.*?)quo;/':'&quot;'}}" />
@@ -50,18 +41,6 @@
            <script>window.html5 || document.write('<script src="{{ url static_file='_js/vendor/html5shiv.js'}}"><\/script>')</script>
         <![endif]-->
         
-        <!-- jQuery Library -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="{{ url static_file='_js/vendor/jquery-1.9.1.min.js'}}"><\/script>')
-        </script>
-
-        <!-- Vendor plugins -->
-        <script src="{{ url static_file="_js/vendor/bootstrap.min.js" }}"></script>
-        <script src="{{ url static_file="_js/vendor/jquery.timeago.js" }}"></script>
-
-        <!-- Theme custom functions and plugins configuration -->
-        <script src="{{ url static_file="_js/globalnews.js" }}"></script>
-
         {{ if $gimme->template->name == 'article.tpl'}}
         <script src="{{ url static_file='_js/vendor/galleria/galleria-1.2.9.min.js'}}"></script>
         <link href="{{ url static_file='_css/flowplayer_skin/minimalist.css' }}" rel="stylesheet">
