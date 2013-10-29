@@ -87,8 +87,12 @@
 }
 #footer {
   border-top: #d6d6d6 1px solid;
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
   margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#footer #sections-block a,
+#footer #more-links-block a {
+  display: block;
+  margin-bottom: 5px;
 }
