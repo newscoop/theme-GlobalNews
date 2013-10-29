@@ -16,6 +16,6 @@
     </output>
 
     <renditions>
-        <rendition name="articlesmall" width="110" height="100" specs="crop"/>
+        <rendition name="section" width="500" height="400" specs="crop"/>
     </renditions>
 </theme>

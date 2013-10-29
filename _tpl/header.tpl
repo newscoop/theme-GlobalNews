@@ -30,8 +30,10 @@
                             </div>
                             <form class="form-horizontal" role="form">
                                 <div class="input-group">
-                                  <input type="search" class="form-control">
-                                  <span class="input-group-addon"><span class="glyphicon glyphicon-search "></span></span>
+                                    {{ search_form template="search.tpl" submit_button="&nbsp;" html_code="class=\"form-search\" " button_html_code="style=\"display: none;\""}} 
+                                        {{ camp_edit object="search" attribute="keywords"  html_code="placeholder=\"{{ #search# }}\" class=\"form-control\" " }}
+                                    {{ /search_form }}
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-search "></span></span>
                                 </div>
                             </form>
                         </div>

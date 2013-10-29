@@ -8,23 +8,21 @@
                 <div class="row">
 
                     <div class="col-lg-8 col-md-8">
-                        <h2>{{ #searchResults# }}</h2>
+                        <h2>{{ $gimme->section->name }}</h2>
 
                         <div id="content" class="index-page">
 
-                            {{ list_search_results length="5" order="bypublishdate desc" }}
-                            {{if $gimme->current_list->at_beginning}}
-                            <p>{{ #resultsFor# }} <strong>"{{ $gimme->search_articles_action->search_phrase }}"</strong>.</p>
-                            {{/if}}
-
+                            {{ list_articles length="5" ignore_issue="true" constraints="type not poll" }}
                             <article class="article list">
                                 <div class="row">
                                     <div class="col-lg-4 col-md-5">
+                                        {{ if $gimme->section->name != "Dialogue" }}
                                         <figure class="section-thumb pull-left">
                                             <a href="{{ uri options="article" }}">
                                                 {{ include file='_tpl/img/img_500x400.tpl'}}
                                             </a>
                                         </figure>
+                                        {{/if}}
                                     </div>
                                     <div class="col-lg-8 col-md-7">
                                         <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
@@ -64,12 +62,8 @@
                             {{ /if }}
 
                             {{ /if }}
-                            
-                            {{ /list_search_results }} 
-                                
-                            {{ if $gimme->prev_list_empty }}
-                              <p>{{ #noResultsFound# }} <strong>"{{ $gimme->search_articles_action->search_phrase }}"</strong>.</p>
-                            {{ /if }}  
+
+                            {{ /list_articles }} 
 
                         </div>
                         <!-- End Content -->
