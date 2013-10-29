@@ -1,3 +1,3 @@
 {{ image rendition="section" }}
-<img class="img-responsive" src="{{ $image->src }}" height="{{ $image->height }}" alt="{{ $image->photographer}}: {{ $image->caption }}">
+<img class="img-responsive" src="{{ $image->src }}" alt="{{ $image->photographer}}: {{ $image->caption }}">
 {{ /image }}
