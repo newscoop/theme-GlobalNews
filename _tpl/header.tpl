@@ -26,7 +26,6 @@
                                 <a href="#"><img src="{{ url static_file='_img/social-icons/twitter.png'}}"></a>
                                 <a href="#"><img src="{{ url static_file='_img/social-icons/vimeo.png'}}"></a>
                                 <a href="#"><img src="{{ url static_file='_img/social-icons/flickr.png'}}"></a>
-                                <a href="#" class="btn btn-primary btn-sm pull-right">Community</a>
                             </div>
                             <form class="form-horizontal" role="form">
                                 <div class="input-group">
@@ -52,6 +51,7 @@
                             </a>
                             {{ /list_sections }}
                             {{ /local }}
+                            <a href="/user" class="pull-right">Community</a>
                             </nav>
                         </div>
                     </div>

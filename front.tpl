@@ -96,20 +96,6 @@
                                 </div>
                             </article>
                             
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <section id="map">
-                                        <h3>Articles by Location</h3>
-                                        <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-86.3258,12.0851,-86.2032,12.1946&amp;layer=mapnik" style="border: 1px solid #fff"></iframe><br /> 
-                                    </section>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <section id="multimedia">
-                                        <h3>Multimedia</h3>
-                                         
-                                    </section>
-                                </div>
-                            </div>
 
                         </div>
                         <!-- End Content -->
