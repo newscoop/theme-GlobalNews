@@ -23,7 +23,6 @@
                                             </a>
                                         </figure>
                                         {{/if}}
-                                        </figure>
                                     </div>
                                     <div class="col-lg-8 col-md-7">
                                         <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
