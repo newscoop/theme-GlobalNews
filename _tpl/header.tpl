@@ -41,6 +41,17 @@
 
                 <div class="row">
                     <div class="col-lg-12">
+                       <div id="news_ticker">
+                            <span>Latest News</span>
+                            <ul>
+                                {{ local }} 
+                                {{ set_current_issue }} 
+                                {{ list_articles length="4" order="bypopularity desc" constraints="type is news" }}
+                                <li><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></li>
+                                {{ /list_articles }} 
+                                {{ /local }}
+                            </ul>
+                        </div>
                         <div id="main-navigation">
                             <nav id="menu">
                                 {{ local }}

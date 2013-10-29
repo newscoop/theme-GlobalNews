@@ -41,6 +41,8 @@
            <script>window.html5 || document.write('<script src="{{ url static_file='_js/vendor/html5shiv.js'}}"><\/script>')</script>
         <![endif]-->
         
+        <link rel="stylesheet" href="{{ url static_file="_css/ticker-style.css" }}">
+
         {{ if $gimme->template->name == 'article.tpl'}}
         <script src="{{ url static_file='_js/vendor/galleria/galleria-1.2.9.min.js'}}"></script>
         <link href="{{ url static_file='_css/flowplayer_skin/minimalist.css' }}" rel="stylesheet">
