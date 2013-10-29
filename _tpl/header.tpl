@@ -6,7 +6,6 @@
                             <div class="pull-left">
                                 <a href="#">Register</a>
                                 <a href="#">Login</a>
-                                <a href="#">Font <span class="font-12">A</span><span class="font-11">A</span><span class="font-10">A</span></a>
                                 <a href="/en/static/rss">{{ #RSS# }}</a>
                             </div>
                             <div class="pull-right">
@@ -23,10 +22,10 @@
                         </div>
                         <div class="col-lg-3 col-md-3">
                             <div id="social-header">
-                                <a href="#"><img src="img/social-icons/facebook.png"></a>
-                                <a href="#"><img src="img/social-icons/twitter.png"></a>
-                                <a href="#"><img src="img/social-icons/vimeo.png"></a>
-                                <a href="#"><img src="img/social-icons/flickr.png"></a>
+                                <a href="#"><img src="{{ url static_file='_img/social-icons/facebook.png'}}"></a>
+                                <a href="#"><img src="{{ url static_file='_img/social-icons/twitter.png'}}"></a>
+                                <a href="#"><img src="{{ url static_file='_img/social-icons/vimeo.png'}}"></a>
+                                <a href="#"><img src="{{ url static_file='_img/social-icons/flickr.png'}}"></a>
                                 <a href="#" class="btn btn-primary btn-sm pull-right">Community</a>
                             </div>
                             <form class="form-horizontal" role="form">
