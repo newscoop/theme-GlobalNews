@@ -46,82 +46,28 @@
                                 <a data-slide-to="{{ $gimme->current_list->index - 1 }}" data-target="#carousel" class="{{ if $gimme->current_list->index =='1' }}active{{ /if }}">{{ $gimme->section->name }}</a>
                                 {{ /list_sections }}
                             </nav>
-
-                            <article class="article list">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-5">
-                                        <figure>
-                                            <img class="img-responsive" src="http://lorempixel.com/500/400/sports" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="col-lg-8 col-md-7">
-                                        <a href="#">Sports</a>
-                                        <h4><a href="#">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit</a></h4>
-                                        <p class="excerpt">
-                                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                                        </p>
-                                        <a href="#">≫ More</a>
-                                    </div>
-                                </div>
-                            </article>
-
-
-                            <article class="article list">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-5">
-                                        <figure>
-                                            <img class="img-responsive" src="http://lorempixel.com/500/400/business" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="col-lg-8 col-md-7">
-                                        <a href="#">Business</a>
-                                        <h4><a href="#">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit</a></h4>
-                                        <p class="excerpt">
-                                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                                        </p>
-                                        <a href="#">≫ More</a>
-                                    </div>
-                                </div>
-                            </article>
-
-
-                            <article class="article list">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-5">
-                                        <figure>
-                                            <img class="img-responsive" src="http://lorempixel.com/500/400/people" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="col-lg-8 col-md-7">
-                                        <a href="#">Health</a>
-                                        <h4><a href="#">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit</a></h4>
-                                        <p class="excerpt">
-                                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                                        </p>
-                                        <a href="#">≫ More</a>
-                                    </div>
-                                </div>
-                            </article>
-
-
-                            <article class="article list">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-5">
-                                        <figure>
-                                            <img class="img-responsive" src="http://lorempixel.com/500/400/" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="col-lg-8 col-md-7">
-                                        <a href="#">Politics</a>
-                                        <h4><a href="#">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit</a></h4>
-                                        <p class="excerpt">
-                                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                                        </p>
-                                        <a href="#">≫ More</a>
-                                    </div>
-                                </div>
-                            </article>
                             
+                            {{ list_playlist_articles name="Front page" length="4" }}
+                            <article class="article list">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-5">
+                                        <a href="{{ uri options='article' }}">
+                                            <figure>
+                                                {{ include file='_tpl/img/img_500x400.tpl'}}
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-8 col-md-7">
+                                        <a href="{{ uri option='section'}}">{{ $gimme->article->section->name }}</a>
+                                        <h4><a href="{{ uri option='article'}}">{{ $gimme->article->name }}</a></h4>
+                                        <p class="excerpt">
+                                            {{ $gimme->article->full_text|truncate:200:"..." }}
+                                        </p>
+                                        <a href="{{ uri option='article'}}">≫ {{ #more# }}</a>
+                                    </div>
+                                </div>
+                            </article>
+                            {{ /list_playlist_articles }}
 
                         </div>
                         <!-- End Content -->
