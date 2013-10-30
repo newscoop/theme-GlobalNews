@@ -18,7 +18,7 @@
                                 </figure>
                                 <a href="{{ $view->url(['username' => $gimme->user->uname], 'user') }}" class="solid-button">{{#viewMyProfile#}}</a>
                             </center>
-                            <div class="anchorage-form well-form well">
+                            <div class="globalnews-form well-form well">
                                 <link rel="stylesheet" href="{{ url static_file="_css/datepicker.css"}}">
                                 <script src="{{ url static_file='_js/vendor/bootstrap-datepicker.js'}}"></script>
                                 <script type="text/javascript">
