@@ -8,7 +8,7 @@
                 <div class="row">
 
                     <div class="col-lg-8 col-md-8">
-                        <h2>{{ $gimme->section->name }}</h2>
+                        <h1>{{ $gimme->section->name }}</h1>
 
                         <div id="content" class="index-page">
 
@@ -27,7 +27,7 @@
                                     <div class="col-lg-8 col-md-7">
                                         <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
                                         {{ if !$gimme->article->is_public }}
-                                        <span class="label label-important"><i class="icon-lock"></i>&nbsp;{{ #premium# }}</span>
+                                        <span class="label label-danger">{{ #premium# }}</span>
                                         {{ /if }} 
                                         <p class="excerpt">
                                             {{ $gimme->article->full_text|truncate:250:"...":true }}
