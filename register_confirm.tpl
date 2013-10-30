@@ -12,7 +12,7 @@
 
                         <div id="content" class="index-page">
                            <br>
-                            <div class="anchorage-form well-form well">
+                            <div class="globalnews-form well-form well">
                                 {{ $form }}
                             </div>
                             <script type="text/javascript">
