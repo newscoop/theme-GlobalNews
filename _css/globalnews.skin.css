@@ -293,6 +293,12 @@ a:hover {
 #content .article.featured .caption h2 {
   font-size: 24px;
 }
+#content .article.list .section-link {
+  color: #f00d14;
+}
+#content .article.list .excerpt p {
+  color: #4a4a4a;
+}
 #content #carousel-sections {
   background: #103e82;
 }
