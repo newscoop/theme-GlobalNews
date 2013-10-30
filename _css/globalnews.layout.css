@@ -1,12 +1,3 @@
-.font-12 {
-  font-size: 12px;
-}
-.font-11 {
-  font-size: 11px;
-}
-.font-10 {
-  font-size: 10px;
-}
 .container {
   max-width: 1140px;
 }
@@ -151,7 +142,30 @@
   margin-right: 15px;
 }
 #content .article.featured {
-  margin-bottom: 20px;
+  position: relative;
+}
+#content .article.featured .caption {
+  position: absolute;
+  bottom: 0;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0.2)), color-stop(5%, rgba(255, 255, 255, 0.2)), to(#ffffff));
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 5%, #ffffff);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 5%, #ffffff);
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 5%, #ffffff);
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 5%, #ffffff);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 5%, #ffffff);
+}
+#content .article.featured .caption h2 {
+  font-size: 20px;
+  line-height: 1.5;
+}
+#content .article.featured .caption h2 a {
+  color: #000;
+}
+#content .article.featured .caption .excerpt {
+  color: #000;
 }
 #content .article.list {
   border-top: #d6d6d6 1px solid;
@@ -169,7 +183,7 @@
   cursor: pointer;
 }
 #content #carousel-sections a.active {
-  background: url(../_css/top-arrow.png) top center;
+  background: url(../_img/top-arrow.png) no-repeat top center;
 }
 #sidebar {
   border-left: #d6d6d6 1px solid;

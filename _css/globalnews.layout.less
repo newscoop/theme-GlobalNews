@@ -1,17 +1,10 @@
 
-.font-12{
-	font-size: 12px;
-}
-.font-11{
-	font-size: 11px;
-}
-.font-10{
-	font-size: 10px;
-}
+@import "mixins.less";
 
 .container{
 	max-width: 1140px;
 }
+
 #top-header{
 	height: 30px;
 	line-height: 30px;
@@ -121,7 +114,25 @@
 #content{
 	.article{
 		&.featured{
-			margin-bottom: 20px;
+			position: relative;
+			.caption{
+				position: absolute;
+				bottom:0;
+				padding: 10px 20px;
+				.linear-gradient(rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 1),5%);
+				h2{
+					font-size: 20px;
+					line-height: 1.5;
+					a{
+						color:#000;
+						
+					}			
+				} 
+
+				.excerpt{
+					color:#000;
+				}
+			}
 		}
 		&.list{
 			border-top: #d6d6d6 1px solid;
@@ -139,7 +150,7 @@
 			cursor:pointer;
 		}
 		a.active{
-			background: url(../_css/top-arrow.png) top center;
+			background: url(../_img/top-arrow.png) no-repeat top center;
 		}
 	}
 }
