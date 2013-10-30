@@ -45,6 +45,7 @@
                                 {{ list_sections }}
                                 <a data-slide-to="{{ $gimme->current_list->index - 1 }}" data-target="#carousel" class="{{ if $gimme->current_list->index =='1' }}active{{ /if }}">{{ $gimme->section->name }}</a>
                                 {{ /list_sections }}
+                                <div class="clearfix"></div>
                             </nav>
                             
                             {{ list_playlist_articles name="Front page" length="4" }}

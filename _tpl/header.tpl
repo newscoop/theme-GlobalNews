@@ -60,7 +60,7 @@
                         </div>
                         <div id="main-navigation">
                             <nav id="menu">
-                                {{ local }}
+                            {{ local }}
                             {{ set_current_issue }}
                             {{ list_sections }}
                             <a href="{{ uri options='section' }}" 
@@ -68,7 +68,7 @@
                             </a>
                             {{ /list_sections }}
                             {{ /local }}
-                            <a href="/user" class="pull-right">Community</a>
+                            <a href="/user" id="community-link" class="pull-right">Community</a>
                             </nav>
                         </div>
                     </div>
