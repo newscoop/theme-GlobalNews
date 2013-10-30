@@ -14,7 +14,7 @@
                             <div id="carousel" class="carousel slide">
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner">
-                                {{ list_sections }}
+                                {{ list_sections constraints="number not 100" }}
                                     {{ assign var=currentindex value=$gimme->current_list->index }}
 
                                     {{ list_articles length="1" order="byPublishDate desc"}}
@@ -42,7 +42,7 @@
 
                             <!-- Controls carousel sections -->
                             <nav id="carousel-sections">
-                                {{ list_sections }}
+                                {{ list_sections constraints="number not 100" }}
                                 <a data-slide-to="{{ $gimme->current_list->index - 1 }}" data-target="#carousel" class="{{ if $gimme->current_list->index =='1' }}active{{ /if }}">{{ $gimme->section->name }}</a>
                                 {{ /list_sections }}
                                 <div class="clearfix"></div>
