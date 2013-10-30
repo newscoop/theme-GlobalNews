@@ -41,7 +41,7 @@
 
                 <div class="row">
                     <div class="col-lg-12">
-                       <div id="news_ticker">
+                       <div id="news-ticker">
                             <span>Breaking News</span>
                             <ul>
                                 {{ local }} 

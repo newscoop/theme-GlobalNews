@@ -34,20 +34,20 @@
   width: 24px;
   height: 24px;
 }
-#news_ticker {
+#news-ticker {
   height: 27px;
   overflow: hidden;
   padding: 3px;
   position: relative;
 }
-#news_ticker span {
+#news-ticker span {
   float: left;
   color: rgba(0, 0, 0, 0.8);
   padding: 5px 0px;
   position: relative;
   font-size: 12px;
 }
-#news_ticker ul {
+#news-ticker ul {
   float: left;
   padding-left: 20px;
   -webkit-animation: ticker 20s cubic-bezier(1, 0, 0.5, 0) infinite;
@@ -55,17 +55,17 @@
   -ms-animation: ticker 20s cubic-bezier(1, 0, 0.5, 0) infinite;
   animation: ticker 20s cubic-bezier(1, 0, 0.5, 0) infinite;
 }
-#news_ticker ul:hover {
+#news-ticker ul:hover {
   -webkit-animation-play-state: paused;
   -moz-animation-play-state: paused;
   -ms-animation-play-state: paused;
   animation-play-state: paused;
 }
-#news_ticker ul li {
+#news-ticker ul li {
   line-height: 26px;
   list-style: none;
 }
-#news_ticker a {
+#news-ticker a {
   text-decoration: none;
   font-size: 13px;
 }
@@ -157,6 +157,19 @@
   border-top: #d6d6d6 1px solid;
   margin-bottom: 20px;
   padding-top: 20px;
+}
+#content #carousel-sections {
+  background: #eee;
+  margin-bottom: 20px;
+}
+#content #carousel-sections a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-right: #fff 1px solid;
+  cursor: pointer;
+}
+#content #carousel-sections a.active {
+  background: url(../_css/top-arrow.png) top center;
 }
 #sidebar {
   border-left: #d6d6d6 1px solid;

@@ -11,15 +11,58 @@
 
                         <div id="content" class="index-page">
 
-                            <article class="article featured">
-                                <figure>
-                                    <img class="img-responsive" src="http://lorempixel.com/900/350/" alt="">
-                                </figure>
-                                <h2><a href="#">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit</a></h2>
-                                <p class="excerpt">
-                                    Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                                </p>
-                            </article>
+                            <div id="carousel" class="carousel slide">
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+
+                                    <div class="item active">
+                                        <article class="article featured">
+                                            <figure>
+                                                <img class="img-responsive" src="http://lorempixel.com/900/370/" alt="">
+                                            </figure>
+                                            <h2><a href="#">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit</a></h2>
+                                            <p class="excerpt">
+                                                Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                            </p>
+                                        </article>
+                                    </div>
+
+                                    <div class="item">
+                                        <article class="article featured">
+                                            <figure>
+                                                <img class="img-responsive" src="http://lorempixel.com/900/370/" alt="">
+                                            </figure>
+                                            <h2><a href="#">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit</a></h2>
+                                            <p class="excerpt">
+                                                Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                            </p>
+                                        </article>
+                                    </div>
+
+                                    <div class="item ">
+                                        <article class="article featured">
+                                            <figure>
+                                                <img class="img-responsive" src="http://lorempixel.com/900/370/" alt="">
+                                            </figure>
+                                            <h2><a href="#">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit</a></h2>
+                                            <p class="excerpt">
+                                                Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                            </p>
+                                        </article>
+                                    </div>
+
+                                <!-- End Wrapper for slides -->
+                                </div>
+
+                            <!-- End carousel -->
+                            </div>
+
+                            <!-- Controls carousel sections -->
+                            <nav id="carousel-sections">
+                                <a data-slide-to="0" data-target="#carousel">lero</a>
+                                <a data-slide-to="1" data-target="#carousel">lero</a>
+                                <a data-slide-to="2" data-target="#carousel">lero</a>
+                            </nav>
 
                             <article class="article list">
                                 <div class="row">
