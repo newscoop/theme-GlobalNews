@@ -17,5 +17,6 @@
 
     <renditions>
         <rendition name="section" width="500" height="400" specs="crop"/>
+        <rendition name="slider" width="950" height="500" specs="crop"/>
     </renditions>
 </theme>
