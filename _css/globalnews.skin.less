@@ -116,11 +116,46 @@ a{
 		a{
 			color:#fff;
 			border-right: @primary + 30 1px solid;
-			.trans(background,0.3s);
+			.trans(all,0.3s);
 			&:hover{
 				background: @primary + 15;
-				.trans(background,0.3s);
+				.trans(all,0.3s);
 			}
 		}
+	}
+}
+
+#sidebar{
+	.block{
+		margin-bottom: 30px;
+		h4{
+			margin:0px 0px 10px 0px;
+			color:@primary;
+			font-family: @text-font;
+		}
+	}
+	#latest-articles-block{
+		background: @semi-dark + 160;
+		padding: 10px 15px;
+		.link{
+			font-size: 12px;
+			font-family: @title-font;
+			border-bottom: @semi-dark + 100 1px dotted;
+			padding-bottom: 10px;
+			a{
+				color:@semi-dark;
+				&:hover{
+					color:@dark;
+				}
+			}
+			.time{
+				color:@secondary;
+				font-family: @text-font;
+			}
+		}
+	}
+	#video-block{
+		background: @semi-dark + 160;
+		padding: 10px 15px;
 	}
 }

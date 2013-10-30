@@ -305,15 +305,47 @@ a:hover {
 #content #carousel-sections a {
   color: #fff;
   border-right: #2e5ca0 1px solid;
-  transition: background 0.3s;
-  -moz-transition: background 0.3s;
-  -webkit-transition: background 0.3s;
-  -o-transition: background 0.3s;
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
 #content #carousel-sections a:hover {
   background: #1f4d91;
-  transition: background 0.3s;
-  -moz-transition: background 0.3s;
-  -webkit-transition: background 0.3s;
-  -o-transition: background 0.3s;
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+#sidebar .block {
+  margin-bottom: 30px;
+}
+#sidebar .block h4 {
+  margin: 0px 0px 10px 0px;
+  color: #103e82;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#sidebar #latest-articles-block {
+  background: #eaeaea;
+  padding: 10px 15px;
+}
+#sidebar #latest-articles-block .link {
+  font-size: 12px;
+  font-family: 'Bitter', serif;
+  border-bottom: #aeaeae 1px dotted;
+  padding-bottom: 10px;
+}
+#sidebar #latest-articles-block .link a {
+  color: #4a4a4a;
+}
+#sidebar #latest-articles-block .link a:hover {
+  color: #000000;
+}
+#sidebar #latest-articles-block .link .time {
+  color: #f00d14;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#sidebar #video-block {
+  background: #eaeaea;
+  padding: 10px 15px;
 }
