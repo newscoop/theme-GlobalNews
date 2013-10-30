@@ -18,7 +18,7 @@
                                     <div class="item active">
                                         <article class="article featured">
                                             <figure>
-                                                <img class="img-responsive" src="http://lorempixel.com/900/500/" alt="">
+                                                <img class="img-responsive" src="http://lorempixel.com/950/500/" alt="">
                                             </figure>
                                             <div class="caption">
                                                 <h2><a href="#">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit</a></h2>
@@ -32,7 +32,7 @@
                                     <div class="item">
                                         <article class="article featured">
                                             <figure>
-                                                <img class="img-responsive" src="http://lorempixel.com/900/500/people" alt="">
+                                                <img class="img-responsive" src="http://lorempixel.com/950/500/people" alt="">
                                             </figure>
                                             <div class="caption">
                                                 <h2><a href="#">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit</a></h2>
@@ -46,7 +46,7 @@
                                     <div class="item ">
                                         <article class="article featured">
                                             <figure>
-                                                <img class="img-responsive" src="http://lorempixel.com/900/500/sports" alt="">
+                                                <img class="img-responsive" src="http://lorempixel.com/950/500/sports" alt="">
                                             </figure>
                                             <div class="caption">
                                                 <h2><a href="#">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit</a></h2>
