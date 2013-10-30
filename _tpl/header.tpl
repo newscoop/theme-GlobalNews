@@ -42,7 +42,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                        <div id="news_ticker">
-                            <span>Latest News</span>
+                            <span>Breaking News</span>
                             <ul>
                                 {{ local }} 
                                 {{ set_current_issue }} 
