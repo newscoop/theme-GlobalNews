@@ -43,7 +43,7 @@
                             <!-- Controls carousel sections -->
                             <nav id="carousel-sections">
                                 {{ list_sections }}
-                                <a data-slide-to="{{ $gimme->current_list->index }}" data-target="#carousel" class="active">{{ $gimme->section->name }}</a>
+                                <a data-slide-to="{{ $gimme->current_list->index - 1 }}" data-target="#carousel" class="{{ if $gimme->current_list->index =='1' }}active{{ /if }}">{{ $gimme->section->name }}</a>
                                 {{ /list_sections }}
                             </nav>
 
