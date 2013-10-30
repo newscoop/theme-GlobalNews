@@ -18,7 +18,7 @@
                 <div class="row">
                     <div id="main-header">
                         <div class="col-lg-9 col-md-9">
-                            <h1><a href="#">Global News</a></h1>
+                            <h1><a href="#">Global <span>News<span></a></h1>
                         </div>
                         <div class="col-lg-3 col-md-3">
                             <div id="social-header">

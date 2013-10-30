@@ -16,7 +16,7 @@
         <meta name="keywords" content="{{ if $gimme->article->defined }}{{ $gimme->article->keywords }}{{ else }}{{$siteinfo.keywords}}{{ /if }}" />
 
         <link rel="stylesheet" href="{{ url static_file="_css/bootstrap.min.css" }}">
-        <link rel="stylesheet" href="{{ url static_file="_css/globalnews.layout.css" }}">
+        <link rel="stylesheet" href="{{ url static_file="_css/globalnews.skin.css" }}">
 
         {{ if $gimme->article->defined }}{{* Open Graph protocol metatags for Facebook sharing *}}
         <meta property="og:title" content="{{$gimme->article->name|html_entity_decode|regex_replace:'/&(.*?)quo;/':'&quot;'}}" />
@@ -40,8 +40,6 @@
            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
            <script>window.html5 || document.write('<script src="{{ url static_file='_js/vendor/html5shiv.js'}}"><\/script>')</script>
         <![endif]-->
-        
-        <link rel="stylesheet" href="{{ url static_file="_css/ticker-style.css" }}">
 
         {{ if $gimme->template->name == 'article.tpl'}}
         <script src="{{ url static_file='_js/vendor/galleria/galleria-1.2.9.min.js'}}"></script>
