@@ -59,11 +59,11 @@
                                         </a>
                                     </div>
                                     <div class="col-lg-8 col-md-7">
-                                        <a href="{{ uri option='section'}}">{{ $gimme->article->section->name }}</a>
+                                        <a href="{{ uri option='section'}}" class="section-link">{{ $gimme->article->section->name }}</a>
                                         <h4><a href="{{ uri option='article'}}">{{ $gimme->article->name }}</a></h4>
-                                        <p class="excerpt">
+                                        <div class="excerpt">
                                             {{ $gimme->article->full_text|truncate:200:"..." }}
-                                        </p>
+                                        </div>
                                         <a href="{{ uri option='article'}}">≫ {{ #more# }}</a>
                                     </div>
                                 </div>
