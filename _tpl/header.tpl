@@ -52,7 +52,7 @@
                             <ul>
                                 {{ local }} 
                                 {{ set_current_issue }} 
-                                {{ list_articles length="4" order="bypopularity desc" constraints="type is news" }}
+                                {{ list_articles length="4" ignore_section="true" order="bypopularity desc" constraints="type is news" }}
                                 <li><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></li>
                                 {{ /list_articles }} 
                                 {{ /local }}
