@@ -1,11 +1,17 @@
+{{ assign var="currentsection" value=$gimme->section->number }}
         <header id="header">
 
                 <div class="row">
                     <div class="col-lg-12">
                         <div id="top-header">
                             <div class="pull-left">
-                                <a href="#">Register</a>
-                                <a href="#">Login</a>
+                                {{ if $gimme->user->logged_in }}
+                                <a href="/dashboard">{{ #profile# }}</a>
+                                <a href="{{ $view->url(['controller' => 'auth', 'action' =>'logout'], 'default') }}">{{ #logout# }}</a>
+                                {{ else }}
+                                <a href="{{ $view->url(['controller' => 'register', 'action' => 'index']) }}">{{ #register# }}</a>
+                                <a href="{{ $view->url(['controller' => 'auth', 'action' =>'login'], 'default') }}">{{ #login# }}</a>
+                                {{ /if }}
                                 <a href="/en/static/rss">{{ #RSS# }}</a>
                             </div>
                             <div class="pull-right">
@@ -22,10 +28,10 @@
                         </div>
                         <div class="col-lg-3 col-md-3">
                             <div id="social-header">
-                                <a href="#"><img src="{{ url static_file='_img/social-icons/facebook.png'}}"></a>
-                                <a href="#"><img src="{{ url static_file='_img/social-icons/twitter.png'}}"></a>
-                                <a href="#"><img src="{{ url static_file='_img/social-icons/vimeo.png'}}"></a>
-                                <a href="#"><img src="{{ url static_file='_img/social-icons/flickr.png'}}"></a>
+                                <a href="http://facebook.com/sourcefabric"><img src="{{ url static_file='_img/social-icons/facebook.png'}}"></a>
+                                <a href="http://twitter.com/sourcefabric"><img src="{{ url static_file='_img/social-icons/twitter.png'}}"></a>
+                                <a href="http://vimeo.com/sourcefabric"><img src="{{ url static_file='_img/social-icons/vimeo.png'}}"></a>
+                                <a href="http://flickr.com/photos/sourcefabric"><img src="{{ url static_file='_img/social-icons/flickr.png'}}"></a>
                             </div>
                             <form class="form-horizontal" role="form">
                                 <div class="input-group">
