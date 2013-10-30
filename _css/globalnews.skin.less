@@ -75,3 +75,42 @@ a{
 		font-weight: bold;
 	}
 }
+
+#main-navigation{
+	#menu{	
+		a{
+			padding:0px 15px 0px 0px;
+			font-size: 16px;
+			border-right: @primary 1px solid;
+		}
+		#community-link{
+			border:0;
+			padding-right: 0px;
+			margin-right: 0px;
+		}	
+	}
+}
+
+#content{
+	.article{
+		&.featured{
+			.caption{
+				h2{
+					font-size: 24px;			
+				} 
+			}
+		}
+	}
+	#carousel-sections{
+		background:@primary;
+		a{
+			color:#fff;
+			border-right: @primary + 30 1px solid;
+			.trans(background,0.3s);
+			&:hover{
+				background: @primary + 15;
+				.trans(background,0.3s);
+			}
+		}
+	}
+}
