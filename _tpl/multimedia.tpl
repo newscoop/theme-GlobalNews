@@ -31,7 +31,7 @@
         <a href="{{ url options="article" }}">
             {{ include file="_tpl/img/img_400x250.tpl" }}
         </a>
-        <span>{{ $gimme->article->category->name }}: <a href="{{ url options='article' }}">{{ $gimme->article-> na}}</a></span>
+        <span>{{ $gimme->article->section->name }}: <a href="{{ url options='article' }}">{{ $gimme->article->name }}</a></span>
         {{ /list_articles }}
     {{ /foreach }}
 </section>
