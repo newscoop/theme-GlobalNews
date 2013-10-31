@@ -2,12 +2,7 @@
 
                         <aside id="sidebar">
 
-                            <section id="video-block" class="block">
-                                <h4>Video ≫</h4>
-                                <img class="img-responsive" src="http://lorempixel.com/400/250/" alt="">
-                                <span>Lorem ipsum: <a href="#">Aenean eu leo quam</a></span>
-                            </section>
-
+                            {{ include file="_tpl/multimedia.tpl" }}
 
                             <section id="latest-articles-block" class="block">
                                 <h4>Latest Articles ≫</h4>
