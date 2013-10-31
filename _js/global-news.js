@@ -72,5 +72,11 @@ $(document).ready(function () {
       $("#carousel-sections a").removeClass("active");
       this.className = this.className + " active";
     })
+  
+    // Poll Ajaxified
+    $('#poll-button').click(function(){
+      $.post($('form[name=debate]').attr("action"),$('form[name=debate]').serialize(),function(data){$('#poll').html(data);});
+      return false;
+    });     
 
 });

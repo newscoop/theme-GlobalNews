@@ -20,5 +20,6 @@
         <rendition name="slider" width="950" height="500" specs="crop"/>
         <rendition name="video" width="400" height="250" specs="crop"/>
         <rendition name="user-articles" width="110" height="100" specs="crop"/>
+        <rendition name="article" width="325" height="190" specs="crop"/>
     </renditions>
 </theme>
