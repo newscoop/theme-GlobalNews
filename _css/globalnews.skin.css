@@ -1,0 +1,161 @@
+
+@import "mixins.less";
+@import "globalnews.layout.less";
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic,700italic|Bitter:400,700,400italic);
+
+// Colors Variable
+
+@dark:#000;
+@semi-dark:#4a4a4a;
+@primary:#103e82;
+@secondary:#f00d14;
+
+// Fonts Variable
+@title-font: 'Bitter', serif;
+@text-font: 'Source Sans Pro', sans-serif;
+
+body{
+	font-family: @text-font;
+}
+
+h1, h2, h3, h4{
+	font-family: @title-font;
+	line-height: 1.4;
+}
+a{
+	color:@primary;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+#top-header{
+	color:#555555;
+	font-size: 14px;
+	a{
+		color:#000;
+	}
+}
+
+#main-header{
+	h1{
+		a{
+			color:@primary;
+			span{
+				color:@secondary;
+			}
+		}
+	}
+	#social-header{
+		margin-bottom: 20px;
+		margin-top:20px;
+		img{
+			width:24px;
+			height: 24px;
+		}
+	}
+}
+
+#news-ticker {
+	height: 28px;
+	span {
+		color: @secondary;
+		font-family: @title-font;
+		padding-top:3px;
+	}
+	ul {
+		li {
+			line-height: 26px;
+			list-style: none;
+		}
+	}
+	a {
+		text-decoration: none;
+		font-weight: bold;
+	}
+}
+
+#main-navigation{
+	#menu{	
+		a{
+			padding:0px 15px 0px 0px;
+			font-size: 16px;
+			border-right: @primary 1px solid;
+		}
+		#community-link{
+			border:0;
+			padding-right: 0px;
+			margin-right: 0px;
+		}	
+	}
+}
+
+#content{
+	.article{
+		&.featured{
+			.caption{
+				h2{
+					font-size: 24px;			
+				} 
+			}
+		}
+		&.list{
+			.section-link{
+				color:@secondary;
+			}
+			.excerpt{
+				p{
+					color:@semi-dark;
+				}
+			}
+		}
+	}
+	#carousel-sections{
+		background:@primary;
+		a{
+			color:#fff;
+			border-right: @primary + 30 1px solid;
+			.trans(all,0.3s);
+			&:hover{
+				background: @primary + 15;
+				.trans(all,0.3s);
+			}
+		}
+	}
+}
+
+#sidebar{
+	.block{
+		margin-bottom: 30px;
+		h4{
+			margin:0px 0px 10px 0px;
+			color:@primary;
+			font-family: @text-font;
+		}
+	}
+	#latest-articles-block{
+		background: @semi-dark + 160;
+		padding: 10px 15px;
+		.link{
+			font-size: 12px;
+			font-family: @title-font;
+			border-bottom: @semi-dark + 100 1px dotted;
+			padding-bottom: 10px;
+			a{
+				color:@semi-dark;
+				&:hover{
+					color:@dark;
+				}
+			}
+			.time{
+				color:@secondary;
+				font-family: @text-font;
+			}
+		}
+	}
+	#video-block{
+		background: @semi-dark + 160;
+		padding: 10px 15px;
+	}
+}
