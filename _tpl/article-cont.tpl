@@ -58,17 +58,14 @@
 	{{ include file="_tpl/_edit-article.tpl" }}{{ $gimme->article->full_text }}
     
     {{ if $gimme->article->subtitles_count("full_text") > 1}}
-    	<div class="pagination pagination-small">
-  			<ul>
-	    {{ if $gimme->article->full_text->has_previous_subtitles }}     
-	    	<li><a href="{{ uri options="previous_subtitle full_text" }}">← {{ #previous# }}</a> </li>
-	    {{ /if }} {{ if $gimme->article->full_text->has_next_subtitles }}     
-	    	<li><a href="{{ uri options="next_subtitle full_text" }}">{{ #next# }} →</a> </li>
-	    {{ /if }} 
-	    	</ul>
+        <ul class="pagination">
+        {{ if $gimme->article->full_text->has_previous_subtitles }}     
+        <li><a href="{{ uri options="previous_subtitle full_text" }}">← {{ #previous# }}</a> </li>
+        {{ /if }} {{ if $gimme->article->full_text->has_next_subtitles }}     
+        <li><a href="{{ uri options="next_subtitle full_text" }}">{{ #next# }} →</a> </li>
+        {{ /if }} 
+        </ul>
 	    <a class="solid-button pull-right" href="{{ uri options="all_subtitles full_text" }}">{{ #viewFullArticle# }}</a>
-	    <div class="clearfix"></div> 
-        </div>
     {{ /if }}
 
 	{{ if $gimme->article->type_name == "news" }}
