@@ -262,6 +262,62 @@
 #gallery .galleria-info-link {
   display: none !important;
 }
+.rate_widget {
+  border: none;
+  overflow: visible;
+  position: relative;
+}
+.ratings_stars {
+  background: url('../_img/rating/star_empty.png') no-repeat;
+  float: left;
+  height: 28px;
+  padding: 2px;
+  width: 28px;
+}
+.ratings_vote {
+  background: url('../_img/rating/star_full.png') no-repeat;
+}
+.ratings_over {
+  background: url('../_img/rating/star_highlight.png') no-repeat;
+}
+.total_votes {
+  margin-top: 2px;
+  float: left;
+  display: inline-block;
+  color: #464646;
+  font-size: 14px;
+}
+.article_rating {
+  font: 21px;
+  width: 100%;
+  padding: 10px 5px 8px 5px;
+}
+.article_rating h4 {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-bottom: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+.rating_error {
+  margin-top: 2px;
+  float: left;
+  display: inline-block;
+  color: #bc0000;
+  font-size: 14px;
+  margin-left: 5px;
+  font-weight: bold;
+}
+.stars {
+  padding: 0;
+  margin: 0 4px 0 0;
+  list-style-type: none;
+  display: inline-block;
+  float: left;
+}
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
