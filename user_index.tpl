@@ -10,7 +10,7 @@
                     <div class="col-lg-8 col-md-8">
                         <h2>{{ #userIndex# }}</h2>
 
-                        <div id="content" class="index-page">
+                        <div id="content" class="community-page">
                            <ul class="nav nav-pills user-tab">
                                 <li class="active">
                                      <a href="{{ $view->url(['controller' => 'user', 'action' => 'index'], 'default', true) }}">{{ #active# }}</a>

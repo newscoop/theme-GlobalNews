@@ -159,3 +159,32 @@ a{
 		padding: 10px 15px;
 	}
 }
+
+/* --- Begin community */
+
+.community-page{
+    .user-tab{
+        a{
+            .rounded-corners(2px);
+            color:#000;
+            &:hover{
+                background: @semi-dark + 160;
+            }
+        }
+        .active > a:focus,.active > a{
+            background: @primary;
+            color:#fff;
+        }
+    }
+    .user-list{
+        background: @semi-dark + 160;
+        .user-title{
+            color:#000;
+        }
+        .member{
+            color:#878787;
+        }
+    }
+}
+
+/* End community --- */

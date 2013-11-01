@@ -384,3 +384,30 @@ a:hover {
   background: #eaeaea;
   padding: 10px 15px;
 }
+/* --- Begin community */
+.community-page .user-tab a {
+  border-radius: 2px;
+  -ms-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  color: #000;
+}
+.community-page .user-tab a:hover {
+  background: #eaeaea;
+}
+.community-page .user-tab .active > a:focus,
+.community-page .user-tab .active > a {
+  background: #103e82;
+  color: #fff;
+}
+.community-page .user-list {
+  background: #eaeaea;
+}
+.community-page .user-list .user-title {
+  color: #000;
+}
+.community-page .user-list .member {
+  color: #878787;
+}
+/* End community --- */
