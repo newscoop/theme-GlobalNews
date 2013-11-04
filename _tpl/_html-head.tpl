@@ -42,14 +42,4 @@
         <![endif]-->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="{{ url static_file='_js/vendor/jquery-1.10.2.min.js'}}"><\/script>')</script>
-        <script src="{{ url static_file='_js/vendor/bootstrap.min.js'}}"></script>
-        <script src="{{ url static_file='_js/global-news.js'}}"></script>
-
-
-        {{ if $gimme->template->name == 'article.tpl'}}
-        <script src="{{ url static_file='_js/vendor/galleria/galleria-1.2.9.min.js'}}"></script>
-        <link href="{{ url static_file='_css/flowplayer_skin/minimalist.css' }}" rel="stylesheet">
-        <script src="{{ url static_file='_js/vendor/flowplayer/flowplayer.min.js' }}"></script>
-        {{/if}}
-
     </head>

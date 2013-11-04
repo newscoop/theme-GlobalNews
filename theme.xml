@@ -21,5 +21,11 @@
         <rendition name="video" width="400" height="250" specs="crop"/>
         <rendition name="user-articles" width="110" height="100" specs="crop"/>
         <rendition name="article" width="325" height="190" specs="crop"/>
+        <rendition name="thumbsmall" width="100" height="70" specs="crop"/>
+        <rendition name="thumbmedium" width="120" height="80" specs="crop"/>
+        <rendition name="thumbbig" width="150" height="100" specs="crop"/>
+        <rendition name="rectanglesmall" width="100" height="50" specs="crop"/>
+        <rendition name="rectanglemedium" width="200" height="150" specs="crop"/>
+        <rendition name="rectanglebig" width="300" height="250" specs="crop"/>
     </renditions>
 </theme>
