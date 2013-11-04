@@ -318,6 +318,11 @@
   display: inline-block;
   float: left;
 }
+span.img-responsive img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
