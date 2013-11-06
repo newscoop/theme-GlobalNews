@@ -145,7 +145,7 @@ function set_votes(widget) {
 
         $(widget).find('.star_' + avg).prevAll().andSelf().addClass('ratings_vote');
         $(widget).find('.star_' + avg).nextAll().removeClass('ratings_vote'); 
-        $(widget).find('.total_votes').text(votes + ' {{ #voteS# }} {{ #averageRating# }} ' + exact);
+        $(widget).find('.total_votes').text(votes + ' ' + votes_str + ' ' + averageRating_str + ' ' + exact);
         $(widget).find('.rating_error').text(error);
     }
 }

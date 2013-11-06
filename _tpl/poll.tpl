@@ -33,10 +33,10 @@
        {{ if $gimme->debate->is_votable }}
 
             <blockquote>{{ $gimme->debate->question }}</blockquote> 
-            {{ debate_form template="_tpl/sidebar-poll.tpl" submit_button="{{ #pollButton# }}" html_code="id=\"poll-button\" class=\"button debbut center\"" }}  
+            {{ debate_form template="_tpl/poll.tpl" submit_button="{{ #pollButton# }}" html_code="id=\"poll-button\" class=\"button debbut center\"" }}  
             
             {{* this is to find out template id for this template, will have to be assigned as hidden form field *}}     
-            {{ $uriAry=explode("tpl=", {{ uri options="template _tpl/sidebar-poll.tpl" }}, 2) }}                        
+            {{ $uriAry=explode("tpl=", {{ uri options="template _tpl/poll.tpl" }}, 2) }}                        
 
             <input name="tpl" value="{{ $uriAry[1] }}" type="hidden">
             {{ list_debate_answers }}
