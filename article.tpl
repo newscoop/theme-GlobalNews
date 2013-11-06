@@ -8,7 +8,7 @@
                 <div class="row">
 
                     <div class="col-lg-8 col-md-8">
-                        <div id="content" class="index-page">
+                        <div id="content" class="article-page">
                             {{ if $gimme->article->type_name == "debate" }}
                             {{ include file="_tpl/article-debate.tpl" }}
                             {{ else }}

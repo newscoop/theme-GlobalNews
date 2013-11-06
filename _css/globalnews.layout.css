@@ -140,6 +140,10 @@
 #main-navigation #menu a {
   margin-right: 15px;
 }
+.page-title {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
 #content .article.featured {
   position: relative;
 }
@@ -171,6 +175,12 @@
   border-top: #d6d6d6 1px solid;
   margin-bottom: 20px;
   padding-top: 20px;
+}
+#content .article.section-featured {
+  padding-bottom: 20px;
+}
+#content .article.section-featured .section-thumb {
+  margin-bottom: 20px;
 }
 #content #carousel-sections {
   background: #eee;

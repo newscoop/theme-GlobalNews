@@ -8,21 +8,41 @@
                 <div class="row">
 
                     <div class="col-lg-8 col-md-8">
-                        <h1>{{ $gimme->section->name }}</h1>
+                        <h1 class="page-title">{{ $gimme->section->name }}</h1>
 
-                        <div id="content" class="index-page">
+                        <div id="content" class="section-page">
 
                             {{ list_articles length="5" ignore_issue="true" constraints="type not poll" }}
+                            
+                            {{ if $gimme->current_list->at_beginning }}
+                            <article class="article section-featured">
+                                {{ if $gimme->section->name != "Dialogue" }}
+                                <figure class="section-thumb pull-left img-responsive">
+                                    <a href="{{ uri options="article" }}">
+                                        {{ include file="_tpl/img/img_950x500.tpl" }}
+                                    </a>
+                                </figure>
+                                {{/if}}
+
+                                <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
+                                {{ if !$gimme->article->is_public }}
+                                <span class="label label-danger">{{ #premium# }}</span>
+                                {{ /if }} 
+                                <p class="excerpt">
+                                    {{ $gimme->article->full_text|truncate:250:"...":true }}
+                                </p>
+                                <a href="{{ uri options="article" }}">≫ {{ #more# }} </a>
+                            </article>
+                            {{ else }}
                             <article class="article list">
+                                {{ if $gimme->section->name != "Dialogue" }}
                                 <div class="row">
                                     <div class="col-lg-4 col-md-5">
-                                        {{ if $gimme->section->name != "Dialogue" }}
                                         <figure class="section-thumb pull-left img-responsive">
                                             <a href="{{ uri options="article" }}">
                                                 {{ include file='_tpl/img/img_rectangle.tpl'}}
                                             </a>
-                                        </figure>
-                                        {{/if}}
+                                        </figure>   
                                     </div>
                                     <div class="col-lg-8 col-md-7">
                                         <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
@@ -35,8 +55,19 @@
                                         <a href="{{ uri options="article" }}">≫ {{ #more# }} </a>
                                     </div>
                                 </div>
+                                {{else}}
+                                    <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
+                                    {{ if !$gimme->article->is_public }}
+                                    <span class="label label-danger">{{ #premium# }}</span>
+                                    {{ /if }} 
+                                    <p class="excerpt">
+                                        {{ $gimme->article->full_text|truncate:250:"...":true }}
+                                    </p>
+                                    <a href="{{ uri options="article" }}">≫ {{ #more# }} </a>
+                                {{/if}}
                             </article>
-
+                            {{/if}}
+                            
                             {{ if $gimme->current_list->at_end }}            
                             {{* PAGINATION *}}
                             {{ $pages=ceil($gimme->current_list->count/5) }}

@@ -1,6 +1,5 @@
-
-<section class="block">
 {{ foreach $gimme->article->slideshows as $slideshow }}
+<section class="block">
     <h4>{{ #slideShow# }}≫</h4>
     <div id="gallery">
     {{ assign var="style" value='true' }}
@@ -10,5 +9,5 @@
     <a class='img-responsive' href="http://{{ $gimme->publication->site }}/{{ $item->image->original }}"><img src="{{ $item->image->src }}" data-title="{{if $item->caption}}{{ $item->caption }}{{else}}&nbsp;{{/if}}" data-big="http://{{ $gimme->publication->site }}/{{ $item->image->original }}" /></a>
         {{ /foreach }}
     </div>
-{{ /foreach }}
 </section>
+{{ /foreach }}
