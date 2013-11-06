@@ -245,6 +245,9 @@
   display: block;
   margin-bottom: 5px;
 }
+#footer #contact-us-block .info {
+  margin-bottom: 10px;
+}
 #gallery {
   min-width: 200px;
   max-width: 100%;
@@ -356,6 +359,9 @@ a {
 }
 a:hover {
   text-decoration: none;
+}
+.link-color {
+  color: #f00d14;
 }
 #top-header {
   color: #555555;

@@ -244,6 +244,9 @@
   display: block;
   margin-bottom: 5px;
 }
+#footer #contact-us-block .info {
+  margin-bottom: 10px;
+}
 #gallery {
   min-width: 200px;
   max-width: 100%;
