@@ -67,12 +67,15 @@ $(document).ready(function () {
       autoheight("#content", "#sidebar");                
     });
    
-    //HACK: to add/remove active class on the slider, bootstrap slider works slightly different 
+    //Add/remove active class on the slider, bootstrap slider works slightly different 
     $("#carousel-sections a").click(function(){
       $("#carousel-sections a").removeClass("active");
       this.className = this.className + " active";
     })
   
+    // initialize timeago plugin for dates
+    $(".timeago").timeago();
+    
     // Poll Ajaxified
     $('#poll-button').click(function(){
       $.post($('form[name=debate]').attr("action"),$('form[name=debate]').serialize(),function(data){$('#poll').html(data);});

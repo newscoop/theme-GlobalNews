@@ -17,12 +17,11 @@
         {{ list_debate_answers }}
           <div class="poll-option">
               <label for="radio{{ $gimme->current_list->index }}">{{ $gimme->debateanswer->answer }}
-              <span class="q-score label label-important"> <small>{{ math equation="round(x)" x=$gimme->debateanswer->percentage_overall format="%d" }}%</small></span>
+              <div class="q-score"> <small>{{ math equation="round(x)" x=$gimme->debateanswer->percentage_overall format="%d" }}%</small></div>
               </label>
-              <div class="progress progress-danger progress-striped debate-bar">
-                    <div class="bar" style="width:{{ math equation="round(x)" x=$gimme->debateanswer->percentage_overall format="%d" }}%;"></div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="{{ math equation="round(x)" x=$gimme->debateanswer->percentage_overall format="%d" }}" aria-valuemin="0" aria-valuemax="100" style="width:{{ math equation="round(x)" x=$gimme->debateanswer->percentage_overall format="%d" }}%;"></div>
               </div>
-              
           </div>
             {{ assign var="votes" value=$votes+$gimme->debateanswer->votes }}
             {{ if $gimme->current_list->at_end }}
@@ -45,10 +44,10 @@
                   <!--input type="radio" id="radio{{ $gimme->current_list->index }}" name="radios1" /-->
                   <label for="radio{{ $gimme->current_list->index }}">{{ $gimme->debateanswer->answer }}
                   {{ debateanswer_edit html_code="id=\"radio{{ $gimme->current_list->index }}\"" }}
-                  <span class="q-score label label-important"> <small>{{ math equation="round(x)" x=$gimme->debateanswer->percentage_overall format="%d" }}%</small></span>
+                  <div class="q-score"> <small>{{ math equation="round(x)" x=$gimme->debateanswer->percentage_overall format="%d" }}%</small></div>
                   </label>
-                  <div class="progress progress-danger progress-striped debate-bar">
-                        <div class="bar" style="width:{{ math equation="round(x)" x=$gimme->debateanswer->percentage_overall format="%d" }}%;"></div>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="{{ math equation="round(x)" x=$gimme->debateanswer->percentage_overall format="%d" }}" aria-valuemin="0" aria-valuemax="100" style="width:{{ math equation="round(x)" x=$gimme->debateanswer->percentage_overall format="%d" }}%;"></div>
                   </div>
               </div>
             {{ /list_debate_answers }}
@@ -63,10 +62,10 @@
             {{ list_debate_answers }}
               <div class="poll-option">
                   <label for="radio{{ $gimme->current_list->index }}">{{ $gimme->debateanswer->answer }}
-                        <span class="q-score label label-important"> <small>{{ math equation="round(x)" x=$gimme->debateanswer->percentage_overall format="%d" }}%</small></span> 
+                        <div class="q-score"> <small>{{ math equation="round(x)" x=$gimme->debateanswer->percentage_overall format="%d" }}%</small></div> 
                   </label>
-                  <div class="progress progress-danger progress-striped debate-bar">
-                        <div class="bar" style="width:{{ math equation="round(x)" x=$gimme->debateanswer->percentage_overall format="%d" }}%;"></div>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="{{ math equation="round(x)" x=$gimme->debateanswer->percentage_overall format="%d" }}" aria-valuemin="0" aria-valuemax="100" style="width:{{ math equation="round(x)" x=$gimme->debateanswer->percentage_overall format="%d" }}%;"></div>
                   </div>
               </div>
             {{ /list_debate_answers }}

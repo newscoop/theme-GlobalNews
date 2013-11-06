@@ -478,6 +478,45 @@ a:hover {
 #sidebar #latest-comments-block .user-link {
   color: #f00d14;
 }
+#sidebar #poll form {
+  margin-bottom: 0px;
+}
+#sidebar #poll .q-score {
+  color: #f00d14;
+  float: right;
+}
+#sidebar #poll input[type="submit"] {
+  color: #fff;
+  background: #103e82;
+  border: none;
+  padding: 6px;
+  width: 100%;
+  position: relative;
+  top: -20px;
+}
+#sidebar #poll .total-votes {
+  margin-left: 20px;
+  color: #fff;
+  padding-bottom: 15px;
+}
+#sidebar #poll .progress {
+  height: 6px;
+  border-radius: 0px;
+  -ms-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+}
+#sidebar #poll .poll-option label {
+  font-size: 12px;
+  width: 100%;
+}
+#sidebar #poll .poll-option input[type="radio"] {
+  margin-right: 5px;
+  position: relative;
+  margin-right: 10px;
+  float: left;
+}
 /* --- Begin community */
 .community-page .user-tab a {
   border-radius: 2px;

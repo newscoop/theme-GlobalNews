@@ -10,10 +10,6 @@
 
                             {{ include file="_tpl/poll.tpl" }}
 
-                            <section id="ad" class="block">
-                                <img class="img-responsive" src="{{ url static_file='_img/sourcefabric-ad.png'}}" alt="ad">
-                            </section>
-
                         </aside>
                         <!-- End Sidebar -->
                     </div>
