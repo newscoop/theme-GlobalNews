@@ -196,6 +196,40 @@
 #content #carousel-sections a.active {
   background: url(../_img/top-arrow.png) no-repeat top center;
 }
+.article-page .page-title .label {
+  font-size: 10px;
+  font-weight: 300;
+}
+.article-page .article-info {
+  text-align: right;
+  margin-bottom: 15px;
+}
+.article-page .comment-count {
+  display: block;
+  text-align: right;
+}
+.article-page .section-link {
+  display: block;
+  text-align: left;
+}
+.article-page .share-buttons {
+  border-top: 1px dotted #AEAEAE;
+  border-bottom: 1px dotted #AEAEAE;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.article-page .share-buttons #twitter-button {
+  float: left;
+  width: 90px;
+}
+.article-page .share-buttons #facebook-button {
+  float: left;
+}
+.article-page .share-buttons #plus-button {
+  float: left;
+  width: 50px;
+}
 #sidebar {
   border-left: #d6d6d6 1px solid;
   padding-left: 30px;
