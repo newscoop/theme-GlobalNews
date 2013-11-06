@@ -3,7 +3,7 @@
 {{ list_articles length="1" ignore_issue="true" ignore_section="true" constraints="type is poll" }}
 {{ list_debates length="1" item="article" }}
     <div class="pollWrap">
-        <h4>{{ #poll# }}</h4>
+        <h4>{{ #poll# }} ≫</h4>
     {{ if $gimme->debate_action->defined }}
         <blockquote>{{ $gimme->debate->question }}</blockquote>
         {{ if $gimme->debate->user_vote_count >= $gimme->debate->votes_per_user || $gimme->debate_action->ok }}

@@ -25,11 +25,12 @@
 {{ /list_articles }} 
 
 <section id="video-block" class="block">
-    <h4>{{ #video# }}≫</h4>
+    <h4>{{ #video# }} ≫</h4>
     {{ foreach from=$multimedia key=articleID item=multimediaType name=multimediaLoop }}
         {{ list_articles ignore_issue="true" ignore_section="true" length="1" constraints="number is `$articleID`"}}
-        <a href="{{ url options="article" }}">
+        <a class="img-video" href="{{ url options="article" }}">
             {{ include file="_tpl/img/img_rectangle.tpl" }}
+            <span class="play-icon glyphicon glyphicon-play-circle"></span>
         </a>
         <span>{{ $gimme->article->section->name }}: <a href="{{ url options='article' }}">{{ $gimme->article->name }}</a></span>
         {{ /list_articles }}

@@ -1,4 +1,3 @@
-
 @import "mixins.less";
 @import "globalnews.layout.less";
 
@@ -45,14 +44,6 @@ a{
 			span{
 				color:@secondary;
 			}
-		}
-	}
-	#social-header{
-		margin-bottom: 20px;
-		margin-top:20px;
-		img{
-			width:24px;
-			height: 24px;
 		}
 	}
 }
@@ -157,6 +148,31 @@ a{
 	#video-block{
 		background: @semi-dark + 160;
 		padding: 10px 15px;
+		color:@secondary;
+		a{
+			color:@semi-dark;
+			font-family: @title-font;
+			font-size: 12px;
+			&:hover{
+				color:@dark;
+			}
+		}
+	}
+	#latest-comments-block{
+		.article-link{
+			color:@semi-dark;
+			font-family: @title-font;
+			font-size: 12px;
+			&:hover{
+				color:@dark;
+			}
+		}
+		.timeago{
+			color:@semi-dark + 50;
+		}
+		.user-link{
+			color:@secondary;
+		}
 	}
 }
 
