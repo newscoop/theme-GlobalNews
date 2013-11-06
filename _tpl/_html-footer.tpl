@@ -4,6 +4,11 @@
         <script src="{{ url static_file='_js/vendor/matchmedia.js'}}"></script>
         <script src="{{ url static_file='_js/vendor/picturefill.js'}}"></script>
         <script src="{{ url static_file='_js/vendor/jquery.timeago.js'}}"></script>
+        <script type="text/javascript">
+            //string variables used on article rating
+            var votes_str = "{{ #votes# }}";
+            var averageRating_str  = "{{ #averageRating# }}";
+        </script>
         <script src="{{ url static_file='_js/global-news.js'}}"></script>
 
         {{ if $gimme->template->name == 'article.tpl'}}
