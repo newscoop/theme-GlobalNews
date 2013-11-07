@@ -125,9 +125,6 @@
     margin-top: 0;
   }
 }
-#main-navigation {
-  margin-bottom: 20px;
-}
 #main-navigation #menu {
   border-bottom: #d6d6d6 1px solid;
   border-top: #d6d6d6 1px solid;
@@ -136,6 +133,14 @@
 }
 #main-navigation #menu a {
   margin-right: 15px;
+}
+#breadcrumb {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: #d6d6d6 1px solid;
+}
+#main {
+  margin-top: 20px;
 }
 .page-title {
   margin-top: 0px;

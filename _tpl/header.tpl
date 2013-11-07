@@ -58,6 +58,7 @@
                                 {{ /local }}
                             </ul>
                         </div>
+
                         <div id="main-navigation">
                             <nav id="menu">
                             {{ local }}
@@ -71,6 +72,12 @@
                             <a href="/user" id="community-link" class="pull-right">Community</a>
                             </nav>
                         </div>
+
+                        {{ if $gimme->template->name == 'article.tpl'}}
+                        <div id="breadcrumb">
+                            <a href="#">{{$gimme->publication->name}}</a>&nbsp; &nbsp; → &nbsp; &nbsp; <a href="#">{{$gimme->section->name}}</a> &nbsp; &nbsp; → &nbsp; &nbsp; {{ $gimme->article->name }}
+                        </div>
+                        {{/if}}
                     </div>
                 </div>
 
