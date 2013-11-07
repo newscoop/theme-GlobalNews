@@ -1,5 +1,5 @@
 <section id="latest-comments-block" class="block">
-    <h4>{{ #latestComments# }} ≫</h4>
+    <h4>{{ #latestComments# }}</h4>
     {{list_article_comments length="3" ignore_article="true" order="byDate desc"}}
     {{if $gimme->comment->content }}
     <div class="comment-box">
