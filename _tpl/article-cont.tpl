@@ -20,6 +20,8 @@
 	{{/if}}
 	</div>
 
+	<div class="clearfix"></div>
+
 	<h1 class="page-title">
         {{ $gimme->article->name }}
         {{ if !$gimme->article->is_public }}

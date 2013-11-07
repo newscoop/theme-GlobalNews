@@ -201,6 +201,13 @@
 .article-page .article-info {
   text-align: right;
   margin-bottom: 15px;
+  float: right;
+  width: 70%;
+}
+.article-page .section-link {
+  display: block;
+  width: 29%;
+  float: left;
 }
 .article-page .comment-count {
   display: block;
