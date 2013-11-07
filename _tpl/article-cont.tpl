@@ -88,7 +88,7 @@
         {{ /if }}
     {{ /list_subtitles }}
     {{ /if }}
-
+    
 	{{ include file="_tpl/_edit-article.tpl" }}{{ $gimme->article->full_text }}
     
     {{ if $gimme->article->subtitles_count("full_text") > 1}}

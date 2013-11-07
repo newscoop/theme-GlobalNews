@@ -29,17 +29,17 @@
                     <div id="contact-us-block" class="col-lg-3 col-md-3">
                         <h4>{{ #contactUs# }}</h4>
                         <div class="info">
-                            <div class="link-color"><span class="glyphicon glyphicon-envelope"></span> {{ #email# }}</div>
+                            <div class="info-label"><span class="glyphicon glyphicon-envelope"></span> {{ #email# }}</div>
                             contact@sourcefabric.org 
                         </div>
 
                         <div class="info">
-                            <div class="link-color"><span class="glyphicon glyphicon-map-marker"></span> {{ #address# }}</div>
+                            <div class="info-label"><span class="glyphicon glyphicon-map-marker"></span> {{ #address# }}</div>
                             Salvátorská 10, 110 00 Praha 1, Czech Republic
                         </div>
 
                         <div class="info">
-                            <div class="link-color"><span class="glyphicon glyphicon-phone-alt"></span> {{ #phone# }}</div>
+                            <div class="info-label"><span class="glyphicon glyphicon-phone-alt"></span> {{ #phone# }}</div>
                              +420 222 362 540
                         </div>
                     </div>

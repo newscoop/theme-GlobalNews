@@ -1,7 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic,700italic|Bitter:400,700,400italic);
-.container {
-  max-width: 1140px;
-}
 #top-header {
   height: 30px;
   padding: 5px 0px;
@@ -230,6 +227,16 @@
 .article-page .share-buttons #plus-button {
   float: left;
   width: 50px;
+}
+.article-page p {
+  margin-bottom: 15px;
+}
+.article-page hr {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.article-page .btn-default {
+  margin: 10px 5px 10px 0px;
 }
 #sidebar {
   border-left: #d6d6d6 1px solid;
@@ -573,6 +580,9 @@ a:hover {
   position: relative;
   margin-right: 10px;
   float: left;
+}
+#footer #contact-us-block .info .info-label {
+  color: #aeaeae;
 }
 /* --- Begin community */
 .community-page .user-tab a {
