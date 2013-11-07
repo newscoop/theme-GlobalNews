@@ -492,12 +492,9 @@ a:hover {
 }
 #sidebar .block h4 {
   margin: 0px 0px 10px 0px;
-  color: #103e82;
+  color: #404040;
   font-family: 'Bitter', serif;
-}
-#sidebar #latest-articles-block {
-  background: #eaeaea;
-  padding: 10px 15px;
+  font-size: 20px;
 }
 #sidebar #latest-articles-block .link {
   font-size: 12px;
@@ -516,8 +513,6 @@ a:hover {
   font-family: 'Source Sans Pro', sans-serif;
 }
 #sidebar #video-block {
-  background: #eaeaea;
-  padding: 10px 15px;
   color: #f00d14;
 }
 #sidebar #video-block a {
@@ -529,18 +524,18 @@ a:hover {
   color: #000000;
 }
 #sidebar #latest-comments-block .article-link {
-  color: #4a4a4a;
+  color: #103e82;
   font-family: 'Bitter', serif;
   font-size: 12px;
 }
 #sidebar #latest-comments-block .article-link:hover {
-  color: #000000;
+  color: #3866aa;
 }
 #sidebar #latest-comments-block .timeago {
   color: #7c7c7c;
 }
 #sidebar #latest-comments-block .user-link {
-  color: #f00d14;
+  color: #103e82;
 }
 #sidebar #poll form {
   margin-bottom: 0px;
@@ -548,6 +543,12 @@ a:hover {
 #sidebar #poll .q-score {
   color: #f00d14;
   float: right;
+}
+#sidebar #poll blockquote {
+  border: 0;
+  font-family: 'Bitter', serif;
+  padding: 10px 0px 0px 0px;
+  color: #5e5e5e;
 }
 #sidebar #poll input[type="submit"] {
   color: #fff;

@@ -25,7 +25,7 @@
 {{ /list_articles }} 
 
 <section id="video-block" class="block">
-    <h4>{{ #video# }} ≫</h4>
+    <h4>{{ #video# }}</h4>
     {{ foreach from=$multimedia key=articleID item=multimediaType name=multimediaLoop }}
         {{ list_articles ignore_issue="true" ignore_section="true" length="1" constraints="number is `$articleID`"}}
         <a class="img-video" href="{{ url options="article" }}">

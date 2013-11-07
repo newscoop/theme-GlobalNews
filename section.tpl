@@ -31,7 +31,7 @@
                                 <p class="excerpt">
                                     {{ $gimme->article->full_text|truncate:250:"...":true }}
                                 </p>
-                                <a href="{{ uri options="article" }}">≫ {{ #more# }} </a>
+                                <a href="{{ uri options="article" }}">{{ #more# }} </a>
                             </article>
                             {{ else }}
                             <article class="article list">
@@ -52,7 +52,7 @@
                                         <p class="excerpt">
                                             {{ $gimme->article->full_text|truncate:250:"...":true }}
                                         </p>
-                                        <a href="{{ uri options="article" }}">≫ {{ #more# }} </a>
+                                        <a href="{{ uri options="article" }}">{{ #more# }} </a>
                                     </div>
                                 </div>
                                 {{else}}

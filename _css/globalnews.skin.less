@@ -135,13 +135,12 @@ a{
 		margin-bottom: 30px;
 		h4{
 			margin:0px 0px 10px 0px;
-			color:@primary;
+			color:@semi-dark - 10;
 			font-family: @title-font;
+			font-size: 20px;
 		}
 	}
 	#latest-articles-block{
-		background: @semi-dark + 160;
-		padding: 10px 15px;
 		.link{
 			font-size: 12px;
 			font-family: @title-font;
@@ -160,8 +159,6 @@ a{
 		}
 	}
 	#video-block{
-		background: @semi-dark + 160;
-		padding: 10px 15px;
 		color:@secondary;
 		a{
 			color:@semi-dark;
@@ -174,18 +171,18 @@ a{
 	}
 	#latest-comments-block{
 		.article-link{
-			color:@semi-dark;
+			color:@primary;
 			font-family: @title-font;
 			font-size: 12px;
 			&:hover{
-				color:@dark;
+				color:@primary + 40;
 			}
 		}
 		.timeago{
 			color:@semi-dark + 50;
 		}
 		.user-link{
-			color:@secondary;
+			color:@primary;
 		}
 	}
 
@@ -198,7 +195,12 @@ a{
 	        color:@secondary;
 	        float:right;
 	    }
-
+		blockquote{
+			border:0;
+			font-family: @title-font;
+			padding:10px 0px 0px 0px;
+			color:@semi-dark + 20;
+		}
 	    input[type="submit"]{
 	        color: #fff;
 	        background: @primary;

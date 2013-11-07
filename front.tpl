@@ -64,7 +64,7 @@
                                         <div class="excerpt">
                                             {{ $gimme->article->full_text|truncate:200:"..." }}
                                         </div>
-                                        <a href="{{ uri option='article'}}">≫ {{ #more# }}</a>
+                                        <a href="{{ uri option='article'}}">{{ #more# }}</a>
                                     </div>
                                 </div>
                             </article>
