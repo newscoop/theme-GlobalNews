@@ -29,9 +29,9 @@
     	{{ /if }}  
     </h1>
 
-    <p class="excerpt">
+    <div class="excerpt">
     	{{ $gimme->article->deck }}
-    </p>
+    </div>
 	<a class="comment-count" href="#comments" class="pull-right"><span class="glyphicon glyphicon-comment"></span> {{ $gimme->article->comment_count}} {{ #comments# }}</a>
 
 	{{ if $gimme->article->type_name == "news" }}

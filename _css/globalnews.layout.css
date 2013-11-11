@@ -144,7 +144,7 @@
 }
 .page-title {
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 #content .article.featured {
   position: relative;
@@ -206,12 +206,15 @@
   text-align: right;
   margin-bottom: 15px;
   float: right;
-  width: 70%;
+  width: 75%;
 }
 .article-page .section-link {
   display: block;
-  width: 29%;
+  width: 24%;
   float: left;
+}
+.article-page .excerpt p {
+  margin-bottom: 10px;
 }
 .article-page .comment-count {
   display: block;
@@ -227,6 +230,7 @@
   margin-bottom: 20px;
   margin-top: 10px;
   padding-top: 10px;
+  padding-bottom: 5px;
 }
 .article-page .share-buttons #twitter-button {
   float: left;
