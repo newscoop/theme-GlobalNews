@@ -244,6 +244,9 @@
   float: left;
   width: 50px;
 }
+.article-page .subtitle p {
+  font-size: 20px;
+}
 .article-page p {
   margin-bottom: 15px;
 }
@@ -430,6 +433,22 @@ a:hover {
 .link-color {
   color: #f00d14;
 }
+.btn {
+  border-radius: 0px;
+  -ms-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+}
+.solid-button {
+  background: #103e82;
+  color: #fff;
+  padding: 4px 10px;
+}
+.solid-button:hover {
+  color: #fff;
+  background: #2e5ca0;
+}
 #top-header {
   color: #555555;
   font-size: 14px;
@@ -505,6 +524,25 @@ a:hover {
 }
 .article-page .section-link {
   color: #f00d14;
+}
+.article-page #subtitle-links a.active {
+  background: #103e82;
+}
+.article-page #subtitle-links .list-group-item:first-child,
+.article-page #subtitle-links .list-group-item:last-child {
+  border-radius: 0px;
+  -ms-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+}
+.article-page .pagination > li:last-child > a,
+.article-page .pagination > li:first-child > a {
+  border-radius: 0px;
+  -ms-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
 }
 #sidebar .block {
   margin-bottom: 30px;

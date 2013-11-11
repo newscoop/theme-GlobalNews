@@ -72,7 +72,10 @@ $(document).ready(function () {
       $("#carousel-sections a").removeClass("active");
       this.className = this.className + " active";
     })
-  
+
+    // adding bootstrap style to tables in articles
+    $(".single-page table").addClass('table table-striped table-bordered');
+
     // initialize timeago plugin for dates
     $(".timeago").timeago();
     

@@ -243,6 +243,9 @@
   float: left;
   width: 50px;
 }
+.article-page .subtitle p {
+  font-size: 20px;
+}
 .article-page p {
   margin-bottom: 15px;
 }

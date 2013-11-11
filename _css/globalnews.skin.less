@@ -33,6 +33,20 @@ a{
 	color:@secondary;
 }
 
+.btn{
+	.rounded-corners(0px);
+}
+
+.solid-button{
+	background: @primary;
+	color:#fff;
+	padding:4px 10px;
+	&:hover{
+		color:#fff;
+		background: @primary + 30;
+	}
+}
+
 #top-header{
 	color:#555555;
 	font-size: 14px;
@@ -130,6 +144,21 @@ a{
 	}
 	.section-link{
 		color:@secondary;
+	}
+
+	#subtitle-links{
+		a.active{
+				background: @primary;
+		}
+		.list-group-item{
+			&:first-child,&:last-child{
+				.rounded-corners(0px);
+			}
+		}
+	}
+	.pagination > li:last-child > a,
+	.pagination > li:first-child > a{
+		.rounded-corners(0px);
 	}
 }
 
