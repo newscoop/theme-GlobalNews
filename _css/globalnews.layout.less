@@ -233,6 +233,49 @@
 	.btn-default{
 		margin:10px 5px 10px 0px;
 	}
+	
+	.comment{
+		margin-top: 15px;
+		margin-bottom: 25px;
+		.author{
+			text-align: right;
+		}
+		.comment-box{
+			background: #e7e7e7;
+			position: relative;
+			border:#e7e7e7 1px solid;
+			padding:10px 15px;
+			font-style: italic;
+			min-height: 40px;
+			.arrow-left {
+				width: 0; 
+				height: 0; 
+				border-top: 10px solid transparent;
+				border-bottom: 10px solid transparent; 
+				border-right:10px solid #e7e7e7;
+				position: absolute;
+				left:-10px;
+			}
+			.arrow-top{
+				width: 0; 
+				height: 0; 
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				border-bottom: 10px solid #e7e7e7;
+				position: absolute;
+				top:-10px;
+			}
+		}
+	}
+
+	#comment-form{
+		margin-top:20px;
+		.form-control{
+			.rounded-corners(0px);
+		}
+
+	}
+
 }
 
 #sidebar{
@@ -353,13 +396,15 @@
     padding:    2px;
     width:      28px;
 }
+
 .ratings_vote {
     background: url('../_img/rating/star_full.png') no-repeat;
 }
+
 .ratings_over {
     background: url('../_img/rating/star_highlight.png') no-repeat;
 }
- 
+
 .total_votes {
     margin-top: 2px;
     float: left;
@@ -368,9 +413,12 @@
     font-size: 14px;
 }
 .article_rating {
+	border-top:1px dotted #AEAEAE;
+	border-bottom: 1px dotted #AEAEAE;
     font: 21px;
     width: 100%;
-    padding: 10px 5px 8px 5px;
+    margin:20px 0px;
+    padding: 10px 5px 0px 0px;
 }
 .article_rating h4 {
     display: inline-block;

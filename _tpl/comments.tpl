@@ -1,27 +1,28 @@
 <aside id="comments">
+    <h4>{{ #commentsTitle# }}</h4>
     {{ list_article_comments order="bydate desc" }}
     <div id="comment-{{$gimme->current_list->index}}" class="comment">
         <div class="comment-content">
-            <div class="author-phone hidden-desktop">  
-                {{ if $gimme->comment->user->identifier }}
-                <a href="http://{{ $gimme->publication->site }}/user/profile/{{ $gimme->comment->user->uname|urlencode }}" >{{ $gimme->comment->user->uname }}</a>
-                {{ else }}
-                <a href="#">{{ $gimme->comment->nickname }} ({{ #anonymous# }})</a>
-                {{ /if }}
-                |&nbsp;<span><time class="timeago" datetime="{{ $gimme->comment->submit_date }}">{{ $gimme->comment->submit_date }}</time></span>
-                <hr>
-            </div>
-            {{ $gimme->comment->content }}
-        </div>
-        <div class="comment-author visible-desktop">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 author">
             {{ if $gimme->comment->user->identifier }}
-            <a href="http://{{ $gimme->publication->site }}/user/profile/{{ $gimme->comment->user->uname|urlencode }}" >{{ $gimme->comment->user->uname }}</a><br>
+                <img src="{{ include file='_tpl/user-image.tpl' user=$user width=60 height=60 }}" class="avatar" width="60" height="60" alt="{{ $gimme->comment->user->uname }}"><br>
+                <a href="http://{{ $gimme->publication->site }}/user/profile/{{ $gimme->comment->user->uname|urlencode }}" >{{ $gimme->comment->user->uname }}</a>
             {{ else }}
-            <a href="#">{{ $gimme->comment->nickname }} ({{ #anonymous# }})</a><br>
+                <img src="{{ include file='_tpl/user-image.tpl' user=$user width=60 height=60 }}" width="60" height="60" class="avatar" alt="avatar"><br>
+                <a href="#">{{ $gimme->comment->nickname }} ({{ #anonymous# }})</a>
             {{ /if }}
-            <span><time class="timeago" datetime="{{ $gimme->comment->submit_date }}">{{ $gimme->comment->submit_date }}</time></span>
+                <br><time class="timeago" datetime="{{ $gimme->comment->submit_date }}">{{ $gimme->comment->submit_date }}</time>
+                </div>
+                 <div class="col-lg-9 col-md-8">
+                    <div class="comment-box">
+                    <div class="arrow-top visible-sm visible-xs"></div>
+                    <div class="arrow-left visible-md visible-lg"></div>
+                    {{ $gimme->comment->content }}
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="clearfix" ></div>
     </div>
     {{ /list_article_comments }}
     <h4>{{ #writeComment# }}</h4>
@@ -44,21 +45,19 @@
                             {{ /if }}
                         {{ /if }}   
                     {{ /if }}
-            {{ comment_form html_code="id=\"comment-form\" class=\"form-horizontal\" " _button="submit" button_html_code="tabindex=\"6\" class=\"solid-button form-column-right\" " }}
-            <div class="form-column-left">                                     
-                <div class="control-group">
+            {{ comment_form html_code="id=\"comment-form\" role=\"form\" class=\"form-horizontal\" " _button="submit" button_html_code="tabindex=\"6\" class=\"solid-button form-column-right\" " }}
+                                  
+                <div class="form-group">
                     <label class="control-label" for="">Comment</label>
                     <div class="controls">
-                    {{ camp_edit object="comment" attribute="content" html_code="id=\"comment\" tabindex=\"4\"" }}
+                    {{ camp_edit object="comment" attribute="content" html_code="id=\"comment\" tabindex=\"4\" class=\"form-control\"" }}
                     </div>
                 </div>
-                <div class="control-group">
+                <div class="form-group">
                     <div class="controls captcha">
                         {{ recaptcha }}
                     </div>
                 </div>
-            </div>
-            <div class="clearfix"></div>
             {{ /comment_form }}
             <div class="clearfix"></div>
             {{ else }}
@@ -85,21 +84,20 @@
                 {{ /if }}   
             {{ /if }}
 
-            {{ comment_form html_code="id=\"comment-form\" class=\"form-horizontal\" " _button="submit" button_html_code="tabindex=\"6\" class=\"solid-button form-column-right\" "  }}
-            <div class="form-column-left">                                     
-                <div class="control-group">
+            {{ comment_form html_code="id=\"comment-form\" role=\"form\" " _button="submit" button_html_code="tabindex=\"6\" class=\"solid-button form-column-right\" "  }}
+                                   
+                <div class="form-group">
                     <label class="control-label" for="">Comment</label>
                     <div class="controls">
-                    {{ camp_edit object="comment" attribute="content" html_code="id=\"comment\" tabindex=\"4\"" }}
+                    {{ camp_edit object="comment" attribute="content" html_code="id=\"comment\" tabindex=\"4\" class=\"form-control\"" }}
                     </div>
                 </div>
-                <div class="control-group">
+                <div class="form-group">
                     <div class="controls">
                         {{ recaptcha }}
                     </div>
                 </div>
-            </div>
-            <div class="clearfix"></div>
+
             {{ /comment_form }}
             <div class="clearfix"></div>
             {{ else }}
@@ -123,33 +121,32 @@
                 {{ /if }}
 
 
-            {{ comment_form html_code="id=\"comment-form\" class=\"form-horizontal\" " _button="submit" button_html_code="tabindex=\"6\" id=\"comment-button\"  class=\"solid-button form-column-right\" " }}
-            <div class="form-column-left">
-                <div class="control-group">
+            {{ comment_form html_code="id=\"comment-form\" role=\"form\" " _button="submit" button_html_code="tabindex=\"6\" id=\"comment-button\"  class=\"solid-button form-column-right\" " }}
+
+                <div class="form-group">
                     <label class="control-label" for="inputName">Name</label>
                         <div class="controls">
-                            {{ camp_edit object="comment" attribute="nickname" html_code="id=\"author\" tabindex=\"1\" " }}
+                            {{ camp_edit object="comment" attribute="nickname" html_code="id=\"author\" tabindex=\"1\" class=\"form-control\" " }}
                         </div>
                 </div>
-                <div class="control-group">
+                <div class="form-group">
                         <label class="control-label" for="inputEmail">Email</label>
                         <div class="controls">
-                        {{ camp_edit object="comment" attribute="reader_email" html_code="id=\"email\" tabindex=\"2\"" }}
+                        {{ camp_edit object="comment" attribute="reader_email" html_code="id=\"email\" tabindex=\"2\" class=\"form-control\"" }}
                         </div>
                 </div>
-                <div class="control-group">
+                <div class="form-group">
                     <label class="control-label" for="">Comment</label>
                     <div class="controls">
-                        {{ camp_edit object="comment" attribute="content" html_code="id=\"comment\" tabindex=\"4\" " }}
+                        {{ camp_edit object="comment" attribute="content" html_code="id=\"comment\" tabindex=\"4\" class=\"form-control\" " }}
                     </div>
                 </div>
-                <div class="control-group">
+                <div class="form-group">
                     <div class="controls">
                         {{ recaptcha }}
                     </div>
                 </div>
-            </div>
-            <div class="clearfix"></div>
+
             {{ /comment_form }}
             <div class="clearfix"></div>
             {{ else }}

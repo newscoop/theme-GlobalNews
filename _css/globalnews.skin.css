@@ -257,6 +257,49 @@
 .article-page .btn-default {
   margin: 10px 5px 10px 0px;
 }
+.article-page .comment {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.article-page .comment .author {
+  text-align: right;
+}
+.article-page .comment .comment-box {
+  background: #e7e7e7;
+  position: relative;
+  border: #e7e7e7 1px solid;
+  padding: 10px 15px;
+  font-style: italic;
+  min-height: 40px;
+}
+.article-page .comment .comment-box .arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #e7e7e7;
+  position: absolute;
+  left: -10px;
+}
+.article-page .comment .comment-box .arrow-top {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #e7e7e7;
+  position: absolute;
+  top: -10px;
+}
+.article-page #comment-form {
+  margin-top: 20px;
+}
+.article-page #comment-form .form-control {
+  border-radius: 0px;
+  -ms-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+}
 #sidebar {
   border-left: #d6d6d6 1px solid;
   padding-left: 30px;
@@ -379,9 +422,12 @@
   font-size: 14px;
 }
 .article_rating {
+  border-top: 1px dotted #AEAEAE;
+  border-bottom: 1px dotted #AEAEAE;
   font: 21px;
   width: 100%;
-  padding: 10px 5px 8px 5px;
+  margin: 20px 0px;
+  padding: 10px 5px 0px 0px;
 }
 .article_rating h4 {
   display: inline-block;
@@ -444,6 +490,7 @@ a:hover {
   background: #103e82;
   color: #fff;
   padding: 4px 10px;
+  border: 0;
 }
 .solid-button:hover {
   color: #fff;
@@ -543,6 +590,13 @@ a:hover {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   -khtml-border-radius: 0px;
+}
+.article-page #comment-form .form-control {
+  border-left: #f00d14 1px solid;
+}
+.article-page #comment-form .solid-button {
+  font-size: 18px;
+  padding: 10px 20px;
 }
 #sidebar .block {
   margin-bottom: 30px;

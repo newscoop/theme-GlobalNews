@@ -41,6 +41,7 @@ a{
 	background: @primary;
 	color:#fff;
 	padding:4px 10px;
+	border:0;
 	&:hover{
 		color:#fff;
 		background: @primary + 30;
@@ -159,6 +160,16 @@ a{
 	.pagination > li:last-child > a,
 	.pagination > li:first-child > a{
 		.rounded-corners(0px);
+	}
+	#comment-form{
+		.form-control{
+			border-left: @secondary 1px solid;
+		}
+		.solid-button{
+			font-size: 18px;
+			padding:10px 20px;
+		}
+
 	}
 }
 
