@@ -48,7 +48,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                        <div id="news-ticker">
-                            <span>Breaking News</span>
+                            <span>{{ #breakingNews# }}</span>
                             <ul>
                                 {{ local }} 
                                 {{ set_current_issue }} 
@@ -75,7 +75,8 @@
 
                         {{ if $gimme->template->name == 'article.tpl'}}
                         <div id="breadcrumb">
-                            <a href="#">{{$gimme->publication->name}}</a>&nbsp; &nbsp; → &nbsp; &nbsp; <a href="#">{{$gimme->section->name}}</a> &nbsp; &nbsp; → &nbsp; &nbsp; {{ $gimme->article->name }}
+                            <a href="{{ uri options='publication' }}">{{$gimme->publication->name}}</a>&nbsp; &nbsp; → &nbsp; &nbsp; 
+                            <a href="{{ uri options='section' }}">{{$gimme->section->name}}</a> &nbsp; &nbsp; → &nbsp; &nbsp; {{ $gimme->article->name }}
                         </div>
                         {{/if}}
                     </div>
