@@ -598,6 +598,13 @@ a:hover {
   font-size: 18px;
   padding: 10px 20px;
 }
+.article-page .alert {
+  border-radius: 0px;
+  -ms-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+}
 #sidebar .block {
   margin-bottom: 30px;
 }

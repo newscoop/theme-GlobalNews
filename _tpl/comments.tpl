@@ -33,15 +33,15 @@
                 <!-- user is logged in -->
                 {{ if $gimme->article->number && $gimme->article->comments_locked == 0 && $gimme->article->comments_enabled == 1}}
                     {{ if $gimme->submit_comment_action->defined && $gimme->submit_comment_action->rejected }}
-                    <p><em>{{ #yourCommentHasNotBeenAccepted# }}</em></p>
+                    <p class="alert alert-danger"><em>{{ #yourCommentHasNotBeenAccepted# }}</em></p>
                     {{ /if }}
 
                     {{ if $gimme->submit_comment_action->is_error }}
-                        <p><em>{{ $gimme->submit_comment_action->error_message }}</em></p>
+                        <p class="alert alert-danger"><em>{{ $gimme->submit_comment_action->error_message }}</em></p>
                     {{ else }}
                         {{ if $gimme->submit_comment_action->defined }}
                             {{ if $gimme->publication->moderated_comments }}
-                                <p><em>{{ #yourCommentHasBeenSentForApproval# }}</em></p>
+                                <p class="alert alert-info"><em>{{ #yourCommentHasBeenSentForApproval# }}</em></p>
                             {{ /if }}
                         {{ /if }}   
                     {{ /if }}
@@ -59,27 +59,26 @@
                     </div>
                 </div>
             {{ /comment_form }}
-            <div class="clearfix"></div>
             {{ else }}
-                <p>{{ #commentsLocked# }}</p>
+                <p class="alert alert-warning">{{ #commentsLocked# }}</p>
             {{ /if }}
         {{ else }}
-            <p>{{ #registrationNeeded# }}</p>
+            <p class="alert alert-danger">{{ #registrationNeeded# }}</p>
         {{ /if }}
     {{ else }}
         <!-- public comments are allowed-->
         {{ if $gimme->user->logged_in }}
             {{ if $gimme->article->number && $gimme->article->comments_locked == 0 && $gimme->article->comments_enabled == 1}}
             {{ if $gimme->submit_comment_action->defined && $gimme->submit_comment_action->rejected }}
-                <p><em>{{ #yourCommentHasNotBeenAccepted# }}</em></p>
+                <p class="alert alert-danger"><em>{{ #yourCommentHasNotBeenAccepted# }}</em></p>
             {{ /if }}
 
             {{ if $gimme->submit_comment_action->is_error }}
-                <p><em>{{ $gimme->submit_comment_action->error_message }}</em></p>
+                <p class="alert alert-danger"><em>{{ $gimme->submit_comment_action->error_message }}</em></p>
             {{ else }}
                 {{ if $gimme->submit_comment_action->defined }}
                     {{ if $gimme->publication->moderated_comments }}
-                        <p><em>{{ #yourCommentHasBeenSentForApproval# }}</em></p>
+                        <p class="alert alert-info"><em>{{ #yourCommentHasBeenSentForApproval# }}</em></p>
                     {{ /if }}
                 {{ /if }}   
             {{ /if }}
@@ -99,23 +98,22 @@
                 </div>
 
             {{ /comment_form }}
-            <div class="clearfix"></div>
             {{ else }}
-                <p>{{ #commentsLocked# }}</p>
+                <p class="alert alert-warning">{{ #commentsLocked# }}</p>
             {{ /if }}
         {{ else }}
             <!-- user is not logged in -->
             {{ if $gimme->article->number && $gimme->article->comments_locked == 0 && $gimme->article->comments_enabled == 1}}
                 {{ if $gimme->submit_comment_action->defined && $gimme->submit_comment_action->rejected }}
-                    <p><em>{{ #yourCommentHasNotBeenAccepted# }}</em></p>
+                    <p class="alert alert-danger"><em>{{ #yourCommentHasNotBeenAccepted# }}</em></p>
                 {{ /if }}
 
                 {{ if $gimme->submit_comment_action->is_error }}
-                    <p><em>{{ $gimme->submit_comment_action->error_message }}</em></p>
+                    <p class="alert alert-danger"><em>{{ $gimme->submit_comment_action->error_message }}</em></p>
                 {{ else }}
                     {{ if $gimme->submit_comment_action->defined }}
                         {{ if $gimme->publication->moderated_comments }}
-                            <p><em>{{ #yourCommentHasBeenSentForApproval# }}</em></p>
+                            <p class="alert alert-info"><em>{{ #yourCommentHasBeenSentForApproval# }}</em></p>
                         {{ /if }}
                     {{ /if }}   
                 {{ /if }}
@@ -148,9 +146,9 @@
                 </div>
 
             {{ /comment_form }}
-            <div class="clearfix"></div>
+
             {{ else }}
-            <p>{{ #commentsLocked# }}</p>
+            <p class="alert alert-warning">{{ #commentsLocked# }}</p>
         {{ /if }}
     {{ /if }}
 {{ /if }}
