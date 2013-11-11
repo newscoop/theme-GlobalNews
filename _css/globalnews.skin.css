@@ -300,6 +300,10 @@
   -webkit-border-radius: 0px;
   -khtml-border-radius: 0px;
 }
+.article-page #comment-form #recaptcha_response_field {
+  height: 30px;
+  padding: 3px 10px !important;
+}
 #sidebar {
   border-left: #d6d6d6 1px solid;
   padding-left: 30px;
