@@ -609,6 +609,11 @@ a:hover {
   font-size: 18px;
   padding: 10px 20px;
 }
+.article-page .comment-box {
+  -webkit-box-shadow: 1px 1px 0px 0px #d5d5d5;
+  -moz-box-shadow: 1px 1px 0px 0px #d5d5d5;
+  box-shadow: 1px 1px 0px 0px #d5d5d5;
+}
 .article-page .alert {
   border-radius: 0px;
   -ms-border-radius: 0px;

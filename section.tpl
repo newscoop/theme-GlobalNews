@@ -17,13 +17,12 @@
                             {{ if $gimme->current_list->at_beginning }}
                             <article class="article section-featured">
                                 {{ if $gimme->section->name != "Dialogue" }}
+
                                 <figure class="section-thumb pull-left img-responsive">
                                     <a href="{{ uri options="article" }}">
                                         {{ include file="_tpl/img/img_950x500.tpl" }}
                                     </a>
                                 </figure>
-                                {{/if}}
-
                                 <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
                                 {{ if !$gimme->article->is_public }}
                                 <span class="label label-danger">{{ #premium# }}</span>
@@ -32,6 +31,19 @@
                                     {{ $gimme->article->full_text|truncate:250:"...":true }}
                                 </p>
                                 <a href="{{ uri options="article" }}">{{ #more# }} </a>
+                                
+                                {{ else }}
+
+                                <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
+                                {{ if !$gimme->article->is_public }}
+                                <span class="label label-danger">{{ #premium# }}</span>
+                                {{ /if }} 
+                                <p class="excerpt">
+                                    {{ $gimme->article->teaser }}
+                                </p>
+                                <a href="{{ uri options="article" }}">{{ #more# }}</a>
+
+                                {{/if}}
                             </article>
                             {{ else }}
                             <article class="article list">
@@ -61,7 +73,7 @@
                                     <span class="label label-danger">{{ #premium# }}</span>
                                     {{ /if }} 
                                     <p class="excerpt">
-                                        {{ $gimme->article->full_text|truncate:250:"...":true }}
+                                        {{ $gimme->article->teaser}}
                                     </p>
                                     <a href="{{ uri options="article" }}">{{ #more# }} </a>
                                 {{/if}}

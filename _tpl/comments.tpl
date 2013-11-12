@@ -1,5 +1,4 @@
 <aside id="comments">
-    <h4>{{ #commentsTitle# }}</h4>
     {{ list_article_comments order="bydate desc" }}
     <div id="comment-{{$gimme->current_list->index}}" class="comment">
         <div class="comment-content">
