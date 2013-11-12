@@ -315,6 +315,22 @@
   margin-top: 20px;
   margin-bottom: 30px;
 }
+.profile-page .panel {
+  border-radius: 0px;
+  -ms-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+}
+.profile-page .panel .panel-heading {
+  padding: 5px 20px;
+}
+.profile-page .panel .panel-body {
+  padding: 15px 20px;
+}
+.profile-page .profile-information .info-value {
+  margin-bottom: 15px;
+}
 #sidebar {
   border-left: #d6d6d6 1px solid;
   padding-left: 30px;
@@ -665,6 +681,17 @@ a:hover {
   font-weight: 200;
   margin-left: 20px;
   margin-right: 10px;
+}
+.profile-page .profile-block {
+  border-top: #f00d14 double 3px;
+  border-bottom: #f00d14 double 3px;
+  padding: 15px 0px 0px 0px;
+}
+.profile-page .profile-block .user-title {
+  color: #f00d14;
+}
+.profile-page .profile-block .profile-avatar {
+  text-align: center;
 }
 #sidebar .block {
   margin-bottom: 30px;

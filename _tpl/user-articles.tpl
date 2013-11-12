@@ -4,20 +4,26 @@
 <div class="profile-articles">
      <h4>{{ #articlesBy# }} {{ $user->first_name}} {{ $user->last_name}}</h4>
      {{ list_articles length="5" ignore_publication="true" ignore_issue="true" ignore_section="true" constraints="author is $escapedName type is news" order="bypublishdate desc" }}
-     <article class="articles articles-list">
-         {{ include file="_tpl/img/img_110x100.tpl" }}
-         <header class="pull-right">
-             <h2><a class="dateline" href="{{ uri options='section' }}">{{ $gimme->article->section->name }}: </a><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h2>
-         </header>
-         <div class="excerpt pull-right">
-             {{ $gimme->article->full_text|truncate:210:"...":true }}
-         </div>
-         <div class="clearfix"></div>
-         <div class="article-links pull-right">
-             <a href="{{ uri options="article" }}" class="btn btn-mini articles-button read-more"><i class="icon-double-angle-right"></i>{{ #readMore# }}</a>
-             <a href="{{ uri options="article" }}#comments" class="btn btn-mini articles-button comment-link"><i class="icon-double-angle-right"></i> {{ #comments# }}({{ $gimme->article->comment_count }})</a>
-         </div>
-         <div class="clearfix"></div>
+     <article class="article list">
+        <div class="row">
+            <div class="col-lg-4 col-md-5">
+                <figure class="section-thumb pull-left img-responsive">
+                    <a href="{{ uri options="article" }}">
+                        {{ include file='_tpl/img/img_rectangle.tpl'}}
+                    </a>
+                </figure>   
+            </div>
+            <div class="col-lg-8 col-md-7">
+                <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
+                {{ if !$gimme->article->is_public }}
+                <span class="label label-danger">{{ #premium# }}</span>
+                {{ /if }} 
+                <p class="excerpt">
+                    {{ $gimme->article->full_text|truncate:250:"...":true }}
+                </p>
+                <a href="{{ uri options="article" }}">{{ #more# }} </a>
+            </div>
+        </div>
      </article>
 
      {{ if $gimme->current_list->at_end }}            

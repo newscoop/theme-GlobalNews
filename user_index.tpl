@@ -8,7 +8,7 @@
                 <div class="row">
 
                     <div class="col-lg-8 col-md-8">
-                        <h2>{{ #userIndex# }}</h2>
+                        <h1 class="page-title">{{ #userIndex# }}</h1>
 
                         <div id="content" class="community-page">
                            <ul id="community-tabs" class="nav nav-tabs">

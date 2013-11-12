@@ -314,6 +314,22 @@
   margin-top: 20px;
   margin-bottom: 30px;
 }
+.profile-page .panel {
+  border-radius: 0px;
+  -ms-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+}
+.profile-page .panel .panel-heading {
+  padding: 5px 20px;
+}
+.profile-page .panel .panel-body {
+  padding: 15px 20px;
+}
+.profile-page .profile-information .info-value {
+  margin-bottom: 15px;
+}
 #sidebar {
   border-left: #d6d6d6 1px solid;
   padding-left: 30px;
