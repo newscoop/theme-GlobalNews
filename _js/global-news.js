@@ -85,6 +85,7 @@ $(document).ready(function () {
       return false;
     });     
 
+
     $('.rate_widget').each(function(i) {
         var widget = this;
         var out_data = {
@@ -137,6 +138,27 @@ $(document).ready(function () {
             'json'
         ); 
     });
+
+    // Community page navigation
+    var pathname = document.location.pathname;
+    if (pathname === "/user") {
+        $("#user-active").addClass('active');
+    } else if (pathname === "/user/filter/f/a-z"){
+        $("#user-all").addClass('active');
+    } else if (pathname === "/user/filter/f/a-d"){
+        $("#user-ad").addClass('active');
+    } else if (pathname === "/user/filter/f/e-k"){
+        $("#user-ek").addClass('active');
+    } else if (pathname === "/user/filter/f/l-p"){
+        $("#user-lp").addClass('active');
+    } else if (pathname === "/user/filter/f/q-t"){
+        $("#user-qt").addClass('active');
+    } else if (pathname === "/user/filter/f/u-z"){
+        $("#user-uz").addClass('active');
+    } else if (pathname === "/user/editors"){
+        $("#user-editors").addClass('active');
+    }
+
 });
 
 function set_votes(widget) {

@@ -311,6 +311,10 @@
 .debate-page h2 {
   margin-bottom: 20px;
 }
+.community-page #community-tabs {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 #sidebar {
   border-left: #d6d6d6 1px solid;
   padding-left: 30px;
@@ -627,6 +631,40 @@ a:hover {
   border-bottom: #f00d14 double 3px;
   padding: 15px 0px 0px 0px;
   text-align: center;
+}
+.community-page #community-tabs > li > a {
+  padding: 10px 20px;
+  border-radius: 0px;
+  -ms-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+}
+.community-page .list-group .list-group-item {
+  padding: 20px 30px;
+}
+.community-page .list-group .list-group-item:first-child,
+.community-page .list-group .list-group-item:last-child {
+  border-radius: 0px;
+  -ms-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+}
+.community-page .list-group .list-group-item:hover {
+  background: #103e82;
+  color: #a6d4ff;
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.community-page .list-group .name {
+  font-size: 18px;
+  font-family: 'Bitter', serif;
+  font-weight: 200;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 #sidebar .block {
   margin-bottom: 30px;

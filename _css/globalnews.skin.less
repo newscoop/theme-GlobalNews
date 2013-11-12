@@ -188,6 +188,36 @@ a{
 	}
 }
 
+.community-page{
+	#community-tabs{
+		& > li > a{
+			padding: 10px 20px;
+			.rounded-corners(0px);
+		}
+	}
+	.list-group{
+		.list-group-item{
+			padding:20px 30px;
+			
+			&:first-child,&:last-child{
+				.rounded-corners(0px);
+			}
+			&:hover{
+				background: @primary;
+				color:@primary + 150;
+				.trans(all,0.3s);
+			}
+		}
+		.name{
+			font-size: 18px;
+			font-family: @title-font;
+			font-weight: 200;
+			margin-left: 20px;
+			margin-right: 10px;
+		}
+	}
+}
+
 #sidebar{
 	.block{
 		margin-bottom: 30px;
