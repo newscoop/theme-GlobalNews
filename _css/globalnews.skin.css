@@ -214,7 +214,7 @@
   width: 24%;
   float: left;
 }
-.article-page .excerpt p {
+.article-page .teaser p {
   margin-bottom: 10px;
 }
 .article-page .comment-count {
@@ -303,6 +303,13 @@
 .article-page #comment-form #recaptcha_response_field {
   height: 30px;
   padding: 3px 10px !important;
+}
+.debate-page .debate-bio {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.debate-page h2 {
+  margin-bottom: 20px;
 }
 #sidebar {
   border-left: #d6d6d6 1px solid;
@@ -608,6 +615,13 @@ a:hover {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   -khtml-border-radius: 0px;
+}
+.debate-page .debate-bio {
+  margin-top: 5px;
+  border-top: #f00d14 double 3px;
+  border-bottom: #f00d14 double 3px;
+  padding: 15px 0px 0px 0px;
+  text-align: center;
 }
 #sidebar .block {
   margin-bottom: 30px;

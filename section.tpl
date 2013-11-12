@@ -63,7 +63,7 @@
                                     <p class="excerpt">
                                         {{ $gimme->article->full_text|truncate:250:"...":true }}
                                     </p>
-                                    <a href="{{ uri options="article" }}">≫ {{ #more# }} </a>
+                                    <a href="{{ uri options="article" }}">{{ #more# }} </a>
                                 {{/if}}
                             </article>
                             {{/if}}

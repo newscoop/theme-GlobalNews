@@ -29,7 +29,7 @@
     	{{ /if }}  
     </h1>
 
-    <div class="excerpt">
+    <div class="teaser">
     	{{ $gimme->article->deck }}
     </div>
 	<a class="comment-count" href="#comments" class="pull-right"><span class="glyphicon glyphicon-comment"></span> {{ $gimme->article->comment_count}} {{ #comments# }}</a>
@@ -116,6 +116,6 @@
 
 {{ else }}
 	<br>
-    <div class="alert alert-error">{{ #infoOnLockedArticles# }}</div>
+    <div class="alert alert-danger">{{ #infoOnLockedArticles# }}</div>
 {{ /if }}
 
