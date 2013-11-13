@@ -1,4 +1,5 @@
 {{ if $gimme->article->content_accessible }}
+	{{ if $gimme->article->type_name == "news" }}
 	<a href="{{ uri option='section'}}" class="section-link">{{ $gimme->article->section->name }}</a>
 	
 	<div class="article-info">
@@ -19,22 +20,24 @@
 			| {{ list_article_locations }}{{ if $gimme->location->enabled }}{{ $gimme->location->name }}{{ if $gimme->current_list->at_end }}{{ else }}, {{ /if }}{{ /if }}{{ /list_article_locations }}
 	{{/if}}
 	</div>
+	{{/if}}
 
 	<div class="clearfix"></div>
 
 	<h1 class="page-title">
         {{ $gimme->article->name }}
         {{ if !$gimme->article->is_public }}
-    	<span class="label label-danger"><i class="icon-lock"></i>&nbsp;{{ #premium# }}</span>
+    	<span class="label label-danger">{{ #premium# }}</span>
     	{{ /if }}  
     </h1>
 
     <div class="teaser">
     	{{ $gimme->article->deck }}
     </div>
-	<a class="comment-count" href="#comments" class="pull-right"><span class="glyphicon glyphicon-comment"></span> {{ $gimme->article->comment_count}} {{ #comments# }}</a>
-
+		
 	{{ if $gimme->article->type_name == "news" }}
+
+		<a class="comment-count" href="#comments" class="pull-right"><span class="glyphicon glyphicon-comment"></span> {{ $gimme->article->comment_count}} {{ #comments# }}</a>
 
 	<!-- Social Buttons BEGIN -->
 		    <div class="share-buttons">

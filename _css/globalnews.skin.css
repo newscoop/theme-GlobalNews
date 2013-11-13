@@ -247,6 +247,18 @@
   float: left;
   width: 50px;
 }
+.article-page .cs_img {
+  width: 50%;
+  float: right;
+  margin-left: 15px;
+}
+.article-page .cs_img .cs_img_caption {
+  font-style: italic;
+  font-size: 12px;
+}
+.article-page .cs_img img {
+  width: 100%;
+}
 .article-page .subtitle p {
   font-size: 20px;
 }
@@ -756,6 +768,9 @@ a:hover {
   -webkit-box-shadow: 1px 1px 0px 0px #d5d5d5;
   -moz-box-shadow: 1px 1px 0px 0px #d5d5d5;
   box-shadow: 1px 1px 0px 0px #d5d5d5;
+}
+.article-page .cs_img .cs_img_caption {
+  color: #727272;
 }
 .debate-page .debate-bio {
   margin-top: 5px;

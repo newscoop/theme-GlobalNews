@@ -8,9 +8,9 @@
                 <div class="row">
 
                     <div class="col-lg-8 col-md-8">
-                        <h2>{{ $gimme->topic->name }}</h2>
+                        <h1 class="page-title">{{ $gimme->topic->name }}</h1>
 
-                        <div id="content" class="index-page">
+                        <div id="content" class="topic-page">
 
                             {{ list_articles length="5" ignore_issue="true" constraints="type not poll" }}
                             <article class="article list">

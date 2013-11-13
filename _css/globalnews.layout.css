@@ -246,6 +246,18 @@
   float: left;
   width: 50px;
 }
+.article-page .cs_img {
+  width: 50%;
+  float: right;
+  margin-left: 15px;
+}
+.article-page .cs_img .cs_img_caption {
+  font-style: italic;
+  font-size: 12px;
+}
+.article-page .cs_img img {
+  width: 100%;
+}
 .article-page .subtitle p {
   font-size: 20px;
 }
