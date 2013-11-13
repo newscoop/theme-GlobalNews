@@ -14,6 +14,7 @@
 
                             <div class="row">
                                 <div class="col-lg-5 col-md-5">
+
                                     <div class="profile-block">
                                         <div class="profile-avatar">
                                             <img src="{{ include file='_tpl/user-image.tpl' user=$user width=150 height=130 }}" alt="{{ #profilePicture# }} ">
@@ -24,9 +25,11 @@
                                             <p>{{ $profile['bio']}}</p>
                                         </div>
                                     </div>
+
                                 </div>
 
                                 <div class="col-lg-7 col-md-7">
+
                                     <div class="panel panel-default">
                                         <div class="panel-heading"><h4>{{ #information# }}</h4></div>
                                         <div class="panel-body">
@@ -46,19 +49,19 @@
                                                 {{ if $profile['website']}}
                                                 <div class="info-value">
                                                     <b>{{ #website# }}</b>
-                                                    <span class="value"><a class="link-color" href="{{ $profile['website']}}" target="_blank" rel="nofollow">{{ $profile['website']|escape}}</a></span>
+                                                    <span class="value"><a href="{{ $profile['website']}}" target="_blank" rel="nofollow">{{ $profile['website']|escape}}</a></span>
                                                 </div>
                                                 {{ /if }}
                                                 {{ if $profile['facebook'] }}
                                                 <div class="info-value">
                                                     <b>Facebook</b>
-                                                    <span class="value"><a class="link-color" href="http://facebook.com/{{ $profile['facebook'] }}" rel="nofollow" target="_blank">{{ $profile['facebook'] }}</a></span>
+                                                    <span class="value"><a href="http://facebook.com/{{ $profile['facebook'] }}" rel="nofollow" target="_blank">{{ $profile['facebook'] }}</a></span>
                                                 </div>
                                                 {{ /if }}
                                                 {{ if $profile['twitter'] }}
                                                 <div class="info-value">
                                                     <b>Twitter</b>
-                                                    <span class="value"><a class="link-color" href="http://twitter.com/{{ $profile['twitter'] }}" rel="nofollow" target="_blank">{{ $profile['twitter'] }}</a></span>
+                                                    <span class="value"><a href="http://twitter.com/{{ $profile['twitter'] }}" rel="nofollow" target="_blank">{{ $profile['twitter'] }}</a></span>
                                                 </div>
                                                 {{ /if }}
                                                 {{ if $profile['birth_date'] }}
@@ -78,13 +81,14 @@
                                                 {{ if $profile['google'] }}
                                                 <div class="info-value">
                                                     <b>Google+</b>
-                                                    <span class="value"><a class="link-color" href="http://plus.google.com/{{ $profile['google'] }}" rel="nofollow" target="_blank">{{ $profile['google'] }}</a></span>
+                                                    <span class="value"><a href="http://plus.google.com/{{ $profile['google'] }}" rel="nofollow" target="_blank">{{ $profile['google'] }}</a></span>
                                                 </div>
                                                 {{ /if }}
 
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
 
                             </div>
