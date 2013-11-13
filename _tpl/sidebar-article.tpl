@@ -1,6 +1,6 @@
                     <div class="col-lg-4 col-md-4">
 
-                        <aside id="sidebar">
+                        <aside id="sidebar" class="visible-lg visible-md">
 
                             {{ include file="_tpl/sidebar-slideshow.tpl" }}
 

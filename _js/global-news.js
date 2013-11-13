@@ -161,6 +161,8 @@ $(document).ready(function () {
 
 });
 
+// Votes functionalitty
+
 function set_votes(widget) {
     if ($(widget).data('fsr')) {
         var avg = $(widget).data('fsr').whole_avg;
@@ -173,4 +175,25 @@ function set_votes(widget) {
         $(widget).find('.total_votes').text(votes + ' ' + votes_str + ' ' + averageRating_str + ' ' + exact);
         $(widget).find('.rating_error').text(error);
     }
+}
+
+// Responsive menu behavior
+var menuLeft = document.getElementById( 'responsive-menu' ),
+    showLeft = document.getElementById( 'showLeft' ),
+    body = document.body;
+
+showLeftPush.onclick = function() {
+    classie.toggle( this, 'active' );
+    classie.toggle( body, 'responsive-menu-push-toright' );
+    classie.toggle( menuLeft, 'responsive-menu-open' );
+    disableOther( 'showLeftPush' );
+};
+
+
+function disableOther( button ) {
+
+    if( button !== 'showLeftPush' ) {
+        classie.toggle( showLeftPush, 'disabled' );
+    }
+
 }

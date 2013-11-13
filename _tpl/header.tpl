@@ -3,7 +3,7 @@
 
                 <div class="row">
                     <div class="col-lg-12">
-                        <div id="top-header">
+                        <div id="top-header" class="hidden-xs">
                             <div class="pull-left">
                                 {{ if $gimme->user->logged_in }}
                                 <a href="/dashboard">{{ #profile# }}</a>
@@ -60,17 +60,20 @@
                         </div>
 
                         <div id="main-navigation">
-                            <nav id="menu">
-                            {{ local }}
-                            {{ set_current_issue }}
-                            {{ list_sections }}
-                            <a href="{{ uri options='section' }}" 
-                                {{if $currentsection == $gimme->section->number }}class="active"{{ /if}} >{{ $gimme->section->name}}
-                            </a>
-                            {{ /list_sections }}
-                            {{ /local }}
-                            <a href="/user" id="community-link" class="pull-right">Community</a>
+                            <nav id="menu" class="visible-lg visible-md">
+                                {{ local }}
+                                {{ set_current_issue }}
+                                {{ list_sections }}
+                                <a href="{{ uri options='section' }}" 
+                                    {{if $currentsection == $gimme->section->number }}class="active"{{ /if}} >{{ $gimme->section->name}}
+                                </a>
+                                {{ /list_sections }}
+                                {{ /local }}
+                                <a href="/user" id="community-link" class="pull-right">Community</a>
                             </nav>
+                            <button id="showLeftPush" type="button" class="responsive-menu-button btn btn-default visible-xs visible-sm">
+                                   <span class="glyphicon glyphicon-th-list"></span> MENU
+                            </button>
                         </div>
 
                         {{ if $gimme->template->name == 'article.tpl'}}

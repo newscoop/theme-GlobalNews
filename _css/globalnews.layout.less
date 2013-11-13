@@ -105,6 +105,11 @@
 			margin-right: 15px;
 		}	
 	}
+	.responsive-menu-button{
+		width: 100%;
+		font-size: 18px;
+		margin-top:10px;
+	}
 }
 
 #breadcrumb{
@@ -364,6 +369,7 @@
     	.rounded-corners(0px);
     }
 }
+
 .zend_form{
     width: 96%;
     dt {
@@ -619,3 +625,152 @@ span.img-responsive{
         max-width: 100%;
     }
 }
+
+/**************************************** */
+/**** Begin Responsive CSS ************** */
+/**************************************** */
+
+/* General styles for all menus */
+.responsive-menu {
+	background: #232323;
+	position: fixed;
+
+	h3 {
+		color: #fff;
+		padding: 10px 15px;
+		margin: 0;
+		font-weight: 300;
+		background: #393939;
+	}
+
+	a {
+		display: block;
+		color: #fff;
+		font-size: 1.1em;
+		font-weight: 300;
+		&:hover {
+			background: #393939;
+		}
+		&:active {
+			background: #393939;
+			color: #47a3da;
+		}
+	}
+}
+
+.responsive-menu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+	a {
+		border-bottom: 1px solid #393939;
+		padding: 12px 15px;
+	}
+}
+
+.responsive-menu-left {
+	left: -240px;
+}
+
+.responsive-menu-left.responsive-menu-open {
+	left: 0px;
+}
+
+/* Push classes applied to the body */
+
+.responsive-menu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.responsive-menu-push-toright {
+	left: 240px;
+}
+
+.responsive-menu,
+.responsive-menu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+
+
+
+/* --- Begin 768px to 979px screen resolution */
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+
+}
+
+/* --- End 768px to 979px screen resolution*/
+
+
+/* --- Begin 481px to 767px screen resolution */
+/* --- Landscape phone to portrait tablet */
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+/* --- End 481px to 767px screen resolution */
+
+/* --- Begin screen resolution less than 680px */
+
+@media (max-width: 680px) {
+
+}
+
+/* --- End screen resolution less than 680px */
+
+/* --- Begin screen resolution less than 620px */
+
+@media (max-width: 620px) {
+
+}
+
+/* --- End screen resolution less than 620px */
+
+
+/* --- Begin screen resolution less than 480px */
+/* --- Landscape phones and down */
+
+@media (max-width: 480px) {
+
+
+}
+
+/* --- End screen resolution less than 480px */
+
+
+/* --- Begin screen resolution less than 380px */
+
+@media (max-width: 380px) {
+
+}
+
+/* End screen resolution less than 380px --- */
+
+/* --- Begin screen resolution less than 360px */
+
+@media (max-width: 360px) {    
+
+
+}
+
+/* End screen resolution less than 360px --- */
+
+/* --- Begin screen resolution less than 320px */
+
+@media (max-width: 320px) {
+
+}
+
+/* End screen resolution less than 320px --- */
+
+/**************************************** */
+/****** End Responsive CSS ************** */
+/**************************************** */
