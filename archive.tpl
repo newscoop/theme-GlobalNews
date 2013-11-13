@@ -8,16 +8,19 @@
                 <div class="row">
 
                     <div class="col-lg-8 col-md-8">
-                        <h2>{{ #issuesArchive# }}</h2>
+                        <h1 class="page-title">{{ #issuesArchive# }}</h1>
 
-                        <div id="content" class="index-page">
+                        <div id="content" class="archive-page">
+                            <div class="list-group">
                             {{ list_issues order="bynumber desc" constraints="number greater 1" }} 
-                            <div class="archive-list">
-                                <div class="archive-border"></div>
-                                <a class="archive-title" href="{{ uri options="template issue.tpl" }}">{{ $gimme->issue->name }}</a>
-                                <span class="published-date" href="">{{ #publishedOn# }} <time datetime="{{ $gimme->issue->publish_date|date_format:"%Y-%m-%dT%H:%MZ" }}">{{ $gimme->issue->publish_date|camp_date_format:"%d %M %Y" }}</time></span>
-                            </div>
-                            {{ /list_issues }}  
+                            
+                                <a class="list-group-item" href="{{ uri options="template issue.tpl" }}">
+                                    <span class="name">{{ $gimme->issue->name }}</span>
+                                    <span class="published-date">{{ #publishedOn# }} <time datetime="{{ $gimme->issue->publish_date|date_format:"%Y-%m-%dT%H:%MZ" }}">{{ $gimme->issue->publish_date|camp_date_format:"%d %M %Y" }}</time></span>
+                                </a>
+                            
+                            {{ /list_issues }} 
+                            </div> 
                         </div>
                         <!-- End Content -->
                     </div>

@@ -24,7 +24,7 @@ h1, h2, h3, h4{
 }
 a{
 	color:@primary;
-	&:hover{
+	&:hover,&:focus{
 		text-decoration: none;
 	}
 }
@@ -145,6 +145,13 @@ a{
 	}
 }
 
+.section-page{
+	.pagination > li:last-child > a,
+	.pagination > li:first-child > a{
+		.rounded-corners(0px);
+	}
+}
+
 .article-page{
 	.article-info{
 		color:@semi-dark + 40;
@@ -237,6 +244,30 @@ a{
 		}
 		.profile-avatar{
 			text-align: center;
+		}
+	}
+}
+
+.archive-page{
+	.list-group{
+		.list-group-item{
+			padding:20px 10px;
+			
+			&:first-child,&:last-child{
+				.rounded-corners(0px);
+			}
+			&:hover{
+				background: @primary;
+				color:@primary + 150;
+				.trans(all,0.3s);
+			}
+		}
+		.name{
+			font-size: 18px;
+			font-family: @title-font;
+			font-weight: 200;
+			margin-left: 20px;
+			margin-right: 10px;
 		}
 	}
 }

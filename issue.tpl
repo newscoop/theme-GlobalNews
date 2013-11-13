@@ -8,37 +8,47 @@
                 <div class="row">
 
                     <div class="col-lg-8 col-md-8">
-                        <h2>{{ $gimme->section->name }}</h2>
+                        <h1 class="page-title">{{ $gimme->section->name }}</h1>
 
-                        <div id="content" class="index-page">
+                        <div id="content" class="issue-page">
 
                             {{ list_sections }} 
                             {{ list_articles }}
                             {{ if $gimme->current_articles_list->at_beginning }}
-                            <h4 class="section-title">{{ $gimme->section->name}}<a href="{{ uri options="section" }}" class="solid-button pull-right">{{ #readAll# }}</a></h4>
+                            <a href="{{ uri options="section" }}" class="solid-button pull-right">{{ #readAll# }}</a>
+                            <h4 class="section-title">{{ $gimme->section->name}}</h4>
                             {{ /if }}
                             <article class="article list">
+                                {{ if $gimme->section->name != "Dialogue" }}
                                 <div class="row">
                                     <div class="col-lg-4 col-md-5">
-                                        {{ if $gimme->section->name != "Dialogue" }}
-                                        <figure class="section-thumb pull-left">
+                                        <figure class="section-thumb pull-left img-responsive">
                                             <a href="{{ uri options="article" }}">
                                                 {{ include file='_tpl/img/img_rectangle.tpl'}}
                                             </a>
-                                        </figure>
-                                        {{/if}}
+                                        </figure>   
                                     </div>
                                     <div class="col-lg-8 col-md-7">
                                         <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
                                         {{ if !$gimme->article->is_public }}
-                                        <span class="label label-important"><i class="icon-lock"></i>&nbsp;{{ #premium# }}</span>
+                                        <span class="label label-danger">{{ #premium# }}</span>
                                         {{ /if }} 
                                         <p class="excerpt">
                                             {{ $gimme->article->full_text|truncate:250:"...":true }}
                                         </p>
-                                        <a href="{{ uri options="article" }}">≫ {{ #more# }} </a>
+                                        <a href="{{ uri options="article" }}">{{ #more# }} </a>
                                     </div>
                                 </div>
+                                {{else}}
+                                    <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
+                                    {{ if !$gimme->article->is_public }}
+                                    <span class="label label-danger">{{ #premium# }}</span>
+                                    {{ /if }} 
+                                    <p class="excerpt">
+                                        {{ $gimme->article->teaser}}
+                                    </p>
+                                    <a href="{{ uri options="article" }}">{{ #more# }} </a>
+                                {{/if}}
                             </article>
                             {{ /list_articles }} 
                             {{ /list_sections }} 
