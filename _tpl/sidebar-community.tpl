@@ -2,6 +2,8 @@
 
                         <aside id="sidebar">
 
+                            {{ include file="_tpl/multimedia.tpl" }}
+
                             {{ include file="_tpl/latest_articles.tpl" }}
 
                             <section id="ad" class="block">
