@@ -8,9 +8,9 @@
                 <div class="row">
 
                     <div class="col-lg-8 col-md-8">
-                        <h2>{{ #userIndex# }}</h2>
+                        <h1 class="page-title">{{ #userIndex# }}</h1>
 
-                        <div id="content" class="index-page">
+                        <div id="content" class="auth-page">
                             <br>
                             <div class="alert alert-info">
                                 <h5 class="checkHeading">{{ #weSentYouAnEmail# }}</h5>

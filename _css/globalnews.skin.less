@@ -48,6 +48,10 @@ a{
 	}
 }
 
+.alert{
+	.rounded-corners(0px);
+}
+
 #top-header{
 	color:#555555;
 	font-size: 14px;
@@ -173,9 +177,6 @@ a{
 	.comment-box{
 		.box-shadow(1px,1px,0px,0px,#d5d5d5)
 	}
-	.alert{
-		.rounded-corners(0px);
-	}
 }
 
 .debate-page{
@@ -231,6 +232,31 @@ a{
 		}
 	}
 }
+
+/* --- Begin Registration and Login Form */
+
+.zend_form{
+
+    input[type="text"],input[type="password"],textarea{
+        border-left: @secondary 1px solid;
+    }
+
+    #submit-element{
+        #submit{
+        	.solid-button;
+        	padding:10px 18px;
+        	font-size: 16px;
+        }
+    }
+	
+	input[type="submit"]{
+        .solid-button;
+        padding:10px 18px;
+        font-size: 16px;
+    }
+}
+
+/* End Registration and Login Form --- */
 
 #sidebar{
 	.block{

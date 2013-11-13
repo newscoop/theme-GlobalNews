@@ -8,13 +8,13 @@
                 <div class="row">
 
                     <div class="col-lg-8 col-md-8">
-                        <h1 class="page-title">{{ #userIndex# }}</h1>
+                        <h1 class="page-title">{{ #login# }}</h1>
 
-                        <div id="content" class="auth-page">
-                            <div class="globalnews-form well-form well">
+                        <div id="content" class="login-page">
+                            <div class="globalnews-form well">
                                  <form action="{{ $form->getAction() }}" class="zend_form" method="{{ $form->getMethod() }}">
                                     {{ if $form->isErrors() }}
-                                    <div class="alert alert-error">
+                                    <div class="alert alert-danger">
                                         <h5>{{ #loginFailed# }}</h5>
                                         <p>{{ #loginFailedMessage# }}</p>
                                         <p>{{ #tryAgainPlease# }}</p>
@@ -27,13 +27,13 @@
                                         <dt class="empty">&nbsp;</dt>
                                         <dd>
                                             <span class="input-info">
-                                                <a class="register-link link-color" href="{{ $view->url(['controller' => 'register', 'action' => 'index']) }}">{{ #register# }} | </a>
-                                                <a class="register-link link-color" href="{{ $view->url(['controller' => 'auth', 'action' => 'password-restore']) }}">{{ #forgotYourPassword# }}</a>
+                                                <a class="register-link" href="{{ $view->url(['controller' => 'register', 'action' => 'index']) }}">{{ #register# }} | </a>
+                                                <a class="register-link" href="{{ $view->url(['controller' => 'auth', 'action' => 'password-restore']) }}">{{ #forgotYourPassword# }}</a>
                                             </span>
                                         </dd>
                                     </dl>
                                     <div class="form-buttons right">
-                                        <input type="submit" id="submit" class="solid-button" value="{{ #login# }}" />
+                                        <input type="submit" id="submit" value="{{ #login# }}" />
                                     </div>
                                 </form>
                             </div> 

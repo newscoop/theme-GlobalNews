@@ -8,13 +8,14 @@
                 <div class="row">
 
                     <div class="col-lg-8 col-md-8">
-                        <h2>{{ #register# }} </h2>
+                        <h1 class="page-title">{{ #register# }} </h1>
 
-                        <div id="content" class="index-page">
-                           <br>
-                            <div class="globalnews-form well-form well">
-                                {{ $form }}
+                        <div id="content" class="register-page">
+                           
+                            <div class="globalnews-form well">
+                            {{ $form }}
                             </div>
+                            
                             <script type="text/javascript">
                             $('.zend_form #email').change(function() {
                                 $.post('{{ $view->url(['controller' => 'register', 'action' => 'check-email'], 'default') }}?format=json', {

@@ -322,6 +322,97 @@
 	}
 }
 
+/* --- Begin Registration and Login Form */
+
+.globalnews-form{
+    &:after{
+        content: " ";
+        display: block;
+        height: 0;
+        overflow: hidden;
+        clear:both;
+    }
+    &.well{
+    	.rounded-corners(0px);
+    }
+}
+.zend_form{
+    width: 96%;
+    dt {
+        float: left;
+        margin-right: 3.8%;
+        width: 29.45%;
+        margin-bottom: 10px;
+    }
+
+    input[type="text"],input[type="password"],textarea{
+        width: 100%;
+        padding: 6px 12px;
+        border:#cdcdcd 1px solid;
+    }
+
+    dd {
+        margin-left: 0;
+        width: 66%;
+        float: left;
+        margin-bottom: 10px;
+    }
+
+    #fieldset-newsletter{
+        dd {
+            margin-left: 0;
+            width: 8%;
+            float: left;
+        }
+        dt {
+            float: right;
+            margin-right: 3.8%;
+            width: 86%;
+            margin-bottom: 10px;
+        }
+    }
+
+    #attributes-element{
+        width: 100%;
+        #attributes-gender-male{
+            margin-right: 10px
+        }
+        #attributes-gender-female{
+            margin-right: 10px;
+        }
+        label[for="attributes-gender-female"]{
+            margin-top:-15px;
+            margin-bottom: 10px;
+        }
+        #attributes-first_name_public-element,
+        #attributes-last_name_public-element,
+        #attributes-email_public-element{
+            float: left;
+            margin-top:-10px;
+            input[type="radio"], input[type="checkbox"] {
+                height: 40px;
+            }
+        }
+    }
+
+    #submit-element{
+        margin-bottom:10px;
+    }
+
+    #attributes-email_public-label,
+    #attributes-email_public-element,
+    #newsletter-label,
+    #newsletter-element,
+    #newsletter-subscriber-label,
+    #newsletter-subscriber-element,
+    #fieldset-newsletter{
+        display: none;
+    }
+
+}
+
+/* End Registration and Login Form --- */
+
 #sidebar{
 	border-left: #d6d6d6 1px solid;
 	padding-left: 30px;

@@ -341,6 +341,94 @@
 .profile-page .profile-comments h4 {
   margin-bottom: 20px;
 }
+/* --- Begin Registration and Login Form */
+.globalnews-form:after {
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.globalnews-form.well {
+  border-radius: 0px;
+  -ms-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+}
+.zend_form {
+  width: 96%;
+}
+.zend_form dt {
+  float: left;
+  margin-right: 3.8%;
+  width: 29.45%;
+  margin-bottom: 10px;
+}
+.zend_form input[type="text"],
+.zend_form input[type="password"],
+.zend_form textarea {
+  width: 100%;
+  padding: 6px 12px;
+  border: #cdcdcd 1px solid;
+}
+.zend_form dd {
+  margin-left: 0;
+  width: 66%;
+  float: left;
+  margin-bottom: 10px;
+}
+.zend_form #fieldset-newsletter dd {
+  margin-left: 0;
+  width: 8%;
+  float: left;
+}
+.zend_form #fieldset-newsletter dt {
+  float: right;
+  margin-right: 3.8%;
+  width: 86%;
+  margin-bottom: 10px;
+}
+.zend_form #attributes-element {
+  width: 100%;
+}
+.zend_form #attributes-element #attributes-gender-male {
+  margin-right: 10px;
+}
+.zend_form #attributes-element #attributes-gender-female {
+  margin-right: 10px;
+}
+.zend_form #attributes-element label[for="attributes-gender-female"] {
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+.zend_form #attributes-element #attributes-first_name_public-element,
+.zend_form #attributes-element #attributes-last_name_public-element,
+.zend_form #attributes-element #attributes-email_public-element {
+  float: left;
+  margin-top: -10px;
+}
+.zend_form #attributes-element #attributes-first_name_public-element input[type="radio"],
+.zend_form #attributes-element #attributes-last_name_public-element input[type="radio"],
+.zend_form #attributes-element #attributes-email_public-element input[type="radio"],
+.zend_form #attributes-element #attributes-first_name_public-element input[type="checkbox"],
+.zend_form #attributes-element #attributes-last_name_public-element input[type="checkbox"],
+.zend_form #attributes-element #attributes-email_public-element input[type="checkbox"] {
+  height: 40px;
+}
+.zend_form #submit-element {
+  margin-bottom: 10px;
+}
+.zend_form #attributes-email_public-label,
+.zend_form #attributes-email_public-element,
+.zend_form #newsletter-label,
+.zend_form #newsletter-element,
+.zend_form #newsletter-subscriber-label,
+.zend_form #newsletter-subscriber-element,
+.zend_form #fieldset-newsletter {
+  display: none;
+}
+/* End Registration and Login Form --- */
 #sidebar {
   border-left: #d6d6d6 1px solid;
   padding-left: 30px;

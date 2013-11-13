@@ -8,10 +8,10 @@
                 <div class="row">
 
                     <div class="col-lg-8 col-md-8">
-                        <h2>{{ #userIndex# }}</h2>
+                        <h1 class="page-title">{{ #resetPassword# }}</h1>
 
-                        <div id="content" class="index-page">
-                            <div class="globalnews-form well-form well">
+                        <div id="content" class="auth-page">
+                            <div class="globalnews-form well">
                                 <form action="{{ $form->getAction() }}"  class="zend_form" method="{{ $form->getMethod() }}">
                                    <fieldset>
                                         {{ if $form->email->hasErrors() }}
