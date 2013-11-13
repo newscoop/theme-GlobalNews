@@ -348,6 +348,11 @@
 .dashboard-page .well {
   width: 75%;
 }
+.dashboard-page .solid-button {
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+}
 /* --- Begin Registration and Login Form */
 .globalnews-form:after {
   content: " ";

@@ -11,12 +11,12 @@
                         <h1 class="page-title">{{ #welcome# }} {{ $user->name }}</h2>
 
                         <div id="content" class="dashboard-page">
-                            <center class="pull-left">
+                            <div class="pull-left">
                                 <figure class="user-image">
                                     <img src="{{ include file="_tpl/user-image.tpl" user=$user width=140 height=210 }}" style="max-width: 100%" rel="resizable" />
                                 </figure>
                                 <a href="{{ $view->url(['username' => $gimme->user->uname], 'user') }}" class="solid-button">{{#viewMyProfile#}}</a>
-                            </center>
+                            </div>
                             <div class="globalnews-form well pull-right">
                                 <link rel="stylesheet" href="{{ url static_file="_css/datepicker.css"}}">
                                 <script src="{{ url static_file='_js/vendor/bootstrap-datepicker.js'}}"></script>
