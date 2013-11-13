@@ -341,6 +341,12 @@
 .profile-page .profile-comments h4 {
   margin-bottom: 20px;
 }
+.dashboard-page .user-image {
+  margin-bottom: 20px;
+}
+.dashboard-page .well {
+  width: 75%;
+}
 /* --- Begin Registration and Login Form */
 .globalnews-form:after {
   content: " ";
