@@ -30,7 +30,7 @@
 
 	<h2>PRO: {{ $gimme->article->pro_title }}</h2>
     <div class="row">
-        <div class="col-lg-3 col-md-3 pull-left">
+        <div id="debate-bio" class="col-lg-3 col-md-3 pull-left">
             {{ list_article_authors }}
             {{ if $gimme->current_list->index == "1"}}
             <div class="debate-bio">
@@ -48,7 +48,7 @@
 	</div>
     <h2>CONTRA: {{ $gimme->article->pro_title }}</h2>
     <div class="row">
-        <div class="col-lg-3 col-md-3 pull-left">
+        <div id="debate-bio" class="col-lg-3 col-md-3 pull-left">
             {{ list_article_authors }}
             {{ if $gimme->current_list->index == "2"}}
             <div class="debate-bio">

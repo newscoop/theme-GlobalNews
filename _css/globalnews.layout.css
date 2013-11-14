@@ -751,6 +751,9 @@ span.img-responsive img {
   .page-title {
     font-size: 26px;
   }
+  h2 {
+    font-size: 22px;
+  }
   .article.list span.img-responsive {
     display: block;
   }
@@ -788,7 +791,10 @@ span.img-responsive img {
 /* End screen resolution less than 380px --- */
 /* --- Begin screen resolution less than 360px */
 @media (max-width: 360px) {
-  
+  .debate-page #debate-bio {
+    width: 100%;
+    display: block;
+  }
 }
 /* End screen resolution less than 360px --- */
 /* --- Begin screen resolution less than 320px */
