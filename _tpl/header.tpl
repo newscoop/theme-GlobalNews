@@ -77,7 +77,7 @@
                         </div>
 
                         {{ if $gimme->template->name == 'article.tpl'}}
-                        <div id="breadcrumb">
+                        <div id="breadcrumb" class="hidden-xs">
                             <a href="{{ uri options='publication' }}">{{$gimme->publication->name}}</a>&nbsp; &nbsp; → &nbsp; &nbsp; 
                             <a href="{{ uri options='section' }}">{{$gimme->section->name}}</a> &nbsp; &nbsp; → &nbsp; &nbsp; {{ $gimme->article->name }}
                         </div>

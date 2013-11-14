@@ -3,7 +3,7 @@
     <div id="comment-{{$gimme->current_list->index}}" class="comment">
         <div class="comment-content">
             <div class="row">
-                <div class="col-lg-3 col-md-4 author">
+                <div class="col-lg-3 col-md-3 col-sm-3 author">
             {{ if $gimme->comment->user->identifier }}
                 <img src="{{ include file='_tpl/user-image.tpl' user=$user width=60 height=60 }}" class="avatar" width="60" height="60" alt="{{ $gimme->comment->user->uname }}"><br>
                 <a href="http://{{ $gimme->publication->site }}/user/profile/{{ $gimme->comment->user->uname|urlencode }}" >{{ $gimme->comment->user->uname }}</a>
@@ -13,10 +13,10 @@
             {{ /if }}
                 <br><time class="timeago" datetime="{{ $gimme->comment->submit_date }}">{{ $gimme->comment->submit_date }}</time>
                 </div>
-                 <div class="col-lg-9 col-md-8">
+                 <div class="col-lg-9 col-md-9 col-sm-9">
                     <div class="comment-box">
-                    <div class="arrow-top visible-sm visible-xs"></div>
-                    <div class="arrow-left visible-md visible-lg"></div>
+                    <div class="arrow-top visible-xs"></div>
+                    <div class="arrow-left hidden-xs"></div>
                     {{ $gimme->comment->content }}
                     </div>
                 </div>

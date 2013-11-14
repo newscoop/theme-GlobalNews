@@ -701,6 +701,10 @@ span.img-responsive img {
   #social-header {
     text-align: center;
   }
+  .article-page .comment .author {
+    margin-bottom: 15px;
+    text-align: left;
+  }
 }
 /* --- End 481px to 767px screen resolution */
 /* --- Begin screen resolution less than 680px */
@@ -711,6 +715,10 @@ span.img-responsive img {
   #main-header h1,
   #social-header {
     text-align: center;
+  }
+  .article-page .comment .author {
+    margin-bottom: 15px;
+    text-align: left;
   }
 }
 /* --- End screen resolution less than 680px */
@@ -740,7 +748,14 @@ span.img-responsive img {
   #content .article.featured .caption .excerpt {
     display: none;
   }
-  .article.list img {
+  .page-title {
+    font-size: 26px;
+  }
+  .article.list span.img-responsive {
+    display: block;
+  }
+  .article.list img,
+  .article.list span.img-responsive img {
     width: 100%;
     margin-bottom: 15px;
   }

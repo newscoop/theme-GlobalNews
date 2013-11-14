@@ -52,14 +52,14 @@
                             <article class="article list">
                                 {{ if $gimme->section->name != "Dialogue" }}
                                 <div class="row">
-                                    <div class="col-lg-4 col-md-5">
+                                    <div class="col-lg-4 col-md-5 col-xs-5">
                                         <figure class="section-thumb pull-left img-responsive">
                                             <a href="{{ uri options="article" }}">
                                                 {{ include file='_tpl/img/img_rectangle.tpl'}}
                                             </a>
                                         </figure>   
                                     </div>
-                                    <div class="col-lg-8 col-md-7">
+                                    <div class="col-lg-8 col-md-7 col-xs-7">
                                         <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
                                         {{ if !$gimme->article->is_public }}
                                         <span class="label label-danger">{{ #premium# }}</span>
