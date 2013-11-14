@@ -780,6 +780,9 @@ span.img-responsive img {
   #more-links-block {
     display: none;
   }
+  .community-page .list-group .member {
+    display: none;
+  }
 }
 /* --- End screen resolution less than 480px */
 /* --- Begin screen resolution less than 380px */

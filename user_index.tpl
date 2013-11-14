@@ -37,7 +37,7 @@
                                     {{ else }}
                                     <img src="{{ url static_file="_img/avatar-list.png" }}" class="avatar" />
                                     {{ /if }}
-                                    <span class="name">{{ $user->first_name }} {{ $user->last_name }},</span>
+                                    <span class="name">{{ $user->first_name }} {{ $user->last_name }}</span>
                                     <span class="member">{{ #memberSince# }} <time class="timeago" datetime="{{ $user->created|date_format:'%Y-%m-%d' }} 06:00:00">{{ $user->created|date_format:"%Y-%m-%d" }} 06:00:00</time></span>
                                 </a>
                             
