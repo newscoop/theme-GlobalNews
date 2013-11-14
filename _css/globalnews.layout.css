@@ -623,6 +623,9 @@ span.img-responsive img {
 /**************************************** */
 /**** Begin Responsive CSS ************** */
 /**************************************** */
+#responsive-controls {
+  display: none;
+}
 /* General styles for all menus */
 .responsive-menu {
   background: #232323;
@@ -683,34 +686,89 @@ span.img-responsive img {
 @media (min-width: 768px) and (max-width: 979px) {
   #news-ticker {
     border: 0;
+    margin: 10px 0px;
   }
 }
 /* --- End 768px to 979px screen resolution*/
 /* --- Begin 481px to 767px screen resolution */
 /* --- Landscape phone to portrait tablet */
 @media (min-width: 481px) and (max-width: 767px) {
-  
+  #news-ticker {
+    border: 0;
+    margin: 10px 0px;
+  }
+  #main-header h1,
+  #social-header {
+    text-align: center;
+  }
 }
 /* --- End 481px to 767px screen resolution */
 /* --- Begin screen resolution less than 680px */
 @media (max-width: 680px) {
-  
+  #news-ticker {
+    display: none;
+  }
+  #main-header h1,
+  #social-header {
+    text-align: center;
+  }
 }
 /* --- End screen resolution less than 680px */
 /* --- Begin screen resolution less than 620px */
 @media (max-width: 620px) {
-  
+  #carousel {
+    margin-bottom: 20px;
+  }
+  #carousel-sections {
+    display: none;
+  }
+  #responsive-controls {
+    display: block;
+  }
 }
 /* --- End screen resolution less than 620px */
 /* --- Begin screen resolution less than 480px */
 /* --- Landscape phones and down */
 @media (max-width: 480px) {
-  
+  #main-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  #social-header {
+    display: none;
+  }
+  #content .article.featured .caption .excerpt {
+    display: none;
+  }
+  .article.list img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .col-xs-1,
+  .col-xs-2,
+  .col-xs-3,
+  .col-xs-4,
+  .col-xs-5,
+  .col-xs-6,
+  .col-xs-7,
+  .col-xs-8,
+  .col-xs-9,
+  .col-xs-10,
+  .col-xs-11,
+  .col-xs-12 {
+    width: 100%;
+  }
+  #sections-block,
+  #more-links-block {
+    display: none;
+  }
 }
 /* --- End screen resolution less than 480px */
 /* --- Begin screen resolution less than 380px */
 @media (max-width: 380px) {
-  
+  #carousel {
+    display: none;
+  }
 }
 /* End screen resolution less than 380px --- */
 /* --- Begin screen resolution less than 360px */

@@ -28,9 +28,9 @@
                                             </figure>
                                             <div class="caption">
                                                 <h2><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h2>
-                                                <p class="excerpt">
+                                                <div class="excerpt">
                                                     {{ $gimme->article->full_text|truncate:250:"..." }}
-                                                </p>
+                                                </div>
                                             </div>
                                         </article>
                                     </div>
@@ -38,6 +38,16 @@
                                 {{ /list_sections }}
 
                                 <!-- End Wrapper for slides -->
+                                </div>
+
+                                <!-- Controls -->
+                                <div id="responsive-controls">
+                                    <a class="left carousel-control" href="#carousel" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                    </a>
+                                    <a class="right carousel-control" href="#carousel" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                    </a>
                                 </div>
 
                             <!-- End carousel -->
@@ -54,14 +64,14 @@
                             {{ list_playlist_articles name="Front page" length="4" }}
                             <article class="article list">
                                 <div class="row">
-                                    <div class="col-lg-4 col-md-5">
+                                    <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
                                         <a href="{{ uri options='article' }}">
                                             <figure>
                                                 {{ include file='_tpl/img/img_rectangle.tpl'}}
                                             </figure>
                                         </a>
                                     </div>
-                                    <div class="col-lg-8 col-md-7">
+                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7">
                                         <a href="{{ uri option='section'}}" class="section-link">{{ $gimme->article->section->name }}</a>
                                         <h4><a href="{{ uri option='article'}}">{{ $gimme->article->name }}</a></h4>
                                         <div class="excerpt">
