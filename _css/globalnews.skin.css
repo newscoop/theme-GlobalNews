@@ -682,7 +682,9 @@ span.img-responsive img {
 }
 /* --- Begin 768px to 979px screen resolution */
 @media (min-width: 768px) and (max-width: 979px) {
-  
+  #news-ticker {
+    border: 0;
+  }
 }
 /* --- End 768px to 979px screen resolution*/
 /* --- Begin 481px to 767px screen resolution */
