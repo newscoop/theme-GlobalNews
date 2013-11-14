@@ -14,8 +14,8 @@
                         <h1 class="page-title">{{ #welcome# }} {{ $user->name }}</h2>
 
                         <div id="content" class="dashboard-page">
-                            <div class="pull-left">
-                                <figure class="user-image">
+                            <div id="dashboard-avatar" class="pull-left">
+                                <figure class="user-image center-block">
                                     <img src="{{ include file="_tpl/user-image.tpl" user=$user width=140 height=210 }}" style="max-width: 100%" rel="resizable" />
                                 </figure>
                                 <a href="{{ $view->url(['username' => $gimme->user->uname], 'user') }}" class="solid-button">{{#viewMyProfile#}}</a>

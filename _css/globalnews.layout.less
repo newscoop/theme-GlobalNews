@@ -736,6 +736,10 @@ span.img-responsive{
 	    text-align: left;
 	}
 
+	.profile-page .profile-block {
+	    margin-bottom: 20px;
+	}
+
 }
 
 /* --- End 481px to 767px screen resolution */
@@ -757,6 +761,10 @@ span.img-responsive{
 	    text-align: left;
 	}
 
+	.profile-page .profile-block {
+	    margin-bottom: 20px;
+	}
+
 }
 
 /* --- End screen resolution less than 680px */
@@ -772,6 +780,16 @@ span.img-responsive{
 	}
 	#responsive-controls{
 		display: block;
+	}
+	.dashboard-page{
+		#dashboard-avatar{
+			text-align: center;
+		}
+		#dashboard-avatar,
+		.globalnews-form{
+			display: block;
+			width: 100%;
+		}
 	}
 
 }
@@ -833,8 +851,20 @@ span.img-responsive{
 	#more-links-block{
 		display: none;
 	}
-	.community-page .list-group .member {
+	.community-page .list-group .member,
+	.archive-page .list-group .published-date {
 	    display: none;
+	}
+	.zend_form dt,.zend_form dd {
+	    width: 100%;
+	}
+	.zend_form{
+		.empty{
+	    	display: none;
+	    }
+	}
+	.article-page .cs_img {
+	    width: 100%;
 	}
 }
 /* --- End screen resolution less than 480px */
@@ -847,6 +877,7 @@ span.img-responsive{
 	#carousel{
 		display: none;
 	}
+
 }
 
 /* End screen resolution less than 380px --- */
@@ -858,7 +889,6 @@ span.img-responsive{
 	    width:100%;
 	    display: block;
 	}
-
 }
 
 /* End screen resolution less than 360px --- */

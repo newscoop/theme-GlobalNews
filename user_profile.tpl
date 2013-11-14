@@ -16,7 +16,7 @@
                         <div id="content" class="profile-page">
 
                             <div class="row">
-                                <div class="col-lg-5 col-md-5">
+                                <div class="col-lg-5 col-md-5 col-sm-5">
 
                                     <div class="profile-block">
                                         <div class="profile-avatar">
@@ -31,7 +31,7 @@
 
                                 </div>
 
-                                <div class="col-lg-7 col-md-7">
+                                <div class="col-lg-7 col-md-7 col-sm-7">
 
                                     <div class="panel panel-default">
                                         <div class="panel-heading"><h4>{{ #information# }}</h4></div>
