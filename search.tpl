@@ -11,7 +11,7 @@
                 <div class="row">
 
                     <div class="col-lg-8 col-md-8">
-                        <h2>{{ #searchResults# }}</h2>
+                        <h1 class="page-title">{{ #searchResults# }}</h1>
 
                         <div id="content" class="index-page">
 
@@ -22,22 +22,20 @@
 
                             <article class="article list">
                                 <div class="row">
-                                    <div class="col-lg-4 col-md-5">
-                                        <figure class="section-thumb pull-left">
-                                            <a href="{{ uri options="article" }}">
+                                    <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
+                                        <a href="{{ uri options='article' }}">
+                                            <figure>
                                                 {{ include file='_tpl/img/img_rectangle.tpl'}}
-                                            </a>
-                                        </figure>
+                                            </figure>
+                                        </a>
                                     </div>
-                                    <div class="col-lg-8 col-md-7">
-                                        <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
-                                        {{ if !$gimme->article->is_public }}
-                                        <span class="label label-important"><i class="icon-lock"></i>&nbsp;{{ #premium# }}</span>
-                                        {{ /if }} 
-                                        <p class="excerpt">
-                                            {{ $gimme->article->full_text|truncate:250:"...":true }}
-                                        </p>
-                                        <a href="{{ uri options="article" }}">≫ {{ #more# }} </a>
+                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7">
+                                        <a href="{{ uri option='section'}}" class="section-link">{{ $gimme->article->section->name }}</a>
+                                        <h4><a href="{{ uri option='article'}}">{{ $gimme->article->name }}</a></h4>
+                                        <div class="excerpt">
+                                            {{ $gimme->article->full_text|truncate:200:"..." }}
+                                        </div>
+                                        <a href="{{ uri option='article'}}">{{ #more# }}</a>
                                     </div>
                                 </div>
                             </article>
