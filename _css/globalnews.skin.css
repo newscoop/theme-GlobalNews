@@ -631,16 +631,16 @@ span.img-responsive img {
 }
 .responsive-menu h3 {
   color: #fff;
-  padding: 10px 15px;
+  padding: 5px 15px;
   margin: 0;
-  font-weight: 300;
+  font-weight: 200;
   background: #393939;
 }
 .responsive-menu a {
   display: block;
   color: #fff;
-  font-size: 1.1em;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 400;
 }
 .responsive-menu a:hover {
   background: #393939;
@@ -650,17 +650,17 @@ span.img-responsive img {
   color: #47a3da;
 }
 .responsive-menu-vertical {
-  width: 240px;
+  width: 260px;
   height: 100%;
   top: 0;
   z-index: 1000;
 }
 .responsive-menu-vertical a {
   border-bottom: 1px solid #393939;
-  padding: 12px 15px;
+  padding: 10px 15px;
 }
 .responsive-menu-left {
-  left: -240px;
+  left: -260px;
 }
 .responsive-menu-left.responsive-menu-open {
   left: 0px;
@@ -672,7 +672,7 @@ span.img-responsive img {
   left: 0;
 }
 .responsive-menu-push-toright {
-  left: 240px;
+  left: 260px;
 }
 .responsive-menu,
 .responsive-menu-push {
@@ -1137,10 +1137,6 @@ a:focus {
   background: #012f73;
 }
 .responsive-menu a {
-  display: block;
-  color: #fff;
-  font-size: 1.1em;
-  font-weight: 300;
   border-bottom: 1px solid #103e82;
 }
 .responsive-menu a:hover {
@@ -1148,5 +1144,4 @@ a:focus {
 }
 .responsive-menu a:active {
   background: #245296;
-  color: #fff;
 }
