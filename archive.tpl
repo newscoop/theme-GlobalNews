@@ -15,7 +15,7 @@
                             <div class="row">
                                 {{ list_issues order="bynumber desc" constraints="number greater 1" }} 
 
-                                <div class="col-lg-6 col-md-6">
+                                <div class="col-lg-4 col-md-4 col-sm-6">
                                     <div class="panel panel-default">
                                         <div class="panel-heading"><h4><a href="{{ uri options="template issue.tpl" }}"><span class="glyphicon glyphicon-bookmark"></span>&nbsp; {{ $gimme->issue->name }}</a></h4></div>
                                         <div class="panel-body">
