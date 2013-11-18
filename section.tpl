@@ -16,10 +16,10 @@
                         <div id="content" class="section-page">
 
                             {{ list_articles length="5" ignore_issue="true" constraints="type not poll" }}
-                            
+
                             {{ if $gimme->current_list->at_beginning }}
                             <article class="article section-featured">
-                                {{ if $gimme->section->name != "Dialogue" }}
+                                {{ if $gimme->section->name != "Dialogue" && $gimme->section->name != "Pages" }}
 
                                 <figure class="section-thumb pull-left img-responsive">
                                     <a href="{{ uri options="article" }}">
@@ -41,16 +41,22 @@
                                 {{ if !$gimme->article->is_public }}
                                 <span class="label label-danger">{{ #premium# }}</span>
                                 {{ /if }} 
+                                {{if $gimme->article->teaser}} 
                                 <p class="excerpt">
-                                    {{ $gimme->article->teaser }}
+                                    {{ $gimme->article->teaser}}
                                 </p>
+                                {{else}}
+                                <p class="excerpt">
+                                    {{ $gimme->article->full_text|truncate:500:"...":true|strip_tags:true }}
+                                </p>
+                                {{/if}}
                                 <a href="{{ uri options="article" }}">{{ #more# }}</a>
 
                                 {{/if}}
                             </article>
                             {{ else }}
                             <article class="article list">
-                                {{ if $gimme->section->name != "Dialogue" }}
+                                {{ if $gimme->section->name != "Dialogue" && $gimme->section->name != "Pages"}}
                                 <div class="row">
                                     <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
                                         <figure class="section-thumb pull-left img-responsive">
@@ -74,10 +80,16 @@
                                     <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
                                     {{ if !$gimme->article->is_public }}
                                     <span class="label label-danger">{{ #premium# }}</span>
-                                    {{ /if }} 
+                                    {{ /if }}
+                                    {{if $gimme->article->teaser}} 
                                     <p class="excerpt">
                                         {{ $gimme->article->teaser}}
                                     </p>
+                                    {{else}}
+                                    <p class="excerpt">
+                                        {{ $gimme->article->full_text|truncate:500:"...":true|strip_tags:true }}
+                                    </p>
+                                    {{/if}}
                                     <a href="{{ uri options="article" }}">{{ #more# }} </a>
                                 {{/if}}
                             </article>
