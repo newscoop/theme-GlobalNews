@@ -12,8 +12,9 @@
         <script src="{{ url static_file='_js/vendor/galleria/galleria-1.2.9.min.js'}}"></script>
         <link href="{{ url static_file='_css/flowplayer_skin/minimalist.css' }}" rel="stylesheet">
         <script src="{{ url static_file='_js/vendor/flowplayer/flowplayer.min.js' }}"></script>
-        <script>
-        // Gallery vendor plugin
+        <script src="{{ url static_file='_js/vendor/jquery.sparkline.min.js' }}"></script>
+        <script type="text/javascript">
+            // Gallery vendor plugin
             var isSlideshow = $('#gallery').is(':visible');
 
             if (isSlideshow) {
@@ -23,8 +24,7 @@
                         imageCrop: true
                     });
             }
-        </script>
-        <script type="text/javascript">
+
             //string variables used on article rating
             var votes_str = "{{ #votes# }}";
             var averageRating_str  = "{{ #averageRating# }}";

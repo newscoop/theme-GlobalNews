@@ -518,6 +518,18 @@
   -moz-text-shadow: 0px 1px 1px #333333;
   -webkit-text-shadow: 0px 1px 1px #333333;
 }
+#sidebar #debate-widget .graph {
+  width: 70%;
+  float: right;
+  margin: 10px 0px;
+}
+#sidebar #debate-widget .vote-box {
+  margin-bottom: 10px;
+}
+.jqstooltip {
+  height: 25px !important;
+  width: 80px !important;
+}
 #footer {
   border-top: #d6d6d6 1px solid;
   margin-top: 20px;

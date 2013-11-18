@@ -1,3 +1,4 @@
+<section id="debate-widget" class="block">
 {{ list_debates length="1" item="article" }}
     <h4>{{ #debateVoting# }}</h4>
     <div class="widget-wrap">
@@ -36,3 +37,4 @@
         </div>
     </div>
 {{ /list_debates }} 
+</section>

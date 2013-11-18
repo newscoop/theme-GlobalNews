@@ -159,6 +159,12 @@ $(document).ready(function () {
         $("#user-editors").addClass('active');
     }
 
+    // Debate graph configuration
+    if (typeof(sparkline)!=undefined){
+       $('.graph').sparkline('html',{enableTagOptions:true} ); 
+    }
+    
+
 });
 
 // Votes functionalitty
@@ -178,6 +184,7 @@ function set_votes(widget) {
 }
 
 // Responsive menu behavior
+
 var menuLeft = document.getElementById( 'responsive-menu' ),
     showLeft = document.getElementById( 'showLeft' ),
     body = document.body;
