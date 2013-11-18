@@ -47,11 +47,11 @@
                                 </p>
                                 {{else}}
                                 <p class="excerpt">
-                                    {{ $gimme->article->full_text|truncate:500:"...":true|strip_tags:true }}
+                                    {{ $gimme->article->full_text|truncate:500:"...":true}}
                                 </p>
                                 {{/if}}
                                 <a href="{{ uri options="article" }}">{{ #more# }}</a>
-
+                                <div class="clearfix"></div>
                                 {{/if}}
                             </article>
                             {{ else }}
@@ -87,10 +87,11 @@
                                     </p>
                                     {{else}}
                                     <p class="excerpt">
-                                        {{ $gimme->article->full_text|truncate:500:"...":true|strip_tags:true }}
+                                        {{ $gimme->article->full_text|truncate:500:"...":true }}
                                     </p>
                                     {{/if}}
                                     <a href="{{ uri options="article" }}">{{ #more# }} </a>
+                                    <div class="clearfix"></div>
                                 {{/if}}
                             </article>
                             {{/if}}

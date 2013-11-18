@@ -193,6 +193,17 @@
 #content .article.section-featured .section-thumb {
   margin-bottom: 20px;
 }
+#content .article .cs_img {
+  width: 40%;
+  float: left;
+  margin-right: 20px;
+}
+#content .article .cs_img img {
+  width: 100%;
+}
+#content .article .cs_img .cs_img_caption {
+  display: none;
+}
 #content #carousel-sections {
   background: #eee;
   margin-bottom: 20px;
