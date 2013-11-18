@@ -18,7 +18,7 @@ body{
 	font-family: @text-font;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5{
 	font-family: @title-font;
 	line-height: 1.4;
 }
@@ -252,27 +252,7 @@ a{
 }
 
 .archive-page{
-	.list-group{
-		.list-group-item{
-			padding:20px 10px;
-			
-			&:first-child,&:last-child{
-				.rounded-corners(0px);
-			}
-			&:hover{
-				background: @primary;
-				color:@primary + 150;
-				.trans(all,0.3s);
-			}
-		}
-		.name{
-			font-size: 18px;
-			font-family: @title-font;
-			font-weight: 200;
-			margin-left: 20px;
-			margin-right: 10px;
-		}
-	}
+
 }
 
 /* --- Begin Registration and Login Form */

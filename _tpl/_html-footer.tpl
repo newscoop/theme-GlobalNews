@@ -27,7 +27,7 @@
 
             //string variables used on article rating
             var votes_str = "{{ #votes# }}";
-            var averageRating_str  = "{{ #averageRating# }}";
+            var averageRating_str  = " | {{ #averageRating# }}";
         </script>
         {{/if}}
     </body>

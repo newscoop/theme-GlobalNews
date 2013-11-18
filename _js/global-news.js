@@ -160,7 +160,7 @@ $(document).ready(function () {
     }
 
     // Debate graph configuration
-    if (typeof(sparkline)!=undefined){
+    if (jQuery().sparkline){
        $('.graph').sparkline('html',{enableTagOptions:true} ); 
     }
     

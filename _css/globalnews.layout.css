@@ -383,6 +383,35 @@
   display: block;
   text-align: center;
 }
+.archive-page .panel {
+  border-radius: 0px;
+  -ms-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+}
+.archive-page .panel .panel-heading {
+  padding: 5px 20px;
+  border-radius: 0px;
+  -ms-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+}
+.archive-page .panel .panel-body {
+  padding: 0px;
+}
+.archive-page .panel .panel-body h5 {
+  padding: 5px 20px;
+  text-align: center;
+}
+.archive-page .panel .panel-body .carousel-control {
+  width: 12%;
+}
+.archive-page .panel .panel-body .carousel-control.left,
+.archive-page .panel .panel-body .carousel-control.right {
+  background: none;
+}
 /* --- Begin Registration and Login Form */
 .globalnews-form:after {
   content: " ";

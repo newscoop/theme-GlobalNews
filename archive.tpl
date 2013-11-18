@@ -11,16 +11,49 @@
                         <h1 class="page-title">{{ #issuesArchive# }}</h1>
 
                         <div id="content" class="archive-page">
-                            <div class="list-group">
-                            {{ list_issues order="bynumber desc" constraints="number greater 1" }} 
-                            
-                                <a class="list-group-item" href="{{ uri options="template issue.tpl" }}">
-                                    <span class="name">{{ $gimme->issue->name }}</span>
-                                    <span class="published-date">{{ #publishedOn# }} <time datetime="{{ $gimme->issue->publish_date|date_format:"%Y-%m-%dT%H:%MZ" }}">{{ $gimme->issue->publish_date|camp_date_format:"%d %M %Y" }}</time></span>
-                                </a>
-                            
-                            {{ /list_issues }} 
-                            </div> 
+
+                            <div class="row">
+                                {{ list_issues order="bynumber desc" constraints="number greater 1" }} 
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading"><h4><a href="{{ uri options="template issue.tpl" }}"><span class="glyphicon glyphicon-bookmark"></span>&nbsp; {{ $gimme->issue->name }}</a></h4></div>
+                                        <div class="panel-body">
+
+                                            <div id="carousel-{{$gimme->issue->id}}" class="carousel slide">
+                                                <div class="carousel-inner">
+                                                    {{ list_sections }}
+                                                    {{ assign var=currentindex value=$gimme->current_list->index }}
+                                                    {{ list_articles length="1" }}
+                                                    <div class="item {{ if $currentindex == '1' }}active{{ /if }}">
+                                                        <a href="{{ uri options='article' }}">
+                                                            <figure>
+                                                                {{ include file='_tpl/img/img_rectangle.tpl'}}
+                                                            </figure>
+                                                        </a>
+                                                      <h5><a href="{{ url options="article" }}">{{ $gimme->article->name }}</a></h5>
+                                                    </div>
+                                                    {{ /list_articles }}
+                                                    {{ /list_sections }} 
+                                                </div>
+                                                <div >
+                                                    <a class="left carousel-control" href="#carousel-{{$gimme->issue->id}}" data-slide="prev">
+                                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                                    </a>
+                                                    <a class="right carousel-control" href="#carousel-{{$gimme->issue->id}}" data-slide="next">
+                                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>                                
+                                {{ /list_issues }} 
+                            </div>
+
                         </div>
                         <!-- End Content -->
                     </div>
