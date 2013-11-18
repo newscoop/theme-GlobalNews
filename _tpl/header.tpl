@@ -28,10 +28,10 @@
                         </div>
                         <div class="col-lg-3 col-md-3">
                             <div id="social-header">
-                                <a href="http://facebook.com/sourcefabric"><img src="{{ url static_file='_img/social-icons/facebook.png'}}"></a>
-                                <a href="http://twitter.com/sourcefabric"><img src="{{ url static_file='_img/social-icons/twitter.png'}}"></a>
-                                <a href="http://vimeo.com/sourcefabric"><img src="{{ url static_file='_img/social-icons/vimeo.png'}}"></a>
-                                <a href="http://flickr.com/photos/sourcefabric"><img src="{{ url static_file='_img/social-icons/flickr.png'}}"></a>
+                                <a href="http://facebook.com/sourcefabric" target="_blank"><img src="{{ url static_file='_img/social-icons/facebook.png'}}"></a>
+                                <a href="http://twitter.com/sourcefabric" target="_blank"><img src="{{ url static_file='_img/social-icons/twitter.png'}}"></a>
+                                <a href="http://vimeo.com/sourcefabric" target="_blank" ><img src="{{ url static_file='_img/social-icons/vimeo.png'}}"></a>
+                                <a href="http://flickr.com/photos/sourcefabric" target="_blank"><img src="{{ url static_file='_img/social-icons/flickr.png'}}"></a>
                             </div>
                             <form class="form-horizontal" role="form">
                                 <div class="input-group">
