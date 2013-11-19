@@ -16,6 +16,7 @@
                         <div id="content" class="topic-page">
 
                             {{ list_articles length="5" ignore_issue="true" constraints="type not poll" }}
+			    {{ assign var=articlesConstraints value="`$articlesConstraints` number not `$gimme->article->number`" }}
                             <article class="article list">
 
                                 <div class="row">

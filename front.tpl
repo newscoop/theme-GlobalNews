@@ -17,7 +17,6 @@
                             <div id="carousel" class="carousel slide">
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner">
-			        {{ assign var=articlesConstraints value='' }}
                                 {{ list_sections constraints="number not 100" }}
                                     {{ assign var=currentindex value=$gimme->current_list->index }}
 

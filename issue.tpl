@@ -17,6 +17,7 @@
 
                             {{ list_sections }} 
                             {{ list_articles }}
+			    {{ assign var=articlesConstraints value="`$articlesConstraints` number not `$gimme->article->number`" }}
                             {{ if $gimme->current_articles_list->at_beginning }}
                             <h4 class="section-title">{{ $gimme->section->name}}</h4>
                             {{ /if }}

@@ -16,6 +16,7 @@
                         <div id="content" class="index-page">
 
                             {{ list_search_results length="5" order="bypublishdate desc" }}
+			    {{ assign var=articlesConstraints value="`$articlesConstraints` number not `$gimme->article->number`" }}
                             {{if $gimme->current_list->at_beginning}}
                             <p>{{ #resultsFor# }} <strong>"{{ $gimme->search_articles_action->search_phrase }}"</strong>.</p>
                             {{/if}}
