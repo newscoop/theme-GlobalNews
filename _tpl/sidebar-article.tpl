@@ -8,10 +8,10 @@
                                 {{ include file="_tpl/debate-voting.tpl" }}
                             {{ /if }}
 
-                            {{ include file="_tpl/latest_articles.tpl" }}
+                            {{ include file="_tpl/related_articles.tpl" }}
 
-                            {{ include file="_tpl/latest_comments.tpl" }}
-                            
+                            {{ include file="_tpl/section_articles.tpl" }}
+
                             {{ if $gimme->article->type_name != "debate" }}
                                 {{ include file="_tpl/poll.tpl" }}
                             {{ /if }}
