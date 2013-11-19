@@ -1235,6 +1235,9 @@ a {
   margin-right: 10px;
   float: left;
 }
+#footer #about-us-block a {
+  color: #4a4a4a;
+}
 #footer #contact-us-block .info .info-label {
   color: #aeaeae;
 }
