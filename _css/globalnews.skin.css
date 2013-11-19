@@ -899,10 +899,6 @@ h5 {
 a {
   color: #103e82;
 }
-a:hover,
-a:focus {
-  text-decoration: none;
-}
 .link-color {
   color: #f00d14;
 }
@@ -947,6 +943,10 @@ a:focus {
 #main-header h1 a span {
   color: #f00d14;
 }
+#main-header h1 a:hover,
+#main-header h1 a:focus {
+  text-decoration: none;
+}
 #news-ticker {
   height: 28px;
 }
@@ -970,6 +970,10 @@ a:focus {
 }
 #main-navigation #menu a.active {
   color: #f00d14;
+}
+#main-navigation #menu a:hover,
+#main-navigation #menu a:focus {
+  text-decoration: none;
 }
 #main-navigation #menu #community-link {
   border: 0;

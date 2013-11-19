@@ -24,9 +24,6 @@ h1, h2, h3, h4, h5{
 }
 a{
 	color:@primary;
-	&:hover,&:focus{
-		text-decoration: none;
-	}
 }
 
 .link-color{
@@ -70,6 +67,9 @@ a{
 			span{
 				color:@secondary;
 			}
+			&:hover,&:focus{
+				text-decoration: none;
+			}
 		}
 	}
 }
@@ -101,6 +101,9 @@ a{
 			border-right: @primary 1px solid;
 			&.active{
 				color:@secondary;
+			}
+			&:hover,&:focus{
+				text-decoration: none;
 			}
 		}
 		#community-link{
