@@ -3,7 +3,7 @@
                     <div id="about-us-block" class="col-lg-5 col-md-5">
                     	<h4>{{#aboutUs#}}</h4>
                         <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                        <p><small><a href="http://www.sourcefabric.org/en/newscoop/" target="_blank">{{#copyrightMessage#}}</a></small></p>
+                        <p><small><a href="http://www.sourcefabric.org/en/newscoop/" target="_blank"><b>{{#copyrightMessage#}}</b></a></small></p>
                     </div>
                     <div id="sections-block" class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
                         <h4>{{#sections#}}</h4>
