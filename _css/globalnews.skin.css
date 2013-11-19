@@ -919,6 +919,7 @@ a {
 .solid-button:hover {
   color: #fff;
   background: #2e5ca0;
+  text-decoration: none;
 }
 .alert,
 .input-group-addon {
@@ -1129,6 +1130,7 @@ a {
 .zend_form #submit-element #submit:hover {
   color: #fff;
   background: #2e5ca0;
+  text-decoration: none;
 }
 .zend_form input[type="submit"] {
   background: #103e82;
@@ -1141,6 +1143,7 @@ a {
 .zend_form input[type="submit"]:hover {
   color: #fff;
   background: #2e5ca0;
+  text-decoration: none;
 }
 /* End Registration and Login Form --- */
 #sidebar .block {

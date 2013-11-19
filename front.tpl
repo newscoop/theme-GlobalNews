@@ -61,7 +61,7 @@
                                 <div class="clearfix"></div>
                             </nav>
                             
-                            {{ list_playlist_articles name="Front page" length="4" }}
+                            {{ list_playlist_articles name="Front page" length="6" }}
                             <article class="article list">
                                 <div class="row">
                                     <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
