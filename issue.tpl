@@ -11,12 +11,12 @@
                 <div class="row">
 
                     <div class="col-lg-8 col-md-8">
-                        <h1 class="page-title">{{ $gimme->section->name }}</h1>
+                        <h1 class="page-title">{{ $gimme->issue->name }}</h1>
 
                         <div id="content" class="issue-page">
 
                             {{ list_sections }} 
-                            {{ list_articles }}
+                            {{ list_articles length="4" }}
                             {{ if $gimme->current_articles_list->at_beginning }}
                             <a href="{{ uri options="section" }}" class="solid-button pull-right">{{ #readAll# }}</a>
                             <h4 class="section-title">{{ $gimme->section->name}}</h4>

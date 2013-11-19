@@ -15,7 +15,7 @@
 
                         <div id="content" class="section-page">
 
-                            {{ list_articles length="5" ignore_issue="true" constraints="type not poll" }}
+                            {{ list_articles length="5" constraints="type not poll" }}
 
                             {{ if $gimme->current_list->at_beginning }}
                             <article class="article section-featured">
