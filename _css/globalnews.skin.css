@@ -567,7 +567,7 @@
   padding-bottom: 20px;
 }
 #footer #sections-block a,
-#footer #more-links-block a {
+#footer #pages-block a {
   display: block;
   margin-bottom: 5px;
 }
@@ -895,6 +895,7 @@ h4,
 h5 {
   font-family: 'Bitter', serif;
   line-height: 1.4;
+  color: #000000;
 }
 a {
   color: #103e82;
@@ -1019,7 +1020,7 @@ a {
   -khtml-border-radius: 0px;
 }
 .article-page .article-info {
-  color: #727272;
+  color: #4a4a4a;
   font-size: 12px;
 }
 .article-page .section-link {
@@ -1179,12 +1180,9 @@ a {
   color: #000000;
 }
 #sidebar #latest-comments-block .article-link {
-  color: #103e82;
+  color: #000000;
   font-family: 'Bitter', serif;
   font-size: 12px;
-}
-#sidebar #latest-comments-block .article-link:hover {
-  color: #3866aa;
 }
 #sidebar #latest-comments-block .timeago {
   color: #7c7c7c;
@@ -1203,7 +1201,7 @@ a {
   border: 0;
   font-family: 'Bitter', serif;
   padding: 10px 0px 0px 0px;
-  color: #5e5e5e;
+  color: #4a4a4a;
 }
 #sidebar #poll input[type="submit"] {
   color: #fff;
@@ -1239,6 +1237,10 @@ a {
 }
 #footer #contact-us-block .info .info-label {
   color: #aeaeae;
+}
+#footer #sections-block a,
+#footer #pages-block a {
+  color: #4a4a4a;
 }
 /* --- Begin community */
 .community-page .user-tab a {

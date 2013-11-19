@@ -21,6 +21,7 @@ body{
 h1, h2, h3, h4, h5{
 	font-family: @title-font;
 	line-height: 1.4;
+	color:@dark;
 }
 a{
 	color:@primary;
@@ -160,7 +161,7 @@ a{
 
 .article-page{
 	.article-info{
-		color:@semi-dark + 40;
+		color:@semi-dark;
 		font-size: 12px;
 	}
 	.section-link{
@@ -321,12 +322,9 @@ a{
 	}
 	#latest-comments-block{
 		.article-link{
-			color:@primary;
+			color:@dark;
 			font-family: @title-font;
 			font-size: 12px;
-			&:hover{
-				color:@primary + 40;
-			}
 		}
 		.timeago{
 			color:@semi-dark + 50;
@@ -349,7 +347,7 @@ a{
 			border:0;
 			font-family: @title-font;
 			padding:10px 0px 0px 0px;
-			color:@semi-dark + 20;
+			color:@semi-dark;
 		}
 	    input[type="submit"]{
 	        color: #fff;
@@ -390,6 +388,12 @@ a{
 			.info-label{
 				color:@semi-dark + 100;
 			}
+		}
+	}
+	#sections-block,
+	#pages-block{
+		a{
+			color:@semi-dark;
 		}
 	}
 }
