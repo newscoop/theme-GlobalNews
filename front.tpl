@@ -17,10 +17,12 @@
                             <div id="carousel" class="carousel slide">
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner">
+			        {{ assign var=articlesConstraints value='' }}
                                 {{ list_sections constraints="number not 100" }}
                                     {{ assign var=currentindex value=$gimme->current_list->index }}
 
                                     {{ list_articles length="1" order="byPublishDate desc"}}
+			            {{ assign var=articlesConstraints value="`$articlesConstraints` number not `$gimme->article->number`" }}
                                     <div class="item {{ if $currentindex == '1' }}active{{ /if }}">
                                         <article class="article featured">
                                             <figure>
@@ -62,6 +64,7 @@
                             </nav>
                             
                             {{ list_playlist_articles name="Front page" length="6" }}
+			    {{ assign var=articlesConstraints value="`$articlesConstraints` number not `$gimme->article->number`" }}
                             <article class="article list">
                                 <div class="row">
                                     <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
