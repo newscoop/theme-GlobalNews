@@ -373,6 +373,10 @@
 .profile-page .profile-comments h4 {
   margin-bottom: 20px;
 }
+.profile-page .profile-comments .comment-box {
+  border-top: #d6d6d6 1px solid;
+  padding: 15px 0px;
+}
 .dashboard-page .user-image {
   margin-bottom: 20px;
 }

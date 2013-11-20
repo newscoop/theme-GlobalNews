@@ -7,6 +7,5 @@
                 <time class="timeago" datetime="{{ $gimme->user_comment->submit_date}}">{{ $gimme->user_comment->submit_date }},</time> 
             </div>
         </div>
-        <hr>
 {{ /list_user_comments }}
 </div>
