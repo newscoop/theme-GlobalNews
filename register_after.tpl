@@ -11,7 +11,7 @@
                 <div class="row">
 
                     <div class="col-lg-8 col-md-8">
-                        <h1 class="page-title"{{ #register# }} </h1>
+                        <h1 class="page-title">{{ #register# }} </h1>
 
                         <div id="content" class="register-page">
                             <br>

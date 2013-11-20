@@ -35,6 +35,7 @@
                                 </script>
                                 {{ $form }} 
                             </div>
+                            <div class="clearfix"></div>
                         </div>
                         <!-- End Content -->
                     </div>
