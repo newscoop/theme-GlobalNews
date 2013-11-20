@@ -49,7 +49,7 @@
                         <!-- End Content -->
                     </div>
 
-                    {{ include "_tpl/sidebar.tpl" }}
+                    {{ include "_tpl/sidebar-community.tpl" }}
 
                 </div>
 

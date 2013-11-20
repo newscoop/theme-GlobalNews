@@ -2,15 +2,20 @@
 
                         <aside id="sidebar" class="visible-lg visible-md">
 
-                            {{ include file="_tpl/sidebar-slideshow.tpl" }}
-
                             {{ if $gimme->article->type_name == "debate" }}
                                 {{ include file="_tpl/debate-voting.tpl" }}
+                                {{ include file="_tpl/latest_articles.tpl" }}
                             {{ /if }}
 
-                            {{ include file="_tpl/related_articles.tpl" }}
+                            {{ if $gimme->article->type_name == "news" }}
+                                {{ include file="_tpl/sidebar-slideshow.tpl" }}
+                                {{ include file="_tpl/related_articles.tpl" }}
+                                {{ include file="_tpl/section_articles.tpl" }}
+                            {{/if}}
 
-                            {{ include file="_tpl/section_articles.tpl" }}
+                            {{ if $gimme->article->type_name == "page" }}
+                                {{ include file="_tpl/latest_articles.tpl" }}
+                            {{/if}}
 
                             {{ if $gimme->article->type_name != "debate" }}
                                 {{ include file="_tpl/poll.tpl" }}

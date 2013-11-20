@@ -11,11 +11,11 @@
                 <div class="row">
 
                     <div class="col-lg-8 col-md-8">
-                        <h2>{{ #register# }} </h2>
+                        <h1 class="page-title">{{ #register# }} </h1>
 
                         <div id="content" class="index-page">
                            <br>
-                            <div class="globalnews-form well-form well">
+                            <div class="globalnews-form well">
                                 {{ $form }}
                             </div>
                             <script type="text/javascript">
@@ -46,7 +46,7 @@
                         <!-- End Content -->
                     </div>
 
-                    {{ include "_tpl/sidebar.tpl" }}
+                    {{ include "_tpl/sidebar-community.tpl" }}
 
                 </div>
 
