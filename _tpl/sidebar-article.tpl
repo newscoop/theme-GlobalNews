@@ -22,7 +22,7 @@
                             {{ /if }}
 
                             <section id="ad" class="block">
-                                <img class="img-responsive" src="{{ url static_file='_img/sourcefabric-ad.png'}}" alt="ad">
+                                <a href="http://sourcefabric.org/" target="_blank"><img class="img-responsive" src="{{ url static_file='_img/sourcefabric-ad.png'}}" alt="ad"></a>
                             </section>
 
                         </aside>
