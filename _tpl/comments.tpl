@@ -52,11 +52,13 @@
                     {{ camp_edit object="comment" attribute="content" html_code="id=\"comment\" tabindex=\"4\" class=\"form-control\"" }}
                     </div>
                 </div>
+                {{ if !$gimme->user->logged_in }}
                 <div class="form-group">
                     <div class="controls captcha">
                         {{ recaptcha }}
                     </div>
                 </div>
+                {{ /if }}
             {{ /comment_form }}
             {{ else }}
                 <p class="alert alert-warning">{{ #commentsLocked# }}</p>
@@ -90,11 +92,13 @@
                     {{ camp_edit object="comment" attribute="content" html_code="id=\"comment\" tabindex=\"4\" class=\"form-control\"" }}
                     </div>
                 </div>
+                {{ if !$gimme->user->logged_in }}
                 <div class="form-group">
                     <div class="controls">
                         {{ recaptcha }}
                     </div>
                 </div>
+                {{ /if }}
 
             {{ /comment_form }}
             {{ else }}
@@ -138,11 +142,13 @@
                         {{ camp_edit object="comment" attribute="content" html_code="id=\"comment\" tabindex=\"4\" class=\"form-control\" " }}
                     </div>
                 </div>
+                {{ if !$gimme->user->logged_in }}
                 <div class="form-group">
                     <div class="controls">
                         {{ recaptcha }}
                     </div>
                 </div>
+                {{ /if }}
 
             {{ /comment_form }}
 

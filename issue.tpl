@@ -21,6 +21,7 @@
                             <a href="{{ uri options="section" }}" class="solid-button pull-right">{{ #readAll# }}</a>
                             <h4 class="section-title">{{ $gimme->section->name}}</h4>
                             {{ /if }}
+                            {{ if $gimme->article->type_name != "poll" }} 
                             <article class="article list">
                                 {{ if $gimme->section->name != "Dialogue" }}
                                 <div class="row">
@@ -53,6 +54,7 @@
                                     <a href="{{ uri options="article" }}">{{ #more# }} </a>
                                 {{/if}}
                             </article>
+                            {{ /if }}
                             {{ /list_articles }} 
                             {{ /list_sections }} 
 
