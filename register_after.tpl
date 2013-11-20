@@ -11,11 +11,11 @@
                 <div class="row">
 
                     <div class="col-lg-8 col-md-8">
-                        <h2>{{ #register# }} </h2>
+                        <h1 class="page-title">{{ #register# }} </h1>
 
-                        <div id="content" class="index-page">
+                        <div id="content" class="register-page">
                             <br>
-                            <div class="alert">
+                            <div class="alert alert-info">
                                 <p>{{ #followTheSteps# }}</p>
                                 <p><b>{{ #thanksForRegistering# }}</b></p>
                             </div> 
@@ -23,7 +23,7 @@
                         <!-- End Content -->
                     </div>
 
-                    {{ include "_tpl/sidebar.tpl" }}
+                    {{ include "_tpl/sidebar-community.tpl" }}
 
                 </div>
 

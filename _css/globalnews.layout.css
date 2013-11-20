@@ -555,6 +555,11 @@
 #sidebar #debate-widget .vote-box {
   margin-bottom: 10px;
 }
+#sidebar #related-articles-block .article,
+#sidebar #section-articles-block .article {
+  border-bottom: 1px solid #D6D6D6;
+  padding-bottom: 20px;
+}
 .jqstooltip {
   height: 25px !important;
   width: 80px !important;

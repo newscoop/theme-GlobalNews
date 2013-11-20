@@ -11,21 +11,21 @@
                 <div class="row">
 
                     <div class="col-lg-8 col-md-8">
-                        <h2>{{ #hi# }} {{ $name }} </h2>
+                        <h1 class="page-title">{{ #hi# }} {{ $name }} </h1>
 
-                        <div id="content" class="index-page">
+                        <div id="content" class="register-page">
                             <p>{{ #youAreHereForTheFirstTime# }}</p>
                             {{ if !empty($error) }}
-                            <div class="alert alert-error"><strong>{{ $error }}</strong></div>
+                            <div class="alert alert-danger"><strong>{{ $error }}</strong></div>
                             {{ /if }}
-                            <div class="globalnews-form well-form well">
+                            <div class="globalnews-form well">
                              {{ $form }}
                             </div>
                         </div>
                         <!-- End Content -->
                     </div>
 
-                    {{ include "_tpl/sidebar.tpl" }}
+                    {{ include "_tpl/sidebar-community.tpl" }}
 
                 </div>
 
