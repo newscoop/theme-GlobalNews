@@ -75,7 +75,7 @@
                                                 {{ /if }}
                                                 <div class="info-value">
                                                     <b>{{ #member# }}</b>
-                                                    <span class="value"><time class="timeago" datetime="{{ $user->created|date_format:'%Y-%m-%d %H:%i:%S' }}">{{ $user->created|date_format:'%Y-%m-%d' }} 06:00:00</time></span>
+                                                    <span class="value"><time class="timeago" datetime="{{ $user->created|date_format:'%Y-%m-%d %H:%i:%S' }}">{{ $user->created|date_format:'%Y-%m-%d %H:%i:%S' }} </time></span>
                                                 </div>
                                                 <div class="info-value">
                                                     <b>{{ #posts# }}</b>
