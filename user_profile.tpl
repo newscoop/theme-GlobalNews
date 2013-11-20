@@ -78,7 +78,7 @@
                                                     <span class="value"><time class="timeago" datetime="{{ $user->created|date_format:'%Y-%m-%d %H:%M:%S' }}">{{ $user->created|date_format:'%Y-%m-%d %H:%M:%S' }} </time></span>
                                                 </div>
                                                 <div class="info-value">
-                                                    <b>{{ #posts# }}</b>
+                                                    <b>{{ #commentsTitle# }}</b>
                                                     <span class="value">{{ $user->posts_count }}</span>
                                                 </div>
                                                 {{ if $profile['google'] }}
