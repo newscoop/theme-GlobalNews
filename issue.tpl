@@ -43,6 +43,7 @@
                                     </div>
                                 </div>
                                 {{else}}
+                                    {{ if $gimme->article->type_name != "poll" }} 
                                     <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
                                     {{ if !$gimme->article->is_public }}
                                     <span class="label label-danger">{{ #premium# }}</span>
@@ -51,6 +52,7 @@
                                         {{ $gimme->article->teaser}}
                                     </p>
                                     <a href="{{ uri options="article" }}">{{ #more# }} </a>
+                                    {{ /if }}
                                 {{/if}}
                             </article>
                             {{ /list_articles }} 
