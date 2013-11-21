@@ -96,11 +96,7 @@
 
                             </div>
 
-                            {{ if $user->isAuthor() }}
                             {{ include file="_tpl/user-articles.tpl" }}
-                            {{ else }}
-                            {{ include file="_tpl/user-comments.tpl" }}
-                            {{ /if }}
 
                         </div>
                         <!-- End Content -->

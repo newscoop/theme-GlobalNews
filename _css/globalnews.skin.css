@@ -351,6 +351,9 @@
   margin-top: 20px;
   margin-bottom: 30px;
 }
+.profile-page #profile-tabs {
+  margin-bottom: 5px;
+}
 .profile-page .panel {
   border-radius: 0px;
   -ms-border-radius: 0px;
@@ -369,11 +372,15 @@
 .profile-page .panel .panel-body {
   padding: 15px 20px;
 }
+.profile-page .profile-block {
+  padding: 15px 0px 0px 0px;
+  margin-bottom: 20px;
+}
 .profile-page .profile-information .info-value {
   margin-bottom: 15px;
 }
-.profile-page .profile-comments {
-  margin-top: 30px;
+.profile-page .profile-articles .article.list:first-child {
+  border-top: 0 !important;
 }
 .profile-page .profile-comments h4 {
   margin-bottom: 20px;
@@ -381,6 +388,9 @@
 .profile-page .profile-comments .comment-box {
   border-top: #d6d6d6 1px solid;
   padding: 15px 0px;
+}
+.profile-page .profile-comments .comment-box:first-child {
+  border-top: 0;
 }
 .dashboard-page .user-image {
   margin-bottom: 20px;
@@ -1117,10 +1127,17 @@ a {
   margin-left: 20px;
   margin-right: 10px;
 }
+.profile-page #profile-tabs > li > a {
+  padding: 10px 20px;
+  border-radius: 0px;
+  -ms-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+}
 .profile-page .profile-block {
   border-top: #f00d14 double 3px;
   border-bottom: #f00d14 double 3px;
-  padding: 15px 0px 0px 0px;
 }
 .profile-page .profile-block .user-title {
   color: #f00d14;

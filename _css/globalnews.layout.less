@@ -335,6 +335,9 @@
 }
 
 .profile-page{
+	#profile-tabs{
+		margin-bottom: 5px;
+	}
 	.panel {
 		.rounded-corners(0px);
 		.panel-heading{
@@ -345,19 +348,32 @@
 			padding: 15px 20px;
 		}
 	}
+	.profile-block{
+		padding:15px 0px 0px 0px;
+		margin-bottom: 20px
+	}
 	.profile-information{
 		.info-value{
 			margin-bottom: 15px;
 		}
 	}
+	.profile-articles{
+		.article.list{
+			&:first-child{
+				border-top:0 !important;
+			}
+		}
+	}
 	.profile-comments{
-		margin-top:30px;
 		h4{
 			margin-bottom: 20px;
 		}
 		.comment-box{
 			border-top: #d6d6d6 1px solid;
 			padding:15px 0px;
+			&:first-child{
+				border-top:0;
+			}
 		}
 	}
 }
