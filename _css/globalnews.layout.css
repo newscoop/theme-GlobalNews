@@ -350,6 +350,9 @@
   margin-top: 20px;
   margin-bottom: 30px;
 }
+.profile-page #profile-tabs {
+  margin-bottom: 5px;
+}
 .profile-page .panel {
   border-radius: 0px;
   -ms-border-radius: 0px;
@@ -368,11 +371,15 @@
 .profile-page .panel .panel-body {
   padding: 15px 20px;
 }
+.profile-page .profile-block {
+  padding: 15px 0px 0px 0px;
+  margin-bottom: 20px;
+}
 .profile-page .profile-information .info-value {
   margin-bottom: 15px;
 }
-.profile-page .profile-comments {
-  margin-top: 30px;
+.profile-page .profile-articles .article.list:first-child {
+  border-top: 0 !important;
 }
 .profile-page .profile-comments h4 {
   margin-bottom: 20px;
@@ -380,6 +387,9 @@
 .profile-page .profile-comments .comment-box {
   border-top: #d6d6d6 1px solid;
   padding: 15px 0px;
+}
+.profile-page .profile-comments .comment-box:first-child {
+  border-top: 0;
 }
 .dashboard-page .user-image {
   margin-bottom: 20px;

@@ -244,10 +244,15 @@ a{
 }
 
 .profile-page{
+	#profile-tabs{
+		& > li > a{
+			padding: 10px 20px;
+			.rounded-corners(0px);
+		}
+	}
 	.profile-block{
 		border-top: @secondary double 3px;
 		border-bottom: @secondary double 3px;
-				padding:15px 0px 0px 0px;
 		.user-title{
 			color:@secondary;
 		}
