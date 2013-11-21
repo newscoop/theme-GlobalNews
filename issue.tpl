@@ -16,9 +16,8 @@
                         <div id="content" class="issue-page">
 
                             {{ list_sections }} 
-                            {{ list_articles length="4" }}
+                            {{ list_articles }}
                             {{ if $gimme->current_articles_list->at_beginning }}
-                            <a href="{{ uri options="section" }}" class="solid-button pull-right">{{ #readAll# }}</a>
                             <h4 class="section-title">{{ $gimme->section->name}}</h4>
                             {{ /if }}
                             {{ if $gimme->article->type_name != "poll" }} 
