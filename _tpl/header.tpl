@@ -15,7 +15,7 @@
                                 <a href="/en/static/rss">{{ #RSS# }}</a>
                             </div>
                             <div class="pull-right">
-                                {{$smarty.now|date_format:"%d/%m/%Y"}}
+                                {{ $smarty.now|date_format:"%A, %B %e, %Y" }}
                             </div>
                         </div>
                     </div>
