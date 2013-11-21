@@ -1134,6 +1134,11 @@ a {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   -khtml-border-radius: 0px;
+  color: #4a4a4a;
+}
+.profile-page #profile-tabs > li.active,
+.profile-page #profile-tabs > li > a:focus {
+  font-weight: bold;
 }
 .profile-page .profile-block {
   border-top: #f00d14 double 3px;
