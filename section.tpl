@@ -15,7 +15,7 @@
 
                         <div id="content" class="section-page">
 
-                            {{ list_articles length="5" constraints="type not poll" }}
+                            {{ list_articles ignore_issue="true" length="5" constraints="type not poll" }}
 
                             {{ if $gimme->current_list->at_beginning }}
                             <article class="article section-featured">
@@ -23,7 +23,7 @@
 
                                 <figure class="section-thumb pull-left img-responsive">
                                     <a href="{{ uri options="article" }}">
-                                        {{ include file="_tpl/img/img_950x500.tpl" }}
+                                        {{ include file="_tpl/img/img_950x480.tpl" }}
                                     </a>
                                 </figure>
                                 <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
@@ -61,7 +61,7 @@
                                     <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
                                         <figure class="section-thumb pull-left img-responsive">
                                             <a href="{{ uri options="article" }}">
-                                                {{ include file='_tpl/img/img_rectangle.tpl'}}
+                                                {{ include file='_tpl/img/img_cinema.tpl'}}
                                             </a>
                                         </figure>   
                                     </div>

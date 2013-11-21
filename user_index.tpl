@@ -38,7 +38,7 @@
                                     <img src="{{ url static_file="_img/avatar-list.png" }}" class="avatar" />
                                     {{ /if }}
                                     <span class="name">{{ $user->first_name }} {{ $user->last_name }}</span>
-                                    <span class="member">{{ #memberSince# }} <time class="timeago" datetime="{{ $user->created|date_format:'%Y-%m-%d %H:%M:%S' }} ">{{ $user->created|date_format:"%Y-%m-%d %H:%M:%S" }}</time></span>
+                                    <span class="member">{{ #memberSince# }} <time datetime="{{ $user->created|date_format:'%Y-%m-%d' }}">{{ $user->created|date_format:"%Y-%m-%d" }}</time></span>
                                 </a>
                             
                             {{ /foreach }}

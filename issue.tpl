@@ -16,9 +16,8 @@
                         <div id="content" class="issue-page">
 
                             {{ list_sections }} 
-                            {{ list_articles length="4" }}
+                            {{ list_articles }}
                             {{ if $gimme->current_articles_list->at_beginning }}
-                            <a href="{{ uri options="section" }}" class="solid-button pull-right">{{ #readAll# }}</a>
                             <h4 class="section-title">{{ $gimme->section->name}}</h4>
                             {{ /if }}
                             {{ if $gimme->article->type_name != "poll" }} 
@@ -28,7 +27,7 @@
                                     <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
                                         <figure class="section-thumb pull-left img-responsive">
                                             <a href="{{ uri options="article" }}">
-                                                {{ include file='_tpl/img/img_rectangle.tpl'}}
+                                                {{ include file='_tpl/img/img_cinema.tpl'}}
                                             </a>
                                         </figure>   
                                     </div>

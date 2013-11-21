@@ -29,7 +29,7 @@
     {{ foreach from=$multimedia key=articleID item=multimediaType name=multimediaLoop }}
         {{ list_articles ignore_issue="true" ignore_section="true" length="1" constraints="number is `$articleID`"}}
         <a class="img-video" href="{{ url options="article" }}">
-            {{ include file="_tpl/img/img_rectangle.tpl" }}
+            {{ include file="_tpl/img/img_cinema.tpl" }}
             <span class="play-icon glyphicon glyphicon-play-circle"></span>
         </a>
         <span>{{ $gimme->article->section->name }}: <a href="{{ url options='article' }}">{{ $gimme->article->name }}</a></span>
