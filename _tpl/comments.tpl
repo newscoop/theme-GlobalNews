@@ -47,7 +47,7 @@
             {{ comment_form html_code="id=\"comment-form\" role=\"form\" class=\"form-horizontal\" " _button="submit" button_html_code="tabindex=\"6\" class=\"solid-button form-column-right\" " }}
                                   
                 <div class="form-group">
-                    <label class="control-label" for="">Comment</label>
+                    <label class="control-label" for="">{{#commentTitle#}}<span class="glyphicon glyphicon-asterisk"></span></label>
                     <div class="controls">
                     {{ camp_edit object="comment" attribute="content" html_code="id=\"comment\" tabindex=\"4\" class=\"form-control\"" }}
                     </div>
@@ -87,7 +87,7 @@
             {{ comment_form html_code="id=\"comment-form\" role=\"form\" " _button="submit" button_html_code="tabindex=\"6\" class=\"solid-button form-column-right\" "  }}
                                    
                 <div class="form-group">
-                    <label class="control-label" for="">Comment</label>
+                    <label class="control-label" for="">{{#commentTitle#}}<span class="glyphicon glyphicon-asterisk"></span></label>
                     <div class="controls">
                     {{ camp_edit object="comment" attribute="content" html_code="id=\"comment\" tabindex=\"4\" class=\"form-control\"" }}
                     </div>
@@ -131,13 +131,13 @@
                         </div>
                 </div>
                 <div class="form-group">
-                        <label class="control-label" for="inputEmail">Email</label>
+                        <label class="control-label" for="inputEmail">{{#email#}}<span class="glyphicon glyphicon-asterisk"></span></label>
                         <div class="controls">
                         {{ camp_edit object="comment" attribute="reader_email" html_code="id=\"email\" tabindex=\"2\" class=\"form-control\"" }}
                         </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="">Comment</label>
+                    <label class="control-label" for="">{{#commentTitle#}}<span class="glyphicon glyphicon-asterisk"></span></label>
                     <div class="controls">
                         {{ camp_edit object="comment" attribute="content" html_code="id=\"comment\" tabindex=\"4\" class=\"form-control\" " }}
                     </div>
