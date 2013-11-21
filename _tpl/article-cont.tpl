@@ -39,7 +39,7 @@
 
 		<a class="comment-count" href="#comments" class="pull-right"><span class="glyphicon glyphicon-comment"></span> {{ $gimme->article->comment_count}} {{ #comments# }}</a>
 
-	<!-- Social Buttons BEGIN -->
+		<!-- Social Buttons BEGIN -->
 		    <div class="share-buttons">
 
 		        <!--- Twitter button -->
@@ -70,8 +70,7 @@
 		        <div class="clearfix"></div>
 
 		    </div>
-	<!-- Social Buttons END -->
-
+		<!-- Social Buttons END -->
 	{{/if}}
 
 	{{ if $gimme->article->type_name == "news" }}
@@ -94,7 +93,9 @@
     {{ /list_subtitles }}
     {{ /if }}
     
+    <div class="article-content">
 	{{ include file="_tpl/_edit-article.tpl" }}{{ $gimme->article->full_text }}
+	</div>
     
     {{ if $gimme->article->subtitles_count("full_text") > 1}}
         <ul class="pagination">

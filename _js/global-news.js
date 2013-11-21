@@ -74,7 +74,7 @@ $(document).ready(function () {
     })
 
     // adding bootstrap style to tables in articles
-    $(".single-page table").addClass('table table-striped table-bordered');
+    $(".article-content table").addClass('table table-striped table-bordered');
 
     // initialize timeago plugin for dates
     $(".timeago").timeago();
