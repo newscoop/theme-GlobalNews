@@ -335,6 +335,11 @@
   height: 30px;
   padding: 3px 10px !important;
 }
+.article-page #comment-form .glyphicon-asterisk {
+  color: red;
+  margin-left: 5px;
+  font-size: 12px;
+}
 .debate-page .debate-bio {
   font-size: 12px;
   margin-bottom: 10px;
