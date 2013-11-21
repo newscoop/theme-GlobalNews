@@ -1,7 +1,7 @@
-{{ list_articles length=3 constraints="number not `$gimme->article->number`" }}
+{{ list_articles ignore_issue='true' length=3 constraints="number not `$gimme->article->number`" }}
 {{ if $gimme->current_list->at_beginning }}
 <section id="section-articles-block" class="block">
-    <h4>{{ #sectionArticles# }}</h4>
+    <h4>{{ #alsoInThisSection# }}</h4>
  {{/if}}
  {{ if $gimme->article->type_name == "news" }}
     <article class="article list">
