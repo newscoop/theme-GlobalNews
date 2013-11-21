@@ -75,7 +75,7 @@
 
 	{{ if $gimme->article->type_name == "news" }}
 	<figure class="image">
-	    {{ include file="_tpl/img/img_950x500.tpl" }}
+	    {{ include file="_tpl/img/img_950x480.tpl" }}
 	    <figcaption>{{ if $image->caption }}{{ $image->caption }}{{else}}&nbsp;{{/if}}</figcaption>
 	</figure>
 	{{/if}}

@@ -23,7 +23,7 @@
 
                                 <figure class="section-thumb pull-left img-responsive">
                                     <a href="{{ uri options="article" }}">
-                                        {{ include file="_tpl/img/img_950x500.tpl" }}
+                                        {{ include file="_tpl/img/img_950x480.tpl" }}
                                     </a>
                                 </figure>
                                 <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>

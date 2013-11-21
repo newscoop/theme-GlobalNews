@@ -17,6 +17,7 @@
 
     <renditions>
         <rendition name="slider" width="950" height="500" specs="crop"/>
+        <rendition name="sectionbig" width="950" height="480" specs="crop"/>
         <rendition name="rectanglesmall" width="100" height="80" specs="crop"/>
         <rendition name="rectanglemedium" width="200" height="160" specs="crop"/>
         <rendition name="rectanglebig" width="500" height="400" specs="crop"/>
