@@ -22,7 +22,7 @@
                                         {{ if $gimme->section->name != "Dialogue" }}
                                         <figure class="section-thumb pull-left">
                                             <a href="{{ uri options="article" }}">
-                                                {{ include file='_tpl/img/img_rectangle.tpl'}}
+                                                {{ include file='_tpl/img/img_cinema.tpl'}}
                                             </a>
                                         </figure>
                                         {{/if}}
