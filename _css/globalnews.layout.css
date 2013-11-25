@@ -190,7 +190,7 @@
   background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 5%, #ffffff);
   background-image: -o-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 5%, #ffffff);
   background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 5%, #ffffff);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(255, 255, 255, 0.2), endColorstr=#ffffff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="@start", endColorstr="@end");
   /* for IE */
 
 }
