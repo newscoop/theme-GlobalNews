@@ -33,13 +33,12 @@
                                 <a href="http://vimeo.com/sourcefabric" target="_blank" ><img src="{{ url static_file='_img/social-icons/vimeo.png'}}"></a>
                                 <a href="http://flickr.com/photos/sourcefabric" target="_blank"><img src="{{ url static_file='_img/social-icons/flickr.png'}}"></a>
                             </div>
-                            <form class="form-horizontal" role="form">
-                                <div class="input-group">
+                            <form id="search-form" class="form-horizontal" role="form">
                                     {{ search_form template="search.tpl" submit_button="&nbsp;" html_code="class=\"form-search\" " button_html_code="style=\"display: none;\""}} 
                                         {{ camp_edit object="search" attribute="keywords"  html_code="placeholder=\"{{ #search# }}\" class=\"form-control\" " }}
+                                        <button id="search-button" class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search "></span></button>
                                     {{ /search_form }}
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-search "></span></span>
-                                </div>
+                                    
                             </form>
                         </div>
                     </div>
