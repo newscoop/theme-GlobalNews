@@ -9,7 +9,7 @@
                 <a href="http://{{ $gimme->publication->site }}/user/profile/{{ $gimme->comment->user->uname|urlencode }}" >{{ $gimme->comment->user->uname }}</a>
             {{ else }}
                 <img src="{{ include file='_tpl/user-image.tpl' user=$user width=60 height=60 }}" width="60" height="60" class="avatar" alt="avatar"><br>
-                <a href="#">{{ $gimme->comment->nickname }} ({{ #anonymous# }})</a>
+                {{ $gimme->comment->nickname }} ({{ #anonymous# }})
             {{ /if }}
                 <br><time class="timeago" datetime="{{ $gimme->comment->submit_date }}">{{ $gimme->comment->submit_date }}</time>
                 </div>
