@@ -37,7 +37,14 @@
 		
 	{{ if $gimme->article->type_name == "news" }}
 
+		<div id="topics-links" class="pull-left">
+ 		{{ list_article_topics }}
+ 		{{ if $gimme->current_list->at_beginning }}
+	 	<span class="glyphicon glyphicon-bookmark"></span> <b>{{ #topics# }}:</b> {{ /if }}<a href="{{ url options="template topic.tpl" }}">{{ $gimme->topic->name }}</a>{{ if $gimme->current_list->at_end }}{{ else }}, {{ /if }}
+	 	{{ /list_article_topics }}
+	 	</div>
 		<a class="comment-count" href="#comments" class="pull-right"><span class="glyphicon glyphicon-comment"></span> {{ $gimme->article->comment_count}} {{ #comments# }}</a>
+		<div class="clearfix"></div>
 
 		<!-- Social Buttons BEGIN -->
 		    <div class="share-buttons">
