@@ -232,7 +232,7 @@
   width: 24%;
   float: left;
 }
-.article-page .teaser p {
+.article-page .teaser {
   margin-bottom: 10px;
 }
 .article-page .comment-count {
