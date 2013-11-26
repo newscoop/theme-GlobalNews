@@ -1,7 +1,9 @@
 @import "mixins.less";
 @import "globalnews.layout.less";
 
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic,700italic|Bitter:400,700,400italic);
+/***************************** */
+/******** Begin Skin ********* */
+/***************************** */
 
 // Colors Variable
 
@@ -11,8 +13,13 @@
 @secondary:#f00d14;
 
 // Fonts Variable
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic,700italic|Bitter:400,700,400italic);
 @title-font: 'Bitter', serif;
 @text-font: 'Source Sans Pro', sans-serif;
+
+
+/* --- Begin Skin General Style */
 
 body{
 	font-family: @text-font;
@@ -23,6 +30,7 @@ h1, h2, h3, h4, h5{
 	line-height: 1.4;
 	color:@dark;
 }
+
 a{
 	color:@primary;
 }
@@ -51,11 +59,17 @@ a{
 	.rounded-corners(0px);
 }
 
+/* End Skin General Style ---- */
+
+/* --- Begin Skin Header */
+
 #top-header{
 	color:@semi-dark + 50;
 	font-size: 14px;
+
 	a{
 		color:@semi-dark + 50;
+
 		&:hover{
 			color:@semi-dark;
 		}
@@ -66,9 +80,11 @@ a{
 	h1{
 		a{
 			color:@primary;
+
 			span{
 				color:@secondary;
 			}
+
 			&:hover,&:focus{
 				text-decoration: none;
 			}
@@ -78,17 +94,20 @@ a{
 
 #news-ticker {
 	height: 28px;
+
 	span {
 		color: @secondary;
 		font-family: @title-font;
 		padding-top:3px;
 	}
+
 	ul {
 		li {
 			line-height: 26px;
 			list-style: none;
 		}
 	}
+
 	a {
 		text-decoration: none;
 		font-weight: bold;
@@ -101,9 +120,11 @@ a{
 			padding:0px 15px 0px 0px;
 			font-size: 16px;
 			border-right: @primary 1px solid;
+
 			&.active{
 				color:@secondary;
 			}
+
 			&:hover,&:focus{
 				text-decoration: none;
 			}
@@ -118,6 +139,11 @@ a{
 		color:@primary;
 	}
 }
+
+/* End Skin Header Styles --- */
+
+
+/* --- Begin Skin Content Elements */
 
 #content{
 	.article{
@@ -154,6 +180,11 @@ a{
 	}
 }
 
+/* End Skin Content Elements ------ */
+
+
+/* --- Begin Skin Section Page */
+
 .section-page{
 	.pagination > li:last-child > a,
 	.pagination > li:first-child > a{
@@ -161,11 +192,17 @@ a{
 	}
 }
 
+/* End Skin Section Page ------ */
+
+
+/* --- Begin Skin Article Page */
+
 .article-page{
 	.article-info{
 		color:@semi-dark;
 		font-size: 12px;
 	}
+
 	.section-link{
 		color:@secondary;
 	}
@@ -174,20 +211,24 @@ a{
 		a.active{
 				background: @primary;
 		}
+
 		.list-group-item{
 			&:first-child,&:last-child{
 				.rounded-corners(0px);
 			}
 		}
 	}
+
 	.pagination > li:last-child > a,
 	.pagination > li:first-child > a{
 		.rounded-corners(0px);
 	}
+
 	#comment-form{
 		.form-control{
 			border-left: @secondary 1px solid;
 		}
+
 		.solid-button{
 			font-size: 18px;
 			padding:10px 20px;
@@ -196,12 +237,17 @@ a{
 	.comment-box{
 		.box-shadow(1px,1px,0px,0px,#d5d5d5)
 	}
+
 	.cs_img{
 		.cs_img_caption{
 			color:@semi-dark + 40;
 		}
 	}
 }
+
+/* End Skin Article Page ------ */
+
+/* --- Begin Skin Pages */
 
 .debate-page{
 	.debate-bio{
@@ -221,204 +267,7 @@ a{
 
 		}
 	}
-	.list-group{
-		.list-group-item{
-			padding:20px 30px;
-			
-			&:first-child,&:last-child{
-				.rounded-corners(0px);
-			}
-			&:hover{
-				background: @primary;
-				color:@primary + 150;
-				.trans(all,0.3s);
-			}
-		}
-		.name{
-			font-size: 18px;
-			font-family: @title-font;
-			font-weight: 200;
-			margin-left: 20px;
-			margin-right: 10px;
-		}
-	}
-}
 
-.profile-page{
-	#profile-tabs{
-		& > li > a{
-			padding: 10px 20px;
-			.rounded-corners(0px);
-			color:@semi-dark;
-		}
-		& > li.active ,
-		& > li > a:focus{
-			font-weight: bold;
-		}
-	}
-	.profile-block{
-		border-top: @secondary double 3px;
-		border-bottom: @secondary double 3px;
-		.user-title{
-			color:@secondary;
-		}
-		.profile-avatar{
-			text-align: center;
-		}
-	}
-}
-
-
-/* --- Begin Registration and Login Form */
-
-.zend_form{
-
-    input[type="text"],input[type="password"],textarea{
-        border-left: @secondary 1px solid;
-    }
-
-    #submit-element{
-        #submit{
-        	.solid-button;
-        	padding:10px 18px;
-        	font-size: 16px;
-        }
-    }
-	
-	input[type="submit"]{
-        .solid-button;
-        padding:10px 18px;
-        font-size: 16px;
-    }
-}
-
-/* End Registration and Login Form --- */
-
-#sidebar{
-	.block{
-		margin-bottom: 30px;
-		h4{
-			margin:0px 0px 10px 0px;
-			color:@secondary;
-			font-family: @title-font;
-			font-size: 20px;
-		}
-	}
-	#latest-articles-block{
-		.link{
-			font-size: 12px;
-			font-family: @title-font;
-			border-bottom: @semi-dark + 100 1px dotted;
-			padding-bottom: 10px;
-			a{
-				color:@semi-dark;
-				&:hover{
-					color:@dark;
-				}
-			}
-			.time{
-				color:@secondary;
-				font-family: @text-font;
-			}
-		}
-	}
-	#video-block{
-		color:@secondary;
-		a{
-			color:@semi-dark;
-			font-family: @title-font;
-			font-size: 12px;
-			&:hover{
-				color:@dark;
-			}
-		}
-	}
-	#latest-comments-block{
-		.article-link{
-			color:@dark;
-			font-family: @title-font;
-			font-size: 12px;
-		}
-		.timeago{
-			color:@semi-dark + 50;
-		}
-		.user-link{
-			color:@primary;
-		}
-	}
-
-	#poll{
-	    form{
-	        margin-bottom: 0px;
-	    }
-
-	    .q-score{
-	        color:@secondary;
-	        float:right;
-	    }
-		blockquote{
-			border:0;
-			font-family: @title-font;
-			padding:10px 0px 0px 0px;
-			color:@semi-dark;
-		}
-	    input[type="submit"]{
-	        color: #fff;
-	        background: @primary;
-	        border: none;
-	        padding: 6px;
-	        width: 100%;
-	        position: relative;
-	        top:-20px;
-	    }
-	    .total-votes{
-	        margin-left:20px;
-	        color:#fff;
-	        padding-bottom: 15px;
-	    }
-	    .progress{
-	        height: 6px;
-	        .rounded-corners(0px);
-	    }
-	    .poll-option{
-	        label{
-	            font-size: 12px;
-	            width:100%;
-	        }
-	        input[type="radio"]{
-	            margin-right: 5px;
-	            position: relative;
-	            margin-right: 10px;
-	            float: left;
-	        }
-	    }
-	}
-}
-
-#footer{
-	#about-us-block{
-		a{
-			color:@semi-dark;
-		}
-	}
-	#contact-us-block{
-		.info{
-			.info-label{
-				color:@semi-dark + 100;
-			}
-		}
-	}
-	#sections-block,
-	#pages-block{
-		a{
-			color:@semi-dark;
-		}
-	}
-}
-
-/* --- Begin community */
-
-.community-page{
     .user-tab{
         a{
             .rounded-corners(2px);
@@ -441,9 +290,235 @@ a{
             color:#878787;
         }
     }
+
+	.list-group{
+		.list-group-item{
+			padding:20px 30px;
+			
+			&:first-child,&:last-child{
+				.rounded-corners(0px);
+			}
+
+			&:hover{
+				background: @primary;
+				color:@primary + 150;
+				.trans(all,0.3s);
+			}
+		}
+
+		.name{
+			font-size: 18px;
+			font-family: @title-font;
+			font-weight: 200;
+		}
+	}
 }
 
-/* End community --- */
+.profile-page{
+	#profile-tabs{
+		& > li > a{
+			padding: 10px 20px;
+			.rounded-corners(0px);
+			color:@semi-dark;
+		}
+
+		& > li.active ,
+		& > li > a:focus{
+			font-weight: bold;
+		}
+	}
+	.profile-block{
+		border-top: @secondary double 3px;
+		border-bottom: @secondary double 3px;
+
+		.user-title{
+			color:@secondary;
+		}
+
+		.profile-avatar{
+			text-align: center;
+		}
+	}
+}
+
+/* End Skin Pages ------ */
+
+
+/* --- Begin Skin Registration and Login Form */
+
+.zend_form{
+
+    input[type="text"],input[type="password"],textarea{
+        border-left: @secondary 1px solid;
+    }
+
+    #submit-element{
+        #submit{
+        	.solid-button;
+        	padding:10px 18px;
+        	font-size: 16px;
+        }
+    }
+	
+	input[type="submit"]{
+        .solid-button;
+        padding:10px 18px;
+        font-size: 16px;
+    }
+}
+
+/* End Skin Registration and Login Form --- */
+
+
+/* --- Begin Skin Sidebar */
+
+#sidebar{
+	.block{
+		margin-bottom: 30px;
+
+		h4{
+			margin:0px 0px 10px 0px;
+			color:@secondary;
+			font-family: @title-font;
+			font-size: 20px;
+		}
+	}
+
+	#latest-articles-block{
+		.link{
+			font-size: 12px;
+			font-family: @title-font;
+			border-bottom: @semi-dark + 100 1px dotted;
+			padding-bottom: 10px;
+
+			a{
+				color:@semi-dark;
+				&:hover{
+					color:@dark;
+				}
+			}
+
+			.time{
+				color:@secondary;
+				font-family: @text-font;
+			}
+		}
+	}
+
+	#video-block{
+		color:@secondary;
+		a{
+			color:@semi-dark;
+			font-family: @title-font;
+			font-size: 12px;
+
+			&:hover{
+				color:@dark;
+			}
+		}
+	}
+	#latest-comments-block{
+		.article-link{
+			color:@dark;
+			font-family: @title-font;
+			font-size: 12px;
+		}
+
+		.timeago{
+			color:@semi-dark + 50;
+		}
+
+		.user-link{
+			color:@primary;
+		}
+	}
+
+	#poll{
+
+	    form{
+	        margin-bottom: 0px;
+	    }
+
+	    .q-score{
+	        color:@secondary;
+	        float:right;
+	    }
+
+		blockquote{
+			border:0;
+			font-family: @title-font;
+			padding:10px 0px 0px 0px;
+			color:@semi-dark;
+		}
+
+	    input[type="submit"]{
+	        color: #fff;
+	        background: @primary;
+	        border: none;
+	        padding: 6px;
+	        width: 100%;
+	        position: relative;
+	        top:-20px;
+	    }
+
+	    .total-votes{
+	        margin-left:20px;
+	        color:#fff;
+	        padding-bottom: 15px;
+	    }
+
+	    .progress{
+	        height: 6px;
+	        .rounded-corners(0px);
+	    }
+
+	    .poll-option{
+	        label{
+	            font-size: 12px;
+	            width:100%;
+	        }
+
+	        input[type="radio"]{
+	            margin-right: 5px;
+	            position: relative;
+	            margin-right: 10px;
+	            float: left;
+	        }
+	    }
+	}
+}
+
+/* End Skin Sidebar --- */
+
+/* --- Begin Skin Footer */
+
+#footer{
+	#about-us-block{
+		a{
+			color:@semi-dark;
+		}
+	}
+
+	#contact-us-block{
+		.info{
+			.info-label{
+				color:@semi-dark + 100;
+			}
+		}
+	}
+
+	#sections-block,
+	#pages-block{
+		a{
+			color:@semi-dark;
+		}
+	}
+}
+
+/* End Skin Footer --- */
+
+
+/* Skin Style for Responsive Menu */
 
 .responsive-menu {
 	background: @primary + 10;
@@ -456,10 +531,12 @@ a{
 	a {
 
 		border-bottom: 1px solid @primary;
+
 		&:hover {
 			background: @primary + 20;
 			text-decoration: none;
 		}
+
 		&:active {
 			background: @primary + 20;
 			text-decoration: none;
