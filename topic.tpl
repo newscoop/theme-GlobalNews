@@ -27,6 +27,7 @@
                                         </figure>   
                                     </div>
                                     <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7">
+                                        <a href="{{ uri options='section' }}" class="section-link">{{ $gimme->article->section->name }}</a>
                                         <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
                                         {{ if !$gimme->article->is_public }}
                                         <span class="label label-danger">{{ #premium# }}</span>

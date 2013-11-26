@@ -1,6 +1,6 @@
 {{ if $gimme->article->content_accessible }}
 	{{ if $gimme->article->type_name == "news" }}
-	<a href="{{ uri option='section'}}" class="section-link">{{ $gimme->article->section->name }}</a>
+	<a href="{{ uri options='section' }}" class="section-link">{{ $gimme->article->section->name }}</a>
 	
 	<div class="article-info">
 	    <time datetime="{{$gimme->article->publish_date|date_format:"%Y-%m-%dT%H:%MZ"}}">{{ $gimme->article->publish_date|camp_date_format:"%d %M %Y" }} | </time> 
