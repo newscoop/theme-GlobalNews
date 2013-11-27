@@ -8,6 +8,7 @@ Modern newspaper style theme for Newscoop.
 Features Included:
 
     Responsive CSS for any browser.
+    Retina display support.
     Latest videos in front page.
     Debate Support.
     Poll support.
