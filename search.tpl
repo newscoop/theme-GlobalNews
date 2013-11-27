@@ -23,19 +23,19 @@
                             <article class="article list">
                                 <div class="row">
                                     <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
-                                        <a href="{{ uri options='article' }}">
+                                        <a href="{{ uri options="article" }}">
                                             <figure>
                                                 {{ include file='_tpl/img/img_cinema.tpl'}}
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7">
-                                        <a href="{{ uri option='section'}}" class="section-link">{{ $gimme->article->section->name }}</a>
-                                        <h4><a href="{{ uri option='article'}}">{{ $gimme->article->name }}</a></h4>
+                                        <a href="{{ uri options='section'}}" class="section-link">{{ $gimme->article->section->name }}</a>
+                                        <h4><a href="{{ uri options='article' }}">{{ $gimme->article->name }}</a></h4>
                                         <div class="excerpt">
                                             {{ $gimme->article->full_text|truncate:200:"..." }}
                                         </div>
-                                        <a href="{{ uri option='article'}}">{{ #more# }}</a>
+                                        <a href="{{ uri options='article'}}">{{ #more# }}</a>
                                     </div>
                                 </div>
                             </article>
