@@ -1,4 +1,5 @@
 {{ assign var="currentsection" value=$gimme->section->number }}
+{{ assign var=articlesConstraints value='' }}
         <header id="header">
 
                 <div class="row">

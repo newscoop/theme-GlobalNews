@@ -1,7 +1,7 @@
 {{* assign counter and maximum count for collecting multimedia files *}}
 {{assign var=multimediacounter value=0}}
 {{assign var=multimediacountermax value=1}}
-{{ list_articles length="100" ignore_issue="true" ignore_section="true" order="bypublishdate desc" }}
+{{ list_articles length="100" ignore_issue="true" ignore_section="true" order="bypublishdate desc" constraints=$articlesConstraints }}
   {{* check if we have to do anything => not yet hit maximum *}}
   {{if $multimediacounter lt $multimediacountermax}}
       {{* assign variable for current article. 1 => has multimedia *}}
