@@ -31,7 +31,7 @@
                             {{ foreach $users as $user }}
                                 <a href="{{ $view->url(['username' => $user->uname], 'user') }}" class="list-group-item">
                                     {{ if !$user->is_active }}
-                                    <img src="{{ url static_file="_img/avatar-list.png" }}" class="avatar" />
+                                    <img width="60" height="60" src="{{ url static_file="_img/avatar-list.png" }}" class="avatar" />
                                     {{ else if $user->image() }}
                                     <img src="{{ $user->image(60, 60) }}" class="avatar" />
                                     {{ else }}
