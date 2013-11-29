@@ -75,7 +75,7 @@
                                                 {{ /if }}
                                                 <div class="info-value">
                                                     <b>{{ #member# }}</b>
-                                                    <span class="value"><time datetime="{{ $user->created|date_format:'%Y-%m-%d' }}">{{ $user->created|date_format:'%Y-%m-%d' }} </time></span>
+                                                    <span class="value"><time datetime="{{ $user->created|date_format:'%d %B %Y' }}">{{ $user->created|date_format:'%d %B %Y' }} </time></span>
                                                 </div>
                                                 <div class="info-value">
                                                     <b>{{ #commentsTitle# }}</b>

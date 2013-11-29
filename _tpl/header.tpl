@@ -1,4 +1,5 @@
 {{ assign var="currentsection" value=$gimme->section->number }}
+{{ assign var=articlesConstraints value='' }}
         <header id="header">
 
                 <div class="row">
@@ -15,7 +16,7 @@
                                 <a href="/en/static/rss">{{ #RSS# }}</a>
                             </div>
                             <div class="pull-right">
-                                {{ $smarty.now|date_format:"%A, %B %e, %Y" }}
+                                {{ $smarty.now|date_format:"%A, %B %e %Y" }}
                             </div>
                         </div>
                     </div>

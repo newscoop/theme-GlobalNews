@@ -16,6 +16,7 @@
                         <div id="content" class="section-page">
 
                             {{ list_articles ignore_issue="true" length="5" constraints="type not poll" }}
+			    {{ assign var=articlesConstraints value="`$articlesConstraints` number not `$gimme->article->number`" }}
 
                             {{ if $gimme->current_list->at_beginning }}
                             <article class="article section-featured">
