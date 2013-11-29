@@ -703,6 +703,18 @@
   border-bottom: 1px solid #D6D6D6;
   padding-bottom: 20px;
 }
+#sidebar #community-feed-block h4 {
+  margin-bottom: 20px;
+}
+#sidebar #community-feed-block .activity-action {
+  margin-bottom: 5px;
+}
+#sidebar #community-feed-block .article-link {
+  margin-bottom: 5px;
+}
+#sidebar #community-feed-block .timeago {
+  font-size: 12px;
+}
 .jqstooltip {
   height: 25px !important;
   width: 80px !important;
