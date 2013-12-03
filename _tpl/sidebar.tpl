@@ -7,8 +7,10 @@
                             {{ include file="_tpl/latest_articles.tpl" }}
 
                             {{ include file="_tpl/latest_comments.tpl" }}
-
+                            
+                            {{ if $gimme->template->name != "search.tpl" }}
                             {{ include file="_tpl/poll.tpl" }}
+                            {{ /if }}
 
                             <section id="ad" class="block">
                                 <a href="http://sourcefabric.org/" target="_blank"><img class="img-responsive" src="{{ url static_file='_img/sourcefabric-ad.png'}}" alt="ad"></a>
