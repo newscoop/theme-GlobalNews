@@ -29,7 +29,7 @@
                                             <span class="glyphicon glyphicon-comment"></span> {{#newCommentOn#}}
                                             <time class="timeago pull-right" datetime="{{ $created}}">{{ $created}}</time>
                                         </div>
-                                        <a class="article-link" href="{{ $gimme->community_feed->comment->article->url }}">{{ $gimme->community_feed->comment->article->title }}</a>
+                                        <a class="article-link" href="{{ $gimme->community_feed->comment->article->url }}#comments">{{ $gimme->community_feed->comment->article->title }}</a>
                                     </div>
                                 </div>
                                 <hr>
