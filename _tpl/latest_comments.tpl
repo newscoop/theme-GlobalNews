@@ -1,11 +1,10 @@
 <section id="latest-comments-block" class="block">
     <h4>{{ #latestComments# }}</h4>
-    {{ local }}
     {{list_article_comments length="3" ignore_article="true" order="byDate desc"}}
     {{if $gimme->comment->content }}
     <div class="comment-box">
         <div class="link">
-            <a class="article-link" href="{{uri}}#comments">{{ $gimme->comment->content|truncate:120 }}</a>
+            <a class="article-link" href="{{ url options="article" }}#comments">{{ $gimme->comment->content|truncate:120 }}</a>
             <div class="comment-info">
                 <time class="timeago" datetime="{{ $gimme->comment->submit_date}}">{{ $gimme->comment->submit_date }},</time> {{ #by# }}
                 {{ if $gimme->comment->user->identifier }}
@@ -19,5 +18,4 @@
     <hr>
     {{ /if }}
     {{ /list_article_comments }}
-    {{ /local }}
 </section>
