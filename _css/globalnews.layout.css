@@ -815,7 +815,8 @@ span.img-responsive img {
     border-left: 0px;
     padding-left: 0px;
   }
-  #sidebar #poll {
+  #sidebar #poll,
+  #sidebar #community-feed-block {
     margin-top: 20px;
     padding-top: 20px;
     border-top: #d6d6d6 1px solid;
@@ -833,7 +834,8 @@ span.img-responsive img {
     border-left: 0px;
     padding-left: 0px;
   }
-  #sidebar #poll {
+  #sidebar #poll,
+  #sidebar #community-feed-block {
     padding-top: 20px;
     margin-top: 20px;
     border-top: #d6d6d6 1px solid;
@@ -860,7 +862,8 @@ span.img-responsive img {
     border-left: 0px;
     padding-left: 0px;
   }
-  #sidebar #poll {
+  #sidebar #poll,
+  #sidebar #community-feed-block {
     padding-top: 20px;
     margin-top: 20px;
     border-top: #d6d6d6 1px solid;
