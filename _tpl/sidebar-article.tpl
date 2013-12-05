@@ -1,6 +1,6 @@
                     <div class="col-lg-4 col-md-4">
 
-                        <aside id="sidebar" class="visible-lg visible-md">
+                        <aside id="sidebar">
 
                             {{ if $gimme->article->type_name == "debate" }}
                                 {{ include file="_tpl/debate-voting.tpl" }}
@@ -21,7 +21,7 @@
                                 {{ include file="_tpl/poll.tpl" }}
                             {{ /if }}
 
-                            <section id="ad" class="block">
+                            <section id="ad" class="block visible-lg visible-md">
                                 <a href="http://sourcefabric.org/" target="_blank"><img class="img-responsive" src="{{ url static_file='_img/sourcefabric-ad.png'}}" alt="ad"></a>
                             </section>
 

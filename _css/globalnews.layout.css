@@ -816,9 +816,11 @@ span.img-responsive img {
     padding-left: 0px;
   }
   #sidebar #poll,
-  #sidebar #community-feed-block {
+  #sidebar #community-feed-block,
+  #sidebar #slideshow-block {
     margin-top: 20px;
     padding-top: 20px;
+    margin-bottom: 0px;
     border-top: #d6d6d6 1px solid;
   }
 }
@@ -835,9 +837,11 @@ span.img-responsive img {
     padding-left: 0px;
   }
   #sidebar #poll,
-  #sidebar #community-feed-block {
+  #sidebar #community-feed-block,
+  #sidebar #slideshow-block {
     padding-top: 20px;
     margin-top: 20px;
+    margin-bottom: 0px;
     border-top: #d6d6d6 1px solid;
   }
   #main-header h1,
@@ -863,8 +867,10 @@ span.img-responsive img {
     padding-left: 0px;
   }
   #sidebar #poll,
-  #sidebar #community-feed-block {
+  #sidebar #community-feed-block,
+  #sidebar #slideshow-block {
     padding-top: 20px;
+    margin-bottom: 0px;
     margin-top: 20px;
     border-top: #d6d6d6 1px solid;
   }
