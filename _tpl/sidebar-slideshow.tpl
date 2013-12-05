@@ -1,5 +1,5 @@
 {{ foreach $gimme->article->slideshows as $slideshow }}
-<section class="block">
+<section id="slideshow-block" class="block">
     <h4>{{ #slideShow# }}</h4>
     <div id="gallery">
     {{ assign var="style" value='true' }}

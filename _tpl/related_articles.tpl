@@ -1,6 +1,6 @@
 {{ list_related_articles }}
 {{ if $gimme->current_list->at_beginning }}
-<section id="related-articles-block" class="block">
+<section id="related-articles-block" class="block visible-lg visible-md">
     <h4>{{ #relatedArticles# }}</h4>
  {{/if}}
  {{ if $gimme->article->type_name == "news" }}
