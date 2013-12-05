@@ -54,18 +54,26 @@ if ( $.browser.msie && $.browser.version < 8 ) {
 
 // Set the same height to main-content and sidebar when the page has finished to load
 $(window).load(function(){
-   autoheight("#content", "#sidebar");
+   if ($(document).width >= 980){
+     autoheight("#content", "#sidebar");
+   } 
 });
 
 $(document).ready(function () {                     
 
     // // set same height to main-content and sidebar
-    autoheight("#content", "#sidebar");
+    if ($(document).width >= 980){
+      autoheight("#content", "#sidebar");
+    } 
 
     // binding resize of window, set the same height after resize
     $(window).resize(function(){
+      if ($(document).width >= 980){
       autoheight("#content", "#sidebar");
-      console.log("algo");                
+      } else {
+        $("#content").css('height', 'auto');
+        $("#sidebar").css('height', 'auto');
+      }
     });
    
     //Add/remove active class on the slider, bootstrap slider works slightly different 
