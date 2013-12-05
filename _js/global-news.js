@@ -54,7 +54,7 @@ if ( $.browser.msie && $.browser.version < 8 ) {
 
 // Set the same height to main-content and sidebar when the page has finished to load
 $(window).load(function(){
-   if ($(document).width >= 980){
+   if ($(document).width() >= 980){
      autoheight("#content", "#sidebar");
    } 
 });
@@ -62,14 +62,14 @@ $(window).load(function(){
 $(document).ready(function () {                     
 
     // // set same height to main-content and sidebar
-    if ($(document).width >= 980){
+    if ($(document).width() >= 980){
       autoheight("#content", "#sidebar");
     } 
 
     // binding resize of window, set the same height after resize
     $(window).resize(function(){
-      if ($(document).width >= 980){
-      autoheight("#content", "#sidebar");
+      if ($(document).width() >= 980){
+        autoheight("#content", "#sidebar");
       } else {
         $("#content").css('height', 'auto');
         $("#sidebar").css('height', 'auto');
