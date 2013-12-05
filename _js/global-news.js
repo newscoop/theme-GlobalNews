@@ -64,7 +64,8 @@ $(document).ready(function () {
 
     // binding resize of window, set the same height after resize
     $(window).resize(function(){
-      autoheight("#content", "#sidebar");                
+      autoheight("#content", "#sidebar");
+      console.log("algo");                
     });
    
     //Add/remove active class on the slider, bootstrap slider works slightly different 

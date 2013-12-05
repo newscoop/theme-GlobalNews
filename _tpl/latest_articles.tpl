@@ -1,4 +1,4 @@
-<section id="latest-articles-block" class="block">
+<section id="latest-articles-block" class="block visible-lg visible-md">
     <h4>{{ #latestArticles# }}</h4>
     {{ list_articles length="5" ignore_issue="true" ignore_section="true" constraints="type not poll" order="byPublishDate desc" }}
     <div class="link">

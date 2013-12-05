@@ -24,7 +24,7 @@
   {{/if}}
 {{ /list_articles }} 
 
-<section id="video-block" class="block">
+<section id="video-block" class="block visible-lg visible-md">
     <h4>{{ #video# }}</h4>
     {{ foreach from=$multimedia key=articleID item=multimediaType name=multimediaLoop }}
         {{ list_articles ignore_issue="true" ignore_section="true" length="1" constraints="number is `$articleID`"}}
