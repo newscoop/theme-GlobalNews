@@ -1,8 +1,10 @@
 {{ config_load file="{{ $gimme->language->english_name }}.conf" }}
 {{ include "_tpl/_html-head.tpl" }}
-<body class="responsive-menu-push">
+<body>
 
-    {{ include "_tpl/responsive-menu.tpl"}}
+{{ include "_tpl/responsive-menu.tpl"}}
+
+<div id="main-container" class="snap-content">
     
     <div class="container">
         {{ include "_tpl/header.tpl" }}

@@ -1,6 +1,5 @@
-<div class="snap-drawers">
+        <div class="snap-drawers">
             <div class="snap-drawer snap-drawer-left">
-                <!-- <nav class="responsive-menu responsive-menu-vertical responsive-menu-left" id="responsive-menu"> -->
                 <nav class="responsive-menu">
                     <h3>Menu</h3>
                     {{ local }}
@@ -22,8 +21,5 @@
                     <a href="{{ $view->url(['controller' => 'auth', 'action' =>'index'], 'default') }}">{{ #login# }}</a>
                     {{ /if }}
                 </nav>
-
-
             </div>
-
         </div>

@@ -176,7 +176,7 @@ $(document).ready(function () {
     // Responsive menu 
     var snapper = new Snap({
       element: document.getElementById('main-container'),
-      disable: 'right'
+      disable: 'right',
     });
 
     var addEvent = function addEvent(element, eventName, func) {
