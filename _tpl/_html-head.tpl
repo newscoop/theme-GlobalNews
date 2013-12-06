@@ -17,6 +17,7 @@
 
         <link rel="stylesheet" href="{{ url static_file="_css/bootstrap.min.css" }}">
         <link rel="stylesheet" href="{{ url static_file="_css/globalnews.skin.css" }}">
+        <link rel="stylesheet" href="{{ url static_file="_css/snap.css" }}">
 
         {{ if $gimme->article->defined }}{{* Open Graph protocol metatags for Facebook sharing *}}
         <meta property="og:title" content="{{$gimme->article->name|html_entity_decode|regex_replace:'/&(.*?)quo;/':'&quot;'}}" />
