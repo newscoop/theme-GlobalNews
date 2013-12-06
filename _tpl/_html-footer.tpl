@@ -1,10 +1,15 @@
         </div>
         <!-- End .container -->
+
+    </div>
+    <!-- End #main-container -->
+
         <script src="{{ url static_file='_js/vendor/bootstrap.min.js'}}"></script>
         <script src="{{ url static_file='_js/vendor/matchmedia.js'}}"></script>
         <script src="{{ url static_file='_js/vendor/picturefill.js'}}"></script>
         <script src="{{ url static_file='_js/vendor/jquery.timeago.js'}}"></script>
-        <script src="{{ url static_file='_js/vendor/classie.js'}}"></script>
+        <script src="{{ url static_file='_js/vendor/snap.js'}}"></script>
+        <link rel="stylesheet" href="{{ url static_file="_css/snap.css" }}">
 
         <script src="{{ url static_file='_js/global-news.js'}}"></script>
 

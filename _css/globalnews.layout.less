@@ -147,6 +147,10 @@
 
 /* --- Begin Content Elements */
 
+#main-container{
+	background: #fff;
+}
+
 #main{
 	margin-top:20px;
 }
@@ -873,9 +877,12 @@ span.img-responsive{
 
 /* General styles for responsive menu */
 
+.snap-drawers{
+	background: #232323;
+}
+
 .responsive-menu {
 	background: #232323;
-	position: fixed;
 
 	h3 {
 		color: #fff;
@@ -890,6 +897,7 @@ span.img-responsive{
 		color: #fff;
 		font-size: 18px;
 		font-weight: 400;
+		padding: 10px 15px;
 
 		&:hover {
 			background: #393939;
@@ -901,44 +909,6 @@ span.img-responsive{
 		}
 	}
 }
-
-.responsive-menu-vertical {
-	width: 260px;
-	height: 100%;
-	top: 0;
-	z-index: 1000;
-
-	a {
-		border-bottom: 1px solid #393939;
-		padding: 10px 15px;
-	}
-}
-
-.responsive-menu-left {
-	left: -260px;
-}
-
-.responsive-menu-left.responsive-menu-open {
-	left: 0px;
-}
-
-.responsive-menu-push {
-	overflow-x: hidden;
-	position: relative;
-	left: 0;
-}
-
-.responsive-menu-push-toright {
-	left: 260px;
-}
-
-.responsive-menu,
-.responsive-menu-push {
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-}
-
 
 /* --- Begin 768px to 979px screen resolution */
 

@@ -168,6 +168,9 @@
 }
 /* End Header Styles --- */
 /* --- Begin Content Elements */
+#main-container {
+  background: #fff;
+}
 #main {
   margin-top: 20px;
 }
@@ -752,9 +755,11 @@ span.img-responsive img {
   display: none;
 }
 /* General styles for responsive menu */
+.snap-drawers {
+  background: #232323;
+}
 .responsive-menu {
   background: #232323;
-  position: fixed;
 }
 .responsive-menu h3 {
   color: #fff;
@@ -768,6 +773,7 @@ span.img-responsive img {
   color: #fff;
   font-size: 18px;
   font-weight: 400;
+  padding: 10px 15px;
 }
 .responsive-menu a:hover {
   background: #393939;
@@ -775,36 +781,6 @@ span.img-responsive img {
 .responsive-menu a:active {
   background: #393939;
   color: #47a3da;
-}
-.responsive-menu-vertical {
-  width: 260px;
-  height: 100%;
-  top: 0;
-  z-index: 1000;
-}
-.responsive-menu-vertical a {
-  border-bottom: 1px solid #393939;
-  padding: 10px 15px;
-}
-.responsive-menu-left {
-  left: -260px;
-}
-.responsive-menu-left.responsive-menu-open {
-  left: 0px;
-}
-.responsive-menu-push {
-  overflow-x: hidden;
-  position: relative;
-  left: 0;
-}
-.responsive-menu-push-toright {
-  left: 260px;
-}
-.responsive-menu,
-.responsive-menu-push {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 /* --- Begin 768px to 979px screen resolution */
 @media (min-width: 768px) and (max-width: 979px) {
@@ -1413,6 +1389,9 @@ a {
 }
 /* End Skin Footer --- */
 /* Skin Style for Responsive Menu */
+.snap-drawers {
+  background: #1a488c;
+}
 .responsive-menu {
   background: #1a488c;
 }

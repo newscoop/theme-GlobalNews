@@ -172,7 +172,24 @@ $(document).ready(function () {
     if (jQuery().sparkline){
        $('.graph').sparkline('html',{enableTagOptions:true} ); 
     }
+
+    // Responsive menu 
+    var snapper = new Snap({
+      element: document.getElementById('main-container'),
+      disable: 'right'
+    });
+
+    var addEvent = function addEvent(element, eventName, func) {
+    if (element.addEventListener) {
+      return element.addEventListener(eventName, func, false);
+    } else if (element.attachEvent) {
+      return element.attachEvent("on" + eventName, func);
+    }
+    }; 
     
+    addEvent(document.getElementById('responsive-menu-button'), 'click', function(){
+      snapper.open('left');
+    }); 
 
 });
 
@@ -190,26 +207,4 @@ function set_votes(widget) {
         $(widget).find('.total_votes').text(votes + ' ' + votes_str + ' ' + averageRating_str + ' ' + exact);
         $(widget).find('.rating_error').text(error);
     }
-}
-
-// Responsive menu behavior
-
-var menuLeft = document.getElementById( 'responsive-menu' ),
-    showLeft = document.getElementById( 'showLeft' ),
-    body = document.body;
-
-showLeftPush.onclick = function() {
-    classie.toggle( this, 'active' );
-    classie.toggle( body, 'responsive-menu-push-toright' );
-    classie.toggle( menuLeft, 'responsive-menu-open' );
-    disableOther( 'showLeftPush' );
-};
-
-
-function disableOther( button ) {
-
-    if( button !== 'showLeftPush' ) {
-        classie.toggle( showLeftPush, 'disabled' );
-    }
-
 }

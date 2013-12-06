@@ -72,7 +72,7 @@
                                 {{ /local }}
                                 <a href="/user" id="community-link" class="pull-right">Community</a>
                             </nav>
-                            <button id="showLeftPush" type="button" class="responsive-menu-button btn btn-default visible-xs visible-sm">
+                            <button id="responsive-menu-button" type="button" class="responsive-menu-button btn btn-default visible-xs visible-sm">
                                    <span class="glyphicon glyphicon-th-list"></span> MENU
                             </button>
                         </div>
