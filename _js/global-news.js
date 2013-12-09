@@ -190,11 +190,18 @@ $(document).ready(function () {
       disable_click();
     });
 
-    snapper.on('close', function(){
-      disable_click();
-      enable_click();
-    });
+    //snapper.on('close', function(){
+    //  disable_click();
+    //  enable_click();
+    //});
 
+    snapper.on('end', function(){
+       state = snapper.state().state;
+       if (state == 'left'){
+          disable_click();
+          enable_click();
+       }
+    });
 });
 
 function enable_disable_snapper(){
