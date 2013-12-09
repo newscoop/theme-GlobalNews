@@ -208,8 +208,7 @@ function enable_disable_snapper(){
 }
 
 function enable_click(){
-    console.log("binding click");
-    $("#responsive-menu-button").prop("disabled", false);
+    $("#responsive-menu-button").delay(400).prop("disabled", false);
     $("#responsive-menu-button").click(function(){
       if( snapper.state().state=="left" ){
           snapper.close();
@@ -221,8 +220,7 @@ function enable_click(){
 
 function disable_click(){
     $("#responsive-menu-button").unbind("click");
-    $("#responsive-menu-button").prop("disabled", true);
-    console.log("unbinding click");
+    $("#responsive-menu-button").delay(400).prop("disabled", true);
 }
 
 // Votes functionalitty
