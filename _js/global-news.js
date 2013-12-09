@@ -58,7 +58,8 @@ if ( $.browser.msie && $.browser.version < 8 ) {
 $(window).load(function(){
    if ($(document).width() >= 980){
      autoheight("#content", "#sidebar");
-   } 
+   }
+   FastClick.attach(document.body); 
 });
 
 
