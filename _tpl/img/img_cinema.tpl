@@ -1,9 +1,9 @@
 {{ if $where=='no'}}
 {{ image rendition="cinemabig" }}
-	<img class="img-responsive" src="{{ $image->src }}" alt="{{ $image->caption }} (photo: {{ $image->photographer }})">
+	<img class="img-responsive" src="{{ $image->src }}" alt="{{ $image->caption|strip_tags }} (photo: {{ $image->photographer }})">
 {{ /image }}
 {{ else }}
-<span data-picture data-alt="{{ image rendition="cinemasmall" }}{{ $image->caption }} (photo: {{ $image->photographer }}){{ /image }}">
+<span data-picture data-alt="{{ image rendition="cinemasmall" }}{{ $image->caption|strip_tags }} (photo: {{ $image->photographer }}){{ /image }}">
 	{{ image rendition="cinemasmall" }}
 		<span class="img-responsive" data-src="{{ $image->src }}"></span>
 	{{ /image }}
@@ -16,12 +16,12 @@
 
 	<!--[if (lt IE 9) & (!IEMobile)]>
         {{ image rendition="cinemabig" }}
-			<img src="{{ $image->src }}" alt="{{ $image->caption }} (photo: {{ $image->photographer }})">
+			<img src="{{ $image->src }}" alt="{{ $image->caption|strip_tags }} (photo: {{ $image->photographer }})">
 		{{ /image }}
         <![endif]-->
 	<noscript>
 	{{ image rendition="cinemasmall" }}
-		<img class="img-responsive" src="{{ $image->src }}" alt="{{ $image->caption }} (photo: {{ $image->photographer }})">
+		<img class="img-responsive" src="{{ $image->src }}" alt="{{ $image->caption|strip_tags }} (photo: {{ $image->photographer }})">
 	{{ /image }}
 	</noscript>
 </span>
