@@ -209,7 +209,7 @@ function enable_disable_snapper(){
 
 function enable_click(){
     $("#responsive-menu-button").delay(400).prop("disabled", false);
-    $("#responsive-menu-button").click(function(){
+    $("#responsive-menu-button").delay(500).click(function(){
       if( snapper.state().state=="left" ){
           snapper.close();
       } else {
