@@ -5,6 +5,8 @@ jQuery.browser={};(function(){jQuery.browser.msie=false;
 jQuery.browser.version=0;if(navigator.userAgent.match(/MSIE ([0-9]+)\./)){
 jQuery.browser.msie=true;jQuery.browser.version=RegExp.$1;}})();
 
+var snapper = null;
+
 if ( $.browser.msie && $.browser.version < 8 ) {
   //definition for autoheight function for IE 7
   var autoheight = function(){
@@ -59,6 +61,7 @@ $(window).load(function(){
    } 
 });
 
+
 $(document).ready(function () {                     
 
     // // set same height to main-content and sidebar
@@ -68,6 +71,7 @@ $(document).ready(function () {
 
     // binding resize of window, set the same height after resize
     $(window).resize(function(){
+      enable_disable_snapper();
       if ($(document).width() >= 980){
         autoheight("#content", "#sidebar");
       } else {
@@ -174,28 +178,47 @@ $(document).ready(function () {
     }
 
     // Responsive menu 
-    var snapper = new Snap({
+    snapper = new Snap({
       element: document.getElementById('main-container'),
       disable: 'right',
     });
 
-    var addEvent = function addEvent(element, eventName, func) {
-    if (element.addEventListener) {
-      return element.addEventListener(eventName, func, false);
-    } else if (element.attachEvent) {
-      return element.attachEvent("on" + eventName, func);
+    enable_disable_snapper();
+    enable_click();
+
+    snapper.on('open', function(){
+      disable_click();
+    });
+    snapper.on('close', function(){
+      disable_click();
+      enable_click();
+    });
+
+});
+
+function enable_disable_snapper(){
+    if (snapper){
+        if ($(document).width()>980){
+            snapper.disable();
+        } else{
+            snapper.enable();
+        }
     }
-    }; 
-    
-    addEvent(document.getElementById('responsive-menu-button'), 'click', function(){
+}
+
+function enable_click(){
+    $("#responsive-menu-button").click(function(){
       if( snapper.state().state=="left" ){
           snapper.close();
       } else {
           snapper.open('left');
       }
     });
+}
 
-});
+function disable_click(){
+    $("#responsive-menu-button").unbind("click");
+}
 
 // Votes functionalitty
 

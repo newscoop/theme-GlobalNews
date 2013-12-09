@@ -9,8 +9,6 @@
         <script src="{{ url static_file='_js/vendor/picturefill.js'}}"></script>
         <script src="{{ url static_file='_js/vendor/jquery.timeago.js'}}"></script>
         <script src="{{ url static_file='_js/vendor/snap.min.js'}}"></script>
-        <!--<script src="{{ url static_file='_js/vendor/iscroll-min.js' }}"></script>-->
-        <!--<script src="{{ url static_file='_js/vendor/touchscroll.js' }}"></script>-->
         
         <script src="{{ url static_file='_js/vendor/overthrow-detect.js' }}"></script>
         <script src="{{ url static_file='_js/vendor/overthrow-polyfill.js' }}"></script>
