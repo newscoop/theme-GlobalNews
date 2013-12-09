@@ -9,11 +9,7 @@
         <script src="{{ url static_file='_js/vendor/picturefill.js'}}"></script>
         <script src="{{ url static_file='_js/vendor/jquery.timeago.js'}}"></script>
         <script src="{{ url static_file='_js/vendor/snap.min.js'}}"></script>
-        
-        <script src="{{ url static_file='_js/vendor/overthrow-detect.js' }}"></script>
-        <script src="{{ url static_file='_js/vendor/overthrow-polyfill.js' }}"></script>
-        <script src="{{ url static_file='_js/vendor/overthrow-toss.js' }}"></script>
-        <script src="{{ url static_file='_js/vendor/overthrow-init.js' }}"></script>
+        <script src="{{ url static_file='_js/vendor/overthrow.min.js' }}"></script>
 
         <script src="{{ url static_file='_js/global-news.js'}}"></script>
 
