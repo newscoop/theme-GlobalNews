@@ -4,7 +4,7 @@
 
 {{ include "_tpl/responsive-menu.tpl"}}
 
-<div id="main-container" class="snap-content">
+<div id="main-container" class="snap-content overthrow">
         
     <div class="container">
         {{ include "_tpl/header.tpl" }}

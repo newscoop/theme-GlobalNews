@@ -188,8 +188,12 @@ $(document).ready(function () {
     }; 
     
     addEvent(document.getElementById('responsive-menu-button'), 'click', function(){
-      snapper.open('left');
-    }); 
+      if( snapper.state().state=="left" ){
+          snapper.close();
+      } else {
+          snapper.open('left');
+      }
+    });
 
 });
 
