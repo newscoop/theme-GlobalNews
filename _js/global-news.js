@@ -189,6 +189,15 @@ $(document).ready(function () {
     snapper.on('open', function(){
       disable_click();
     });
+
+   snapper.on('drag', function(){
+      console.log('dragging');
+      console.log(snapper.state());
+      if( snapper.state().state=="left" ){
+          disable_click();
+      }
+    });
+
     snapper.on('close', function(){
       disable_click();
       enable_click();
@@ -207,6 +216,7 @@ function enable_disable_snapper(){
 }
 
 function enable_click(){
+    console.log("binding click");
     $("#responsive-menu-button").click(function(){
       if( snapper.state().state=="left" ){
           snapper.close();
@@ -218,6 +228,7 @@ function enable_click(){
 
 function disable_click(){
     $("#responsive-menu-button").unbind("click");
+    console.log("unbinding click");
 }
 
 // Votes functionalitty
