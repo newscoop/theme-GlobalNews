@@ -59,6 +59,7 @@ $(window).load(function(){
    if ($(document).width() >= 980){
      autoheight("#content", "#sidebar");
    }
+   FastClick.attach(document.getElementById('main-container'));
 });
 
 
