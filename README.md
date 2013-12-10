@@ -8,11 +8,14 @@ A clean theme for Newscoop.
 Features Included:
 
     Responsive CSS for any browser.
+    Navigation slider for mobile devices. 
+    Optimised image resolutions for mobile devices. 
+    Article integration for user profiles of editors. 
     Retina display support.
-    Latest videos in front page.
+    Latest videos on front page.
     Debate Support.
     Poll support.
-    Translation Ready
+    Translation Ready.
     Easy CSS theming (see "Documentation" section below).
 
 Documentation
