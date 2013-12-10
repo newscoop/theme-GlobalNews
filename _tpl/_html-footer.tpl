@@ -9,7 +9,6 @@
         <script src="{{ url static_file='_js/vendor/picturefill.js'}}"></script>
         <script src="{{ url static_file='_js/vendor/jquery.timeago.js' }}"></script>
         <script src="{{ url static_file='_js/vendor/snap.min.js' }}"></script>
-        <script src="{{ url static_file='_js/vendor/fastclick.min.js' }}"></script>
         <script src="{{ url static_file='_js/vendor/overthrow.min.js' }}"></script>
 
         <script src="{{ url static_file='_js/global-news.js'}}"></script>

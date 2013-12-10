@@ -59,7 +59,6 @@ $(window).load(function(){
    if ($(document).width() >= 980){
      autoheight("#content", "#sidebar");
    }
-   FastClick.attach(document.getElementById('responsive-menu-button'));
 });
 
 
@@ -198,9 +197,12 @@ $(document).ready(function () {
 
     snapper.on('end', function(){
        state = snapper.state().state;
+       console.log($._data(document.getElementById('responsive-menu-button'), 'events'));
        if (state == 'left'){
           disable_click();
+          window.setTimeout()
           enable_click();
+          console.log($._data(document.getElementById('responsive-menu-button'), 'events'));
        }
     });
 });
@@ -216,8 +218,9 @@ function enable_disable_snapper(){
 }
 
 function enable_click(){
-    $("#responsive-menu-button").delay(400).prop("disabled", false);
-    $("#responsive-menu-button").delay(500).click(function(){
+    $("#responsive-menu-button").prop("disabled", false);
+    $("#responsive-menu-button").off();
+    $("#responsive-menu-button").click(function(){
       if( snapper.state().state=="left" ){
           snapper.close();
       } else {
@@ -228,7 +231,7 @@ function enable_click(){
 
 function disable_click(){
     $("#responsive-menu-button").unbind("click");
-    $("#responsive-menu-button").delay(400).prop("disabled", true);
+    $("#responsive-menu-button").prop("disabled", true);
 }
 
 // Votes functionalitty
