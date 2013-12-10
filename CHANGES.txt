@@ -1,0 +1,9 @@
+Newscoop theme Global News Changelog
+==============================
+
+Version 1.0
+-----------
+
+Released on December 11, 2013
+
+First public release
