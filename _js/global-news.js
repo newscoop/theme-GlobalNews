@@ -190,19 +190,11 @@ $(document).ready(function () {
       disable_click();
     });
 
-    //snapper.on('close', function(){
-    //  disable_click();
-    //  enable_click();
-    //});
-
     snapper.on('end', function(){
        state = snapper.state().state;
-       console.log($._data(document.getElementById('responsive-menu-button'), 'events'));
        if (state == 'left'){
           disable_click();
-          window.setTimeout()
-          enable_click();
-          console.log($._data(document.getElementById('responsive-menu-button'), 'events'));
+          window.setTimeout(enable_click, 500);
        }
     });
 });
