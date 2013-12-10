@@ -1,7 +1,7 @@
 Global News
 ===========
 
-Modern newspaper style theme for Newscoop.
+A clean theme for Newscoop.
 
 ![Global News Theme frontpage in different devices](https://wiki.sourcefabric.org/download/attachments/13631652/preview.png)
 
