@@ -18,7 +18,7 @@ Features Included:
 Documentation
 -------------
 
-https://wiki.sourcefabric.org/display/CS/Global+News+Theme+%7C+Newscoop+4.x+%7C+Release+Date:+November+2013
+https://wiki.sourcefabric.org/x/pADQ
 
 Demo
 ----
