@@ -26,7 +26,7 @@ https://wiki.sourcefabric.org/x/pADQ
 Demo
 ----
 
-http://globalnews.lab.sourcefabric.org
+http://globalnews-dev.lab.sourcefabric.org
 
 Copyright & License
 -------------------
