@@ -24,13 +24,13 @@
                         <a target="_blank" href="http://twitter.com/sourcefabric ">{{ #followUs# }}</a>
                         <a target="_blank"href="http://facebook.com/sourcefabric ">{{ #beOurFan# }}</a>
                         <a href="/en/static/rss">{{ #subscribeToOurFeed# }}</a>
-                        <a href="/?tpl=6">{{ #archive# }}</a>
+                        <a href="{{ uri options="template archive.tpl" }}">{{ #archive# }}</a>
                     </div>
                     <div id="contact-us-block" class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
                         <h4>{{ #contactUs# }}</h4>
                         <div class="info">
                             <div class="info-label"><span class="glyphicon glyphicon-envelope"></span> {{ #email# }}</div>
-                            contact@sourcefabric.org 
+                            contact@sourcefabric.org
                         </div>
 
                         <div class="info">
