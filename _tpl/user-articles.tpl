@@ -5,7 +5,7 @@
     <li class="{{ if $user->isAuthor() }} active {{/if}}">
          <a href="#articles-tab" data-toggle="tab">{{ #articles# }}</a>
     </li>
-</ul> 
+</ul>
 
 <div id="myTabContent" class="tab-content">
     <div class="tab-pane fade {{ if $user->isAuthor() }}{{else}}active in{{/if}}" id="comments-tab">
@@ -14,7 +14,7 @@
                 <div class="comment-box">
                     <a href="{{ $gimme->user_comment->article->url }}#comments">{{ $gimme->user_comment->content|escape|truncate:120 }}</a>
                     <div class="comment-info">
-                        <time class="timeago" datetime="{{ $gimme->user_comment->submit_date}}">{{ $gimme->user_comment->submit_date }},</time> 
+                        <time class="timeago" datetime="{{ $gimme->user_comment->submit_date}}">{{ $gimme->user_comment->submit_date }},</time>
                     </div>
                 </div>
         {{ /list_user_comments }}
@@ -35,15 +35,15 @@
                             <a href="{{ uri options="article" }}">
                                 {{ include file='_tpl/img/img_cinema.tpl'}}
                             </a>
-                        </figure>   
+                        </figure>
                     </div>
                     <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7">
                         <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
                         {{ if !$gimme->article->is_public }}
                         <span class="label label-danger">{{ #premium# }}</span>
-                        {{ /if }} 
+                        {{ /if }}
                         <p class="excerpt">
-                            {{ $gimme->article->full_text|truncate:250:"...":true }}
+                            {{ $gimme->article->deck|truncate:250:"...":true }}
                         </p>
                         <a href="{{ uri options="article" }}">{{ #more# }} </a>
                     </div>
@@ -52,7 +52,7 @@
              {{ /if }}
              {{ assign var=lastArticle value=$gimme->article->number }}
 
-             {{ if $gimme->current_list->at_end }}            
+             {{ if $gimme->current_list->at_end }}
 
              {{* PAGINATION *}}
              {{ $pages=ceil($gimme->current_list->count/5) }}
@@ -78,7 +78,7 @@
              {{ /if }}
 
              {{/list_articles}}
-             
+
         </div>
 
     </div>

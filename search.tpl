@@ -5,10 +5,10 @@
 {{ include "_tpl/responsive-menu.tpl"}}
 
 <div id="main-container" class="snap-content overthrow">
-    
+
     <div class="container">
         {{ include "_tpl/header.tpl" }}
-        
+
         <main id="main">
                 <div class="row">
 
@@ -36,14 +36,14 @@
                                         <a href="{{ uri options='section'}}" class="section-link">{{ $gimme->article->section->name }}</a>
                                         <h4><a href="{{ uri options='article' }}">{{ $gimme->article->name }}</a></h4>
                                         <div class="excerpt">
-                                            {{ $gimme->article->full_text|truncate:200:"..." }}
+                                            {{ $gimme->article->deck|truncate:200:"..." }}
                                         </div>
                                         <a href="{{ uri options='article'}}">{{ #more# }}</a>
                                     </div>
                                 </div>
                             </article>
 
-                            {{ if $gimme->current_list->at_end }}            
+                            {{ if $gimme->current_list->at_end }}
                             {{* PAGINATION *}}
                             {{ $pages=ceil($gimme->current_list->count/5) }}
                             {{ $curpage=intval($gimme->url->get_parameter($gimme->current_list_id())) }}
@@ -66,12 +66,12 @@
                             {{ /if }}
 
                             {{ /if }}
-                            
-                            {{ /list_search_results }} 
-                                
+
+                            {{ /list_search_results }}
+
                             {{ if $gimme->prev_list_empty }}
                               <p>{{ #noResultsFound# }} <strong>"{{ $gimme->search_articles_action->search_phrase }}"</strong>.</p>
-                            {{ /if }}  
+                            {{ /if }}
 
                         </div>
                         <!-- End Content -->
@@ -81,7 +81,7 @@
 
                 </div>
 
-            </main> 
+            </main>
 
         {{ include "_tpl/footer.tpl" }}
     {{ include "_tpl/_html-footer.tpl" }}

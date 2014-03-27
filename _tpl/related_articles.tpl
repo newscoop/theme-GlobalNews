@@ -16,7 +16,7 @@
             </div>
             <div class="col-lg-7 col-md-7">
                 <div class="excerpt">
-                    {{ $gimme->article->full_text|truncate:100:"..." }}
+                    {{ $gimme->article->deck|truncate:100:"..." }}
                 </div>
                 <a href="{{ uri option='article'}}">{{ #more# }}</a>
             </div>
