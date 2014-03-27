@@ -5,10 +5,10 @@
 {{ include "_tpl/responsive-menu.tpl"}}
 
 <div id="main-container" class="snap-content overthrow">
-    
+
     <div class="container">
         {{ include "_tpl/header.tpl" }}
-        
+
         <main id="main">
                 <div class="row">
 
@@ -32,25 +32,25 @@
                                 <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
                                 {{ if !$gimme->article->is_public }}
                                 <span class="label label-danger">{{ #premium# }}</span>
-                                {{ /if }} 
+                                {{ /if }}
                                 <p class="excerpt">
-                                    {{ $gimme->article->full_text|truncate:250:"...":true }}
+                                    {{ $gimme->article->deck|truncate:250:"...":true }}
                                 </p>
                                 <a href="{{ uri options="article" }}">{{ #more# }} </a>
-                                
+
                                 {{ else }}
 
                                 <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
                                 {{ if !$gimme->article->is_public }}
                                 <span class="label label-danger">{{ #premium# }}</span>
-                                {{ /if }} 
-                                {{if $gimme->article->teaser}} 
+                                {{ /if }}
+                                {{if $gimme->article->teaser}}
                                 <p class="excerpt">
                                     {{ $gimme->article->teaser}}
                                 </p>
                                 {{else}}
                                 <p class="excerpt">
-                                    {{ $gimme->article->full_text|truncate:500:"...":true}}
+                                    {{ $gimme->article->deck|truncate:500:"...":true}}
                                 </p>
                                 {{/if}}
                                 <a href="{{ uri options="article" }}">{{ #more# }}</a>
@@ -66,15 +66,15 @@
                                             <a href="{{ uri options="article" }}">
                                                 {{ include file='_tpl/img/img_cinema.tpl'}}
                                             </a>
-                                        </figure>   
+                                        </figure>
                                     </div>
                                     <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7">
                                         <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
                                         {{ if !$gimme->article->is_public }}
                                         <span class="label label-danger">{{ #premium# }}</span>
-                                        {{ /if }} 
+                                        {{ /if }}
                                         <p class="excerpt">
-                                            {{ $gimme->article->full_text|truncate:250:"...":true }}
+                                            {{ $gimme->article->deck|truncate:250:"...":true }}
                                         </p>
                                         <a href="{{ uri options="article" }}">{{ #more# }} </a>
                                     </div>
@@ -84,13 +84,13 @@
                                     {{ if !$gimme->article->is_public }}
                                     <span class="label label-danger">{{ #premium# }}</span>
                                     {{ /if }}
-                                    {{if $gimme->article->teaser}} 
+                                    {{if $gimme->article->teaser}}
                                     <p class="excerpt">
                                         {{ $gimme->article->teaser}}
                                     </p>
                                     {{else}}
                                     <p class="excerpt">
-                                        {{ $gimme->article->full_text|truncate:500:"...":true }}
+                                        {{ $gimme->article->deck|truncate:500:"...":true }}
                                     </p>
                                     {{/if}}
                                     <a href="{{ uri options="article" }}">{{ #more# }} </a>
@@ -98,8 +98,8 @@
                                 {{/if}}
                             </article>
                             {{/if}}
-                            
-                            {{ if $gimme->current_list->at_end }}            
+
+                            {{ if $gimme->current_list->at_end }}
                             {{* PAGINATION *}}
                             {{ $pages=ceil($gimme->current_list->count/5) }}
                             {{ $curpage=intval($gimme->url->get_parameter($gimme->current_list_id())) }}
@@ -123,7 +123,7 @@
 
                             {{ /if }}
 
-                            {{ /list_articles }} 
+                            {{ /list_articles }}
 
                         </div>
                         <!-- End Content -->
@@ -133,7 +133,7 @@
 
                 </div>
 
-            </main> 
+            </main>
 
         {{ include "_tpl/footer.tpl" }}
     {{ include "_tpl/_html-footer.tpl" }}

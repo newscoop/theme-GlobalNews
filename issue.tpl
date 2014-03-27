@@ -5,10 +5,10 @@
 {{ include "_tpl/responsive-menu.tpl"}}
 
 <div id="main-container" class="snap-content overthrow">
-    
+
     <div class="container">
         {{ include "_tpl/header.tpl" }}
-        
+
         <main id="main">
                 <div class="row">
 
@@ -17,13 +17,13 @@
 
                         <div id="content" class="issue-page">
 
-                            {{ list_sections }} 
+                            {{ list_sections }}
                             {{ list_articles }}
 			    {{ assign var=articlesConstraints value="`$articlesConstraints` number not `$gimme->article->number`" }}
                             {{ if $gimme->current_articles_list->at_beginning }}
                             <h4 class="section-title">{{ $gimme->section->name}}</h4>
                             {{ /if }}
-                            {{ if $gimme->article->type_name != "poll" }} 
+                            {{ if $gimme->article->type_name != "poll" }}
                             <article class="article list">
                                 {{ if $gimme->section->name != "Dialogue" }}
                                 <div class="row">
@@ -32,15 +32,15 @@
                                             <a href="{{ uri options="article" }}">
                                                 {{ include file='_tpl/img/img_cinema.tpl'}}
                                             </a>
-                                        </figure>   
+                                        </figure>
                                     </div>
                                     <div class="col-lg-8 col-md-7 col-sm7 col-xs-7">
                                         <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
                                         {{ if !$gimme->article->is_public }}
                                         <span class="label label-danger">{{ #premium# }}</span>
-                                        {{ /if }} 
+                                        {{ /if }}
                                         <p class="excerpt">
-                                            {{ $gimme->article->full_text|truncate:250:"...":true }}
+                                            {{ $gimme->article->deck|truncate:250:"...":true }}
                                         </p>
                                         <a href="{{ uri options="article" }}">{{ #more# }} </a>
                                     </div>
@@ -49,7 +49,7 @@
                                     <h4><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h4>
                                     {{ if !$gimme->article->is_public }}
                                     <span class="label label-danger">{{ #premium# }}</span>
-                                    {{ /if }} 
+                                    {{ /if }}
                                     <p class="excerpt">
                                         {{ $gimme->article->teaser}}
                                     </p>
@@ -57,8 +57,8 @@
                                 {{/if}}
                             </article>
                             {{ /if }}
-                            {{ /list_articles }} 
-                            {{ /list_sections }} 
+                            {{ /list_articles }}
+                            {{ /list_sections }}
 
                         </div>
                         <!-- End Content -->
@@ -68,7 +68,7 @@
 
                 </div>
 
-            </main> 
+            </main>
 
         {{ include "_tpl/footer.tpl" }}
     {{ include "_tpl/_html-footer.tpl" }}

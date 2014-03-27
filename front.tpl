@@ -8,7 +8,7 @@
 
     <div class="container">
         {{ include "_tpl/header.tpl" }}
-        
+
         <main id="main">
                 <div class="row">
 
@@ -32,7 +32,7 @@
                                             <div class="caption">
                                                 <h2><a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a></h2>
                                                 <div class="excerpt">
-                                                    {{ $gimme->article->full_text|truncate:250:"..." }}
+                                                    {{ $gimme->article->deck|truncate:250:"..." }}
                                                 </div>
                                             </div>
                                         </article>
@@ -63,7 +63,7 @@
                                 {{ /list_sections }}
                                 <div class="clearfix"></div>
                             </nav>
-                            
+
                             {{ list_playlist_articles name="Front page" length="6" }}
 			    {{ assign var=articlesConstraints value="`$articlesConstraints` number not `$gimme->article->number`" }}
                             <article class="article list">
@@ -79,7 +79,7 @@
                                         <a href="{{ uri options='section' }}" class="section-link">{{ $gimme->article->section->name }}</a>
                                         <h4><a href="{{ uri option='article'}}">{{ $gimme->article->name }}</a></h4>
                                         <div class="excerpt">
-                                            {{ $gimme->article->full_text|truncate:200:"..." }}
+                                            {{ $gimme->article->deck|truncate:200:"..." }}
                                         </div>
                                         <a href="{{ uri option='article'}}">{{ #more# }}</a>
                                     </div>
@@ -95,7 +95,7 @@
 
                 </div>
 
-            </main> 
+            </main>
 
         {{ include "_tpl/footer.tpl" }}
     {{ include "_tpl/_html-footer.tpl" }}
