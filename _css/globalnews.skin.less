@@ -91,6 +91,36 @@ a{
 		}
 	}
 }
+/* Language styles */
+
+.language_menu {
+  float: left;
+  list-style: none;
+  z-index: 999;
+}
+.language_menu > a:after {
+  content: url('../_img/arrow_down.png');
+  margin-left: 5px;
+  position: absolute;
+  margin-top: -2px;
+}
+
+.language_menu ul{
+  display: none;
+  z-index: 999;
+  padding-left: 0px;
+}
+
+
+.language_menu:hover ul {
+  padding-bottom: 5px;
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  padding: 5px 30px 10px 2px;
+  border: 1px solid #d3d3d3;
+  border-top: none;
+}
 
 #news-ticker {
 	height: 28px;
