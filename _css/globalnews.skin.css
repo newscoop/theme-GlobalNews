@@ -5,7 +5,7 @@
 /* --- Begin Header */
 #top-header {
   height: 30px;
-  padding: 5px 0px;
+  padding: 10px 0px;
   border-bottom: #d6d6d6 1px solid;
   font-size: 12px;
 }
@@ -1054,6 +1054,9 @@ a {
   display: none;
   z-index: 999;
   padding-left: 0px;
+}
+.language_menu ul li {
+  list-style: none;
 }
 .language_menu:hover ul {
   padding-bottom: 5px;
