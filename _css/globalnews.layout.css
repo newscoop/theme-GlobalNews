@@ -756,6 +756,19 @@ span.img-responsive img {
 /* General styles for responsive menu */
 .snap-drawers {
   background: #232323;
+  display: none;
+}
+body.snapjs-left {
+  overflow: hidden;
+}
+.snapjs-left .snap-drawers {
+  display: block;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 266px;
+  z-index: 9999;
+  overflow: auto;
 }
 .responsive-menu {
   background: #232323;
@@ -833,7 +846,13 @@ span.img-responsive img {
   }
 }
 /* --- End 481px to 767px screen resolution */
-/* --- Begin screen resolution less than 680px */
+/* --- Begin screen resolution less than 991px */
+@media (max-width: 991px) {
+  .snapjs-left .overthrow-enabled.overthrow {
+    -webkit-transform: none !important;
+    margin-left: 266px;
+  }
+}
 @media (max-width: 680px) {
   #news-ticker {
     display: none;
