@@ -20,6 +20,10 @@
                     <a href="{{ $view->url(['controller' => 'register', 'action' => 'index']) }}">{{ #register# }}</a>
                     <a href="{{ $view->url(['controller' => 'auth', 'action' =>'index'], 'default') }}">{{ #login# }}</a>
                     {{ /if }}
+                    <h3>Language</h3>
+                    <a title="English" href="#">English</a>
+                    <a title="Spanish" href="#">Spanish</a>
+
                 </nav>
             </div>
         </div>

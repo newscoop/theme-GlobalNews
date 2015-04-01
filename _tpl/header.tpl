@@ -15,6 +15,13 @@
                                 {{ /if }}
                                 <a href="/en/static/rss">{{ #RSS# }}</a>
                             </div>
+                             <div class="top_links language_menu">
+                                       <a href="#">Language</a>
+                                       <ul>
+                                       <li><a title="English" href="#">English</a></li>
+                                       <li><a title="Spanish" href="#">Spanish</a></li>
+                                       </ul>
+                                </div>
                             <div class="pull-right">
                                 {{ $smarty.now|date_format:"%A, %B %e %Y" }}
                             </div>
