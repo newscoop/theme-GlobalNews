@@ -26,8 +26,9 @@
         {{ $escapedName=str_replace(" ", "\ ", $user->author->name) }}
         {{/if}}
         <div class="profile-articles">
+        {{ assign var=lastArticle value=$gimme->article->number }}
              {{ list_articles length="5" ignore_publication="true" ignore_issue="true" ignore_section="true" constraints="author is $escapedName type is news" order="bypublishdate desc" }}
-             {{ assign var=lastArticle value=$gimme->article->number }}
+
              {{ if $gimme->article->number != $lastArticle }}
              <article class="article list">
                 <div class="row">
