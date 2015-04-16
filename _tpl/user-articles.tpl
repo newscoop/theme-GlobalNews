@@ -26,14 +26,16 @@
         {{ $escapedName=str_replace(" ", "\ ", $user->author->name) }}
         {{/if}}
         <div class="profile-articles">
+        {{ assign var=lastArticle value=$gimme->article->number }}
              {{ list_articles length="5" ignore_publication="true" ignore_issue="true" ignore_section="true" constraints="author is $escapedName type is news" order="bypublishdate desc" }}
+
              {{ if $gimme->article->number != $lastArticle }}
              <article class="article list">
                 <div class="row">
                     <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
                         <figure class="section-thumb pull-left img-responsive">
                             <a href="{{ uri options="article" }}">
-                                {{ include file='_tpl/img/img_cinema.tpl'}}
+                                {{ include file='_tpl/img/img_cinema.tpl' where="no"}}
                             </a>
                         </figure>
                     </div>
@@ -50,7 +52,7 @@
                 </div>
              </article>
              {{ /if }}
-             {{ assign var=lastArticle value=$gimme->article->number }}
+             
 
              {{ if $gimme->current_list->at_end }}
 
