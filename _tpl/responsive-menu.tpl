@@ -5,9 +5,7 @@
                     {{ local }}
                     {{ set_current_issue }}
                     {{ list_sections }}
-                    <a href="{{ uri options='section' }}" 
-                        {{if $currentsection == $gimme->section->number }}class="active"{{ /if}} >{{ $gimme->section->name}}
-                    </a>
+                    <a href="{{ uri options='section' }}">{{ $gimme->section->name}}</a>
                     {{ /list_sections }}
                     {{ /local }}
                     <a href="/user" id="community-link">Community</a>
