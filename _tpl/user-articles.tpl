@@ -33,7 +33,7 @@
                     <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
                         <figure class="section-thumb pull-left img-responsive">
                             <a href="{{ uri options="article" }}">
-                                {{ include file='_tpl/img/img_cinema.tpl'}}
+                                {{ include file='_tpl/img/img_cinema.tpl' where="no"}}
                             </a>
                         </figure>
                     </div>
